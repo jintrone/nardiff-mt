@@ -15,6 +15,7 @@
         this.age = null;
         this.gender = null;
         this.education = null;
+        this.turker_id = null;
 
         var removeImage;
 

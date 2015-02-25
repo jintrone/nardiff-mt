@@ -101,13 +101,4 @@ class NarrativeController {
         }
     }
 
-    def initStories() {
-        Narrative testNarrative = create();
-        testNarrative.root_narrative_id = 10
-        testNarrative.text = "initial narrative"
-
-        save(testNarrative);
-
-    }
-
 }

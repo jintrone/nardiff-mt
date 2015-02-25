@@ -10,5 +10,10 @@ class NarrativeRequest {
     Integer priority;
 
     static constraints = {
+        when_assigned nullable: true
+        assigned_to nullable: true
+        when_completed nullable: true
+
+
     }
 }

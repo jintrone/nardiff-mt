@@ -5,7 +5,7 @@
   Time: 6:05 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="nardiff.mt.NarrativeRequest; nardiff.mt.NardiffStuff" contentType="text/html;charset=UTF-8" %>
 <html ng-app="nardiff">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
@@ -35,6 +35,11 @@
 <body>
 <div ng-controller="WorkflowController as wf" id="mainPanel">
     <img class="center" src="images/wordmark_green_RGB.png"/>
+    <%
+        NarrativeRequest nr = NardiffStuff.findRequest(Long.parseLong(request.getParameter("story_id")));
+        boolean askForDemographics = NardiffStuff.assignRequestToTurker(nr,request.getParameter("turker_id"));
+        out.println(nr.toString());
+    %>
     <timer/>
 
     <div ng-show="stage === 1">
@@ -62,7 +67,9 @@
         </p>
 
         <p>
-            <button ng-click="stage = 2; wf.startTimer(); ">Begin</button>
+            <button ng-click="stage = 2; wf.startTimer(); wf.request_id = <%=
+                nr.id
+            %>; ">Begin</button>
         </p>
     </div>
 
@@ -73,7 +80,11 @@
         will be rejected.
         </p>
 
-        <p id="toremove"><img src="images/Text.png"/></p>
+        <p id="toremove"><img src="images/narratives/<%
+            NarrativeRequest.withTransaction { tx ->
+                nr.attach();
+                out.print(nr.parent_narrative.id)
+            } %>.png"/></p>
 
         <p>Time Remaining: {{ timeRemaining + " seconds" }}</p>
     </div>

@@ -56,8 +56,6 @@ public class Text2PNG {
         System.out.println("Headless? " + java.awt.GraphicsEnvironment.isHeadless());
 
         String[] splitText = cleanInput(testText);
-
-
         BufferedImage img = renderTextToImage(splitText,400);
 
         try {
@@ -65,8 +63,20 @@ public class Text2PNG {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public static void writeImageFile(String story, Long id) {
+        System.setProperty("java.awt.headless", "true");
+        String[] text = cleanInput(story);
+        BufferedImage img = renderTextToImage(text,500);
+        try {
+            ImageIO.write(img,"png",new File("web-app/images/narratives/" + id + ".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
+
 
     /**
      * Create a sanitized input for generating the next image of text.  The image

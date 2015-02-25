@@ -8,5 +8,8 @@ class Turker {
     Integer education;
 
     static constraints = {
+        age nullable: true
+        gender nullable: true
+        education nullable: true
     }
 }

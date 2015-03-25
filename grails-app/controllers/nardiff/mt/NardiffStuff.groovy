@@ -108,6 +108,7 @@ class NardiffStuff {
             Narrative na = new Narrative();
             na.root_narrative_id = narID++;
             na.text = story;
+            na.too_simple = false;
 
             Narrative.withTransaction { tx ->
                 na.save flush: true, failOnError: true
@@ -120,6 +121,7 @@ class NardiffStuff {
                 nr.parent_narrative = na;
                 nr.root_narrative = na;
                 nr.priority = 1;
+                nr.depth = 1;
 
                 NarrativeRequest.withTransaction { tx ->
                     nr.save flush: true, failOnError:true
@@ -130,7 +132,8 @@ class NardiffStuff {
                 NarrativeRequest nr = new NarrativeRequest();
                 nr.parent_narrative = na;
                 nr.root_narrative = na;
-                nr.priority = 10;
+                nr.priority = 100;
+                nr.depth = 1;
 
                 NarrativeRequest.withTransaction { tx ->
                     nr.save flush: true, failOnError:true
@@ -142,7 +145,19 @@ class NardiffStuff {
 
     public static NarrativeRequest findRequest(Long root_story_id) {
         NarrativeRequest.withTransaction { tx ->
-            NarrativeRequest.find("from NarrativeRequest nr where assigned_to is null order by priority ");
+            Date now = new Date();
+            Date cutoff = new Date(now.getTime() - (10 * 60 * 1000L)) // 10 minutes ago
+            List expiredRequests = NarrativeRequest.findAll("from NarrativeRequest nr where nr.when_assigned < :t", [t: cutoff]);
+            for (Object o : expiredRequests) {
+                NarrativeRequest expiredRequest = (NarrativeRequest) o;
+                log.info("NarrativeRequest " + expiredRequest.id + " was assigned to" +
+                    expiredRequest.assigned_to.mturk_id + ", but not completed after 10 minutes, so made available again.");
+                expiredRequest.assigned_to = null;
+                expiredRequest.when_assigned = null;
+                expiredRequest.save();
+            }
+
+            NarrativeRequest.find("from NarrativeRequest nr where nr.root_narrative.id = :rid and assigned_to is null order by priority", [rid: root_story_id]);
         }
 
     }

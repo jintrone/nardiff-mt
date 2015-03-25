@@ -1,0 +1,34 @@
+<plugin name='gwurk' version='0.4' grailsVersion='2.3 &gt; *'>
+  <author>Joshua Introne</author>
+  <title>Gwurk Plugin</title>
+  <description>Gwurk offers a level of abstraction upon Amazon's Mechanical Turk web service.  Introduces concepts of Workflows and Tasks. Converts existing gsp pages into external hits on mturk.
+</description>
+  <documentation>http://grails.org/plugin/gwurk-plugin</documentation>
+  <type>GwurkGrailsPlugin</type>
+  <resources>
+    <resource>BootStrap</resource>
+    <resource>PluginResources</resource>
+    <resource>PluginUrlMappings</resource>
+    <resource>edu.msu.mi.gwurk.ShiroSecurityFilters</resource>
+    <resource>edu.msu.mi.gwurk.AuthController</resource>
+    <resource>edu.msu.mi.gwurk.CredentialsController</resource>
+    <resource>edu.msu.mi.gwurk.JavascriptController</resource>
+    <resource>edu.msu.mi.gwurk.WorkflowController</resource>
+    <resource>edu.msu.mi.gwurk.WorkflowRunController</resource>
+    <resource>edu.msu.mi.gwurk.AssignmentView</resource>
+    <resource>edu.msu.mi.gwurk.Credentials</resource>
+    <resource>edu.msu.mi.gwurk.HitView</resource>
+    <resource>edu.msu.mi.gwurk.ShiroRole</resource>
+    <resource>edu.msu.mi.gwurk.ShiroUser</resource>
+    <resource>edu.msu.mi.gwurk.SingleHitTask</resource>
+    <resource>edu.msu.mi.gwurk.Task</resource>
+    <resource>edu.msu.mi.gwurk.TaskProperties</resource>
+    <resource>edu.msu.mi.gwurk.TaskRun</resource>
+    <resource>edu.msu.mi.gwurk.Workflow</resource>
+    <resource>edu.msu.mi.gwurk.WorkflowRun</resource>
+    <resource>edu.msu.mi.gwurk.ShiroDbRealm</resource>
+    <resource>edu.msu.mi.gwurk.MturkAwsFacadeService</resource>
+    <resource>edu.msu.mi.gwurk.MturkMonitorService</resource>
+    <resource>edu.msu.mi.gwurk.MturkTaskService</resource>
+  </resources>
+</plugin>

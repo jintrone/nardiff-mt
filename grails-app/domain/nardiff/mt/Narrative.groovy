@@ -10,6 +10,7 @@ class Narrative {
     Integer time_distrator;
     Integer time_writing;
     String text;
+    Boolean too_simple;
 
 
     static constraints = {
@@ -24,6 +25,7 @@ class Narrative {
 
     static mapping = {
         text type: "text"
+        root_narrative_id index: "root_narrative_id_idx"
     }
 
 

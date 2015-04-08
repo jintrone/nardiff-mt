@@ -11,6 +11,7 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
+grails.server.port.http = 8001
 gwurk.port = 8001
 gwurk.hostname = "cognosis.cas.msu.edu"
 

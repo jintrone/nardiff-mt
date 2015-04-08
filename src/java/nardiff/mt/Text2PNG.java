@@ -70,7 +70,7 @@ public class Text2PNG {
         String[] text = cleanInput(story);
         BufferedImage img = renderTextToImage(text,500);
         try {
-            ImageIO.write(img,"png",new File("web-app/images/narratives/" + id + ".png"));
+            ImageIO.write(img,"png",new File("/Users/kkoning/Dropbox/IdeaProjects/nardiff-mt/web-app/images/narratives/" + id + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -92,8 +92,7 @@ public class Text2PNG {
         String[] lines = input.split("\n");
         for ( String line : lines ) {
             line = line.trim();
-            if (line.length() > 3) // Line must be at least 1 word
-                toReturn.add("     " + line);
+            toReturn.add("     " + line);
         }
 
         return toReturn.toArray(new String[0]);

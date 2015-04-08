@@ -6,7 +6,7 @@
     var app = angular.module('nardiff', []);
     app.controller('WorkflowController', ['$scope', '$interval', function($scope, $interval) {
         $scope.stage = 1;
-        $scope.timeRemaining = 5;
+        $scope.timeRemaining = 15;
 
         this.request_id = null;
         this.parent_story_id = null;
@@ -16,6 +16,9 @@
         this.gender = null;
         this.education = null;
         this.turker_id = null;
+        this.distractorTime = null;
+        this.retellTime = null;
+        this.tooSimple = null;
 
         var removeImage;
 
@@ -29,11 +32,19 @@
             deductTime = $interval(function() {
                 $scope.timeRemaining--;
                 if ($scope.timeRemaining === 0) {
-                    $scope.stage = 3;
+                    $scope.stage = 4;
                     removeImage();
                 }
 
             }, 1000);
+        }
+
+        this.dt = function(wf) {
+            wf.distractorTime = $scope.timeRemaining;
+        }
+
+        this.rt = function(wf) {
+            wf.retellTime = $scope.timeRemaining;
         }
 
 

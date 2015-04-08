@@ -11,8 +11,8 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-gwurk.port = 8080
-gwurk.hostname = "localhost"
+gwurk.port = 8001
+gwurk.hostname = "cognosis.cas.msu.edu"
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 

@@ -1,15 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kkoning
-  Date: 2/19/15
-  Time: 6:05 PM
---%>
-
 <%@ page import="nardiff.mt.NarrativeRequest; nardiff.mt.NardiffStuff" contentType="text/html;charset=UTF-8" %>
 <html ng-app="nardiff">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
-    <script type="text/javascript" src="js/nardiff.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../js/nardiff.js"></script>
+
     <title></title>
 
     <style>
@@ -35,10 +30,10 @@
 <body>
 <div ng-controller="WorkflowController as wf" id="mainPanel">
 
-        <img class="center" src="images/wordmark_green_RGB.png"/>
+        <img class="center" src="../images/wordmark_green_RGB.png"/>
     <%
-        NarrativeRequest nr = NardiffStuff.findRequest(Long.parseLong(request.getParameter("story_id")));
-        boolean askForDemographics = NardiffStuff.assignRequestToTurker(nr,request.getParameter("turker_id"));
+        NarrativeRequest nr = params.get("narrativeRequest")
+        boolean askForDemographics = params.get("askForDemographics")
         int beginStage = 2;
         if (askForDemographics == false)
             beginStage = 3;
@@ -213,7 +208,7 @@
         will be rejected.
         </p>
 
-        <p id="toremove"><img src="images/narratives/<%
+        <p id="toremove"><img src="../images/narratives/<%
             NarrativeRequest.withTransaction { tx ->
                 nr.attach();
                 out.print(nr.parent_narrative.id)
@@ -254,9 +249,12 @@
         In the text box below, please retell the story for the next person.
         <form>
             <textarea ng-model="wf.story" name="story"></textarea><br>
-            <input type="checkbox" ng-model="wf.tooSimple" name="tooSimple">
             This story is so short that it is trivial to remember it perfectly.<br>
-            <button ng-click="wf.rt(wf); stage = 6">Continue</button>
+            <input type="radio" ng-model="wf.tooSimple" name="tooSimple" value="Yes"> Yes
+            <input type="radio" ng-model="wf.tooSimple" name="tooSimple" value="No"> No
+
+
+        <button ng-click="wf.rt(wf); stage = 6">Continue</button>
         </form>
     </div>
 

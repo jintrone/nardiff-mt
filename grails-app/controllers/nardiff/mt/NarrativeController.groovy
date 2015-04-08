@@ -1,5 +1,6 @@
 package nardiff.mt
 
+import edu.msu.mi.gwurk.Task
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -24,72 +25,64 @@ class NarrativeController {
 
     @Transactional
     def complete() {
-        System.out.println(params)
-        NarrativeRequest nr = NarrativeRequest.findById(Long.parseLong((String) params.get("request_id")));
-        nr.when_completed = new Date();
-        nr.save();
-
-        Turker worker = nr.getAssigned_to();
-        String age = params.get("age");
-        if (age != null) {
-            if (!age.equals("")) {
-                worker.age = Integer.parseInt(age);
-                worker.gender = params.get("gender");
-                worker.education = Integer.parseInt((String) params.get("education"));
-                worker.save();
-            }
-        }
-
-        Narrative parentNarrative = nr.getParent_narrative();
-
-        Narrative thisNarrative = new Narrative();
-        thisNarrative.parent_narrative = parentNarrative;
-        thisNarrative.root_narrative_id = parentNarrative.root_narrative_id;
-        thisNarrative.completed_by = worker;
-        thisNarrative.text = params.get("story");
-        thisNarrative.distractor_answer = params.get("distractorAnswer");
-        thisNarrative.time_distrator = Integer.parseInt(params.get("distractorTime"));
-        thisNarrative.time_writing = Integer.parseInt(params.get("retellTime"));
-        thisNarrative.too_simple = false;
-        if (((String)params.get("tooSimple")).matches("^[T|t]") )
-            thisNarrative.too_simple = true;
-
-        thisNarrative.save();
-
-        // Only insert more child requests if it wasn't too simple.
-        if (thisNarrative.too_simple)
-            return;
-
-        Text2PNG.writeImageFile(thisNarrative.text,thisNarrative.id);
-
-        // TODO Decide whether or not to accept this task and create new child tasks.
 
 
-        // Assuming we are creating child tasks.
-        def branchingLevels = [1:5, 2:5, 3:5, 4:1, 5:1, 6:1, 7:1, 8:1, 9:1, 10:0];
-
-        int tasksToAdd = branchingLevels.get(nr.depth);
-        int newNarrativeDepth = nr.depth+1;
-        int newPriority = nr.priority+1;
-        if (nr.priority > 50)
-            newPriority = nr.priority-1;
-
-        for (int i = 0; i < tasksToAdd; i++) {
-            NarrativeRequest newRequest = new NarrativeRequest();
-            newRequest.priority = newPriority;
-            newRequest.depth = newNarrativeDepth;
-            newRequest.root_narrative = nr.root_narrative;
-            newRequest.parent_narrative = thisNarrative;
-            newRequest.save();
-        }
 
 
+
+    }
+
+    def preview() {
 
     }
 
     def start() {
         //  [taskrun: params.task, workerId: params.workerId, action: run.taskProperties.action,controller: run.taskProperties.controller, submiturl: run.submitUrl, assignmentId: params.assignmentId]
 
+        Integer taskID;
+        String assignmentID;
+        String workerID;
+
+        try {
+            taskID = Integer.parseInt(params.get("task"))
+        } catch (Exception e) {
+            log.info("start() hit with no taskID, rendering preview");
+            render(view: "preview.gsp");
+            return;
+        }
+
+        assignmentID = params.get("assignmentId");
+        if (assignmentID == null) {
+            log.info("start() hit without assignmentID = \"" + assignmentID + "\", rendering preview");
+            render(view: "preview.gsp");
+            return;
+        }
+
+        workerID = params.get("workerId");
+        if (workerID == null) {
+            log.info("start() hit without workerID, rendering preview");
+            render(view: "preview.gsp");
+            return;
+        }
+
+        // Now that we have a taskID, assignmentID, and workerID, we can make
+        // the assignment and have the user start working on it.
+        log.info("start() called with assignmentID = \"" + assignmentID + "\"")
+        Task t = Task.get(taskID);
+        Long rootNarrativeID = Long.parseLong((t.getProperties().get("taskProperties")).getAt("parameter"));
+        NarrativeRequest nr = NardiffStuff.findRequest(rootNarrativeID);
+        boolean askForDemographics = NardiffStuff.assignRequestToTurker(nr, workerID, assignmentID);
+        params.setProperty("askForDemographics", askForDemographics);
+        params.setProperty("narrativeRequest", nr);
+        params.setProperty("task", t);
+
+//        NarrativeRequest nr = NardiffStuff.findRequest(params.get("narrative_id"));
+//        boolean askForDemographics = NardiffStuff.assignRequestToTurker(workerId);
+//        int beginStage = 2;
+//        if (askForDemographics == false)
+//            beginStage = 3;
+
+        log.info(params);
     }
 
     @Transactional

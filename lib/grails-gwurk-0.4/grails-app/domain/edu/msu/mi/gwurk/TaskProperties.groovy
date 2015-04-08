@@ -19,6 +19,7 @@ class TaskProperties implements Cloneable {
         description nullable: true
         height nullable: true
         requireApproval nullable: true
+        parameter nullable: true
 
     }
 
@@ -41,6 +42,9 @@ class TaskProperties implements Cloneable {
     Boolean requireApproval
     String controller
     String action
+
+    // A controller + action isn't specific enough.  Need a parameter too.
+    String parameter
 
 
     def TaskProperties copyFrom(TaskProperties props) {

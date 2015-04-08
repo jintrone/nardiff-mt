@@ -4,6 +4,7 @@ class NarrativeRequest {
 
     Narrative root_narrative;
     Narrative parent_narrative;
+    String assignment_id;
     Date when_assigned;
     Turker assigned_to;
     Date when_completed;
@@ -14,6 +15,7 @@ class NarrativeRequest {
         when_assigned nullable: true
         assigned_to nullable: true
         when_completed nullable: true
+        assignment_id nullable: true
     }
 
     static mapping = {
@@ -22,4 +24,5 @@ class NarrativeRequest {
         assigned_to index: "assigned_to_idx"
         when_assigned index: "when_assigned_idx"
     }
+
 }

@@ -1,5 +1,7 @@
 package nardiff.mt
 
+import org.apache.commons.logging.LogFactory
+
 /**
  * Ugh, yes, it's mostly static stuff in a single class, but whatever.
  *
@@ -15,7 +17,7 @@ class NardiffStuff {
             List expiredRequests = NarrativeRequest.findAll("from NarrativeRequest nr where nr.when_assigned < :t", [t: cutoff]);
             for (Object o : expiredRequests) {
                 NarrativeRequest expiredRequest = (NarrativeRequest) o;
-                log.info("NarrativeRequest " + expiredRequest.id + " was assigned to" +
+                LogFactory.getLog(this).info("NarrativeRequest " + expiredRequest.id + " was assigned to " +
                     expiredRequest.assigned_to.mturk_id + ", but not completed after 10 minutes, so made available again.");
                 expiredRequest.assigned_to = null;
                 expiredRequest.when_assigned = null;

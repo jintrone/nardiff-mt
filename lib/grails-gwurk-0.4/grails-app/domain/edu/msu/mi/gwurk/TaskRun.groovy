@@ -131,7 +131,7 @@ class TaskRun implements BeatListener{
     }
 
     def String getSubmitUrl() {
-         workflowRun.real? "https://www.mturk.com/mturk/externalSubmit" : "http://workersandbox.mturk.com/mturk/externalSubmit"
+         workflowRun.real? "https://www.mturk.com/mturk/externalSubmit" : "https://workersandbox.mturk.com/mturk/externalSubmit"
     }
 
     /**

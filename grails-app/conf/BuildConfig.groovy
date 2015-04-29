@@ -7,6 +7,13 @@ grails.project.target.level = 1.6
 grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
+grails.server.port.http = 8080
+grails.server.port.https = 8001
+
+grails.keystorePath = "/usr/local/apache-tomcat-8.0.18/conf/cognosis.jks"
+grails.tomcat.keystorePassword = "123456"
+
+
 //grails.project.fork = [
 //    // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
 //    //  compile: [maxMemory: 256, minMemory: 64, debug: false, maxPerm: 256, daemon:true],
@@ -61,7 +68,7 @@ grails.project.dependency.resolution = {
 
     plugins {
         // plugins for the build system only
-        build ":tomcat:7.0.55"
+        build ":tomcat:7.0.55.3"
 
         // plugins for the compile step
         compile ":scaffolding:2.1.2"

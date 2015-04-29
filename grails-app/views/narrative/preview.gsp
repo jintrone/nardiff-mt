@@ -1,7 +1,8 @@
 <html ng-app="nardiff">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
-    <script type="text/javascript" src="js/nardiff.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/nardiff-mt/js/nardiff.js"></script>
     <title></title>
 
     <style>

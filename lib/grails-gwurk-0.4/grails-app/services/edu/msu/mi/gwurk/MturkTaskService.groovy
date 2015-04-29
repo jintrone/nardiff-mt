@@ -18,8 +18,10 @@ class MturkTaskService {
 
 
     def onAssignment(TaskRun taskRun, AssignmentView assignmentView) {
-        log.info("On Assignment: ${taskRun.task.name}")
-        assignmentFx[taskRun.task.name](new GwurkEvent(taskRun,assignmentView))
+        if (assignmentFx[taskRun.task.name]) {
+            assignmentFx[taskRun.task.name](new GwurkEvent(taskRun,assignmentView))
+            log.info("On Assignment: ${taskRun.task.name}")
+        }
     }
 
     def onHit(TaskRun taskRun, HitView hitView) {

@@ -32,7 +32,7 @@
             deductTime = $interval(function() {
                 $scope.timeRemaining--;
                 if ($scope.timeRemaining === 0) {
-                    $scope.stage = 4;
+                    $scope.stage = 5;
                     removeImage();
                 }
 

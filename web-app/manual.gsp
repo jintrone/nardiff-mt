@@ -11,10 +11,13 @@
   <title></title>
 </head>
 <body>
-<form action="test.gsp" method="PUT">
+<form action="narrative/start" method="POST">
+    <input type="hidden" name="task" value="99999999"/>
+    <input type="hidden" name="assignmentId" value="manual"/>
+
     Enter starting information:<br/>
-    (Simulated) Turker ID: <input name="turker_id"><br/>
-    Story to Do: (check db for ID first) <input name="story_id"><br/>
+    (Simulated) Turker ID: <input name="workerId"><br/>
+    Story to Do: (check db for ID first) <input name="rootNarrativeId"><br/>
     <g:submitButton name="Start">Start</g:submitButton>
 </form>
 

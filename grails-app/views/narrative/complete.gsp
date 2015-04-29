@@ -11,6 +11,6 @@
   <title></title>
 </head>
 <body>
-This HIT has been completed.  <a href="../start.gsp">Do Another!</a>
+This HIT has been completed.  <a href="../manual.gsp">Do Another!</a>
 </body>
 </html>

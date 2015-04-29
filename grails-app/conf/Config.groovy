@@ -11,7 +11,6 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-grails.server.port.http = 8001
 gwurk.port = 8001
 gwurk.hostname = "cognosis.cas.msu.edu"
 
@@ -92,10 +91,13 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.serverURL = "https://localhost:8001/${appName}"
+
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+        grails.serverURL = "https://cognosis.cas.msu.edu:8001/${appName}"
+
     }
 }
 

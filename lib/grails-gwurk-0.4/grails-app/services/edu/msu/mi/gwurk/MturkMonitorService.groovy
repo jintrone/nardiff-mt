@@ -72,20 +72,23 @@ class MturkMonitorService {
 
                 } catch (Exception e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                    heartBeat.cancel();
+                    // exceptions are far too numerous and varied to give up after just one!
+                    //heartBeat.cancel();
                 }
 
 
             }
         }, 0, pauseTime);
-
     }
 
     def launch(Workflow w, boolean real, int iterations, Credentials credentials,Map props) {
         WorkflowRun run = new WorkflowRun(w,credentials,real,props)
         run.save()
         run.run(iterations)
-        listeners.add(run)
+
+            listeners.add(run)
+
+
     }
 
     def beat() {

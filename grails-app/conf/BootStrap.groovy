@@ -8,12 +8,20 @@ import nardiff.mt.Narrative
 import nardiff.mt.NarrativeRequest
 import nardiff.mt.Text2PNG
 import nardiff.mt.Turker
+import org.apache.commons.lang3.StringUtils
+import org.springframework.web.context.WebApplicationContext
+import org.springframework.web.context.support.WebApplicationContextUtils
+
+import javax.servlet.ServletContext
 
 //This is test application
 @Log4j
 class BootStrap {
 
     def mturkTaskService
+
+    def grailsApplication
+
 
     static String[] initialStories = [
             "Once there was a little boy who lived in a hot country.  " +
@@ -31,7 +39,7 @@ class BootStrap {
                     "The sun was shining hard and when he got home the butter " +
                     "had all melted.  \n" +
                     "His mother told him that he was a silly boy and that " +
-                    "he would have put the butter in a leaf so that it would " +
+                    "he should have put the butter in a leaf so that it would " +
                     "have gotten home safe and sound.",
 
             "Once there was a woman who needed a tiger’s whisker.  She " +
@@ -108,7 +116,7 @@ class BootStrap {
                     "widespread outbreak."
     ]
 
-    public static Narrative insertStory(String story, int numInitialRequests, int numLPRequests) {
+    public static Narrative insertStory(String story, int numInitialRequests, int numLPRequests, String imagePath) {
 
         Narrative narrative = new Narrative();
         narrative.text = story;
@@ -120,7 +128,7 @@ class BootStrap {
             narrative.save flush: true, failOnError: true
         }
 
-        Text2PNG.writeImageFile(narrative.text, narrative.id);
+        Text2PNG.writeImageFile(narrative.text, narrative.id, imagePath);
 
         for (int i = 0; i < numInitialRequests; i++) {
             NarrativeRequest nr = new NarrativeRequest();
@@ -151,132 +159,166 @@ class BootStrap {
 
 
     def init = { servletContext ->
-        for (String story : initialStories) {
-            Narrative narrative = insertStory(story, 5, 10);
+
+        if (Narrative.count() < 3) {
+
+            for (String story : initialStories) {
+
+                WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+                ServletContext sc = context.getServletContext();
+                String imagePath = sc.getRealPath("/images/narratives");
+
+                Narrative narrative = insertStory(story, 5, 10, imagePath);
+
+                Workflow w = new Workflow("Narrative Diffusion #" + narrative.id, "An experiment similar to a game of telephone", [
+                        rewardAmount      : 0.03f,
+                        relaunchInterval  : 1000 * 60 * 60,
+                        autoApprove       : true,
+                        lifetime          : 60 * 60 * 10,
+                        assignmentDuration: 600,
+                        keywords          : "research",
+                        maxAssignments    : 10,
+                        height            : 1000,
+                        requireApproval   : true
+                ])
 
 
-            Workflow w = new Workflow("Narrative Diffusion #" + narrative.id, "An experiment similar to a game of telephone", [
-                    rewardAmount      : 0.03f,
-                    relaunchInterval  : 1000 * 60 * 60,
-                    autoApprove       : true,
-                    lifetime          : 60 * 60 * 10,
-                    assignmentDuration: 600,
-                    keywords          : "research",
-                    maxAssignments    : 1,
-                    height            : 1000,
-                    requireApproval   : true
-            ])
+                Task t = new SingleHitTask("Narrative Task #" + narrative.id, [
+                        parameter  : narrative.id.toString(),
+                        controller : "narrative",
+                        action     : "start",
+                        title      : "Please follow the instructions below.",
+                        description: "This research is to help understand certain aspects of how information spreads.  No sensitive information is collected, and identities will be erased after data collection is complete.",
+                ]).save()
 
+                w.initStartingTasks(t);
 
-            Task t = new SingleHitTask("Narrative Task #" + narrative.id, [
-                    parameter  : narrative.id.toString(),
-                    controller : "narrative",
-                    action     : "start",
-                    title      : "Please follow the instructions below.",
-                    description: "This research is to help understand certain aspects of how information spreads.  No sensitive information is collected, and identities will be erased after data collection is complete.",
-            ]).save()
-
-            w.initStartingTasks(t);
-
-            //Remember to save!
-            w.save()
+                //Remember to save!
+                w.save()
 
 
 
-            mturkTaskService.installTask(t) { type, GwurkEvent evt ->
-                switch (type) {
+                mturkTaskService.installTask(t) { type, GwurkEvent evt ->
+                    switch (type) {
 
-                    case GwurkEvent.Type.TASK_STARTING:
-                        log.info("Task #" + narrative.id + "starting")
-                        break
+                        case GwurkEvent.Type.TASK_STARTING:
+                            log.info("Task #" + narrative.id + "starting")
+                            break
 
-                    case GwurkEvent.Type.HIT_COMPLETE:
-                        log.info("Hit complete!")
-                        break
-                    case GwurkEvent.Type.ASSIGNMENT_COMPLETE:
-                        log.info("Assignment complete!")
-                        log.info(evt.assignmentView.answer)
+                        case GwurkEvent.Type.HIT_COMPLETE:
+                            log.info("Hit complete!")
+                            break
+                        case GwurkEvent.Type.ASSIGNMENT_COMPLETE:
+                            log.info("Assignment complete!")
+                            log.info(evt.assignmentView.answer)
 
-                        Map params = evt.assignmentView.answer;
+                            Map params = evt.assignmentView.answer;
 
+                            System.out.println(params)
+                            NarrativeRequest nr = NarrativeRequest.findById(Long.parseLong((String) params.get("request_id")));
+                            nr.when_completed = new Date();
+                            nr.save();
 
-                        System.out.println(params)
-                        NarrativeRequest nr = NarrativeRequest.findById(Long.parseLong((String) params.get("request_id")));
-                        nr.when_completed = new Date();
-                        nr.save();
-
-                        Turker worker = nr.getAssigned_to();
-                        String age = params.get("age");
-                        if (age != null) {
-                            if (!age.equals("")) {
-                                worker.age = Integer.parseInt(age);
-                                worker.gender = params.get("gender");
-                                worker.education = Integer.parseInt((String) params.get("education"));
-                                worker.save();
+                            Turker worker = nr.getAssigned_to();
+                            String age = params.get("age");
+                            if (age != null) {
+                                if (!age.equals("")) {
+                                    worker.age = Integer.parseInt(age);
+                                    worker.gender = params.get("gender");
+                                    worker.education = Integer.parseInt((String) params.get("education"));
+                                    worker.save();
+                                }
                             }
-                        }
 
-                        Narrative parentNarrative = nr.getParent_narrative();
+                            Narrative parentNarrative = nr.getParent_narrative();
 
-                        Narrative thisNarrative = new Narrative();
-                        thisNarrative.parent_narrative = parentNarrative;
-                        thisNarrative.root_narrative_id = parentNarrative.root_narrative_id;
-                        thisNarrative.completed_by = worker;
-                        thisNarrative.text = params.get("story");
-                        thisNarrative.distractor_answer = params.get("distractorAnswer");
-                        thisNarrative.time_distrator = Integer.parseInt(params.get("distractorTime"));
-                        thisNarrative.time_writing = Integer.parseInt(params.get("retellTime"));
-                        thisNarrative.too_simple = false;
-                        if (((String)params.get("tooSimple")).matches("^[T|t]") )
-                            thisNarrative.too_simple = true;
+                            Narrative thisNarrative = new Narrative();
+                            thisNarrative.parent_narrative = parentNarrative;
+                            thisNarrative.root_narrative_id = parentNarrative.root_narrative_id;
+                            thisNarrative.completed_by = worker;
+                            thisNarrative.text = params.get("story");
+                            thisNarrative.distractor_answer = params.get("distractorAnswer");
+                            thisNarrative.time_distrator = Integer.parseInt(params.get("distractorTime"));
+                            thisNarrative.time_writing = Integer.parseInt(params.get("retellTime"));
+                            thisNarrative.too_simple = false;
+                            if (((String) params.get("tooSimple")).matches("^[T|t]"))
+                                thisNarrative.too_simple = true;
 
-                        thisNarrative.save();
+                            thisNarrative.save();
 
-                        // Only insert more child requests if it wasn't too simple.
-                        if (thisNarrative.too_simple)
-                            return;
+                            // Only insert more child requests if it wasn't too simple.
+                            if (thisNarrative.too_simple)
+                                return;
 
-                        Text2PNG.writeImageFile(thisNarrative.text,thisNarrative.id);
+                            // TODO Decide whether or not to accept this task and create new child tasks.
+                            String parentText = parentNarrative.text;
+                            String childText = thisNarrative.text;
 
-                        // TODO Decide whether or not to accept this task and create new child tasks.
+                            // if it's a perfect match, stop
+                            if (parentText.equalsIgnoreCase(childText))
+                                return;
+
+                            // if it's just REALLY short, also stop.
+                            if (childText.length() < 120)
+                                return;
+
+                            // Else, try calculating levenstein distance.
+                            // find the larger of the two strings
+                            int largerSize = parentText.length();
+                            if (childText.length() > largerSize)
+                                largerSize = childText.length();
+
+                            // looking for a 10% edit distance
+                            int maxDistToCheck = largerSize * 0.10;
+
+                            // if distance is above max distance, contains -1
+                            int rawDistance = StringUtils.getLevenshteinDistance(childText,parentText,maxDistToCheck);
+
+                            // we only want to continue if it's above the max (10% distance)
+                            if (rawDistance >= 0)
+                                return;
 
 
-                        // Assuming we are creating child tasks.
-                        def branchingLevels = [1:5, 2:5, 3:5, 4:1, 5:1, 6:1, 7:1, 8:1, 9:1, 10:0];
+                            // Assuming we are creating child tasks.
+                            def branchingLevels = [1: 5, 2: 5, 3: 5, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 0];
 
-                        int tasksToAdd = branchingLevels.get(nr.depth);
-                        int newNarrativeDepth = nr.depth+1;
-                        int newPriority = nr.priority+1;
-                        if (nr.priority > 50)
-                            newPriority = nr.priority-1;
+                            int tasksToAdd = branchingLevels.get(nr.depth);
+                            int newNarrativeDepth = nr.depth + 1;
+                            int newPriority = nr.priority + 1;
+                            if (nr.priority > 50)
+                                newPriority = nr.priority - 1;
 
-                        for (int i = 0; i < tasksToAdd; i++) {
-                            NarrativeRequest newRequest = new NarrativeRequest();
-                            newRequest.priority = newPriority;
-                            newRequest.depth = newNarrativeDepth;
-                            newRequest.root_narrative = nr.root_narrative;
-                            newRequest.parent_narrative = thisNarrative;
-                            newRequest.save();
-                        }
+                            for (int i = 0; i < tasksToAdd; i++) {
+                                NarrativeRequest newRequest = new NarrativeRequest();
+                                newRequest.priority = newPriority;
+                                newRequest.depth = newNarrativeDepth;
+                                newRequest.root_narrative = nr.root_narrative;
+                                newRequest.parent_narrative = thisNarrative;
+                                newRequest.save();
+                            }
 
-                        //  def d = new Demographics(evt.assignmentView.answer).save()
+                            //  def d = new Demographics(evt.assignmentView.answer).save()
 
-                        //User properties must be strings (for maximal generality)
-                        // evt.taskRun.setUserProperty("age", "${d.age}")
-                        break;
+                            //User properties must be strings (for maximal generality)
+                            // evt.taskRun.setUserProperty("age", "${d.age}")
+                            break;
 
-                    case GwurkEvent.Type.TASK_COMPLETE:
-                        log.info("Task1 complete!")
-                        break
+                        case GwurkEvent.Type.TASK_COMPLETE:
+                            log.info("Task1 complete!")
+                            break
+                    }
+
+                }
+
+                mturkTaskService.installWorkflow(w) { a, b ->
+                    log.info("Workflow complete!")
                 }
 
             }
-
-            mturkTaskService.installWorkflow(w) { a, b ->
-                log.info("Workflow complete!")
-            }
-
+            log.info("Installed nardiff tasks")
         }
+
+        log.info("Bootstrap Complete")
 
 //        Task one = new SingleHitTask("Narrative Task #1", [
 //                narrative_id: 1,
@@ -405,7 +447,6 @@ class BootStrap {
 //            }
 //
 //        }
-
 
 
     }

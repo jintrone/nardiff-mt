@@ -15,6 +15,8 @@ package nardiff.mt;/*
  *
  */
 
+import org.springframework.core.io.ResourceLoader;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
@@ -32,7 +34,9 @@ import java.util.*;
 
  * @author nigel
  */
-public class Text2PNG {
+public class Text2PNG implements org.springframework.context.ResourceLoaderAware {
+
+    ResourceLoader resourceLoader;
 
     static String testText = "Judy is going to have a birthday party.  " +
             "She is ten years old.  She wants a hammer and a saw for presents.  Then " +
@@ -65,12 +69,14 @@ public class Text2PNG {
         }
     }
 
-    public static void writeImageFile(String story, Long id) {
+    public static void writeImageFile(String story, Long id, String dir) {
         System.setProperty("java.awt.headless", "true");
         String[] text = cleanInput(story);
         BufferedImage img = renderTextToImage(text,500);
+
+
         try {
-            ImageIO.write(img,"png",new File("/Users/kkoning/Dropbox/IdeaProjects/nardiff-mt/web-app/images/narratives/" + id + ".png"));
+            ImageIO.write(img,"png",new File(dir + "/" + id + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -222,5 +228,23 @@ public class Text2PNG {
     public static BufferedImage createCompatibleImage(int width, int height) {
         return new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 
+    }
+
+    /**
+     * Set the ResourceLoader that this object runs in.
+     * <p>This might be a ResourcePatternResolver, which can be checked
+     * through {@code instanceof ResourcePatternResolver}. See also the
+     * {@code ResourcePatternUtils.getResourcePatternResolver} method.
+     * <p>Invoked after population of normal bean properties but before an init callback
+     * like InitializingBean's {@code afterPropertiesSet} or a custom init-method.
+     * Invoked before ApplicationContextAware's {@code setApplicationContext}.
+     *
+     * @param resourceLoader ResourceLoader object to be used by this object
+     * @see org.springframework.core.io.support.ResourcePatternResolver
+     * @see org.springframework.core.io.support.ResourcePatternUtils#getResourcePatternResolver
+     */
+    @Override
+    public void setResourceLoader(org.springframework.core.io.ResourceLoader resourceLoader) {
+        this.resourceLoader = resourceLoader;
     }
 }

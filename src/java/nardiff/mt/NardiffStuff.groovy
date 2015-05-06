@@ -90,10 +90,18 @@ class NardiffStuff {
             thisNarrative.distractor_answer = params.get("distractorAnswer");
             try {
                 thisNarrative.time_distrator = Integer.parseInt(params.get("distractorTime"));
+            } catch (Exception e) {
+                System.out.println("Error processing distractor times for story: " + e);
+            }
+            try {
                 thisNarrative.time_writing = Integer.parseInt(params.get("retellTime"));
+            } catch (Exception e) {
+                System.out.println("Error processing retelling times for story: " + e);
+            }
+            try {
                 thisNarrative.time_reading = Integer.parseInt(params.get("storyTime"));
             } catch (Exception e) {
-                System.out.println("Error processing times for story: " + e);
+                System.out.println("Error processing reading times for story: " + e);
             }
             thisNarrative.too_simple = false;
 

@@ -6,7 +6,7 @@
     var app = angular.module('nardiff', []);
     app.controller('WorkflowController', ['$scope', '$interval', function($scope, $interval) {
         $scope.stage = 1;
-        $scope.timeRemaining = 15;
+        $scope.timeRemaining = 120;
 
         this.request_id = null;
         this.parent_story_id = null;
@@ -16,6 +16,7 @@
         this.gender = null;
         this.education = null;
         this.turker_id = null;
+        this.storyTime = 0;
         this.distractorTime = null;
         this.retellTime = null;
         this.tooSimple = null;
@@ -37,16 +38,19 @@
                 }
 
             }, 1000);
-        }
+        };
 
         this.dt = function(wf) {
             wf.distractorTime = $scope.timeRemaining;
-        }
+        };
 
         this.rt = function(wf) {
             wf.retellTime = $scope.timeRemaining;
-        }
+        };
 
+        this.st = function(wf) {
+            wf.storyTime = $scope.timeRemaining;
+        };
 
 
 

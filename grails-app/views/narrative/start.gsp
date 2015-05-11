@@ -12,6 +12,8 @@
         margin-left: auto;
         margin-right: auto;
         width: 500px;
+
+        font-size: 125%;
     }
 
     img.center {
@@ -22,7 +24,11 @@
 
     textarea {
         width: 100%;
-        height: 200;
+        height: 200px;
+    }
+
+    .button {
+        font-size: 125%;
     }
     </style>
 </head>
@@ -30,7 +36,6 @@
 <body>
 <div ng-controller="WorkflowController as wf" id="mainPanel">
 
-        <img class="center" src="../images/wordmark_green_RGB.png"/>
     <%
         NarrativeRequest nr = params.get("narrativeRequest")
         boolean askForDemographics = params.get("askForDemographics")
@@ -42,21 +47,6 @@
     <timer></timer>
 
     <div ng-show="stage === 1">
-        <p><b>Research Disclosure.</b> The task below is part of a research study
-        conducted by a team from the Media and Information department at Michigan
-        State University. This purpose of this study is to better understand certain
-        aspects of how people communicate. No sensitive information will be collected,
-        the results will be kept confidential, and after the HIT is marked complete
-        the data linking your responses to MTurk identifiers will be destroyed.  If
-        you have any questions, you can contact
-            <a href="http://cas.msu.edu/people/faculty-staff/staff-listing/name/joshua-introne/">Dr. Joshua Introne</a>
-            (<a href="mailto:jintrone@msu.edu">email</a>) or the
-            <a href="">MSU Institutional Review Board</a>
-            (<a href="mailto:irb@msu.edu">email</a>).
-        </p>
-
-        <p>By accepting this HIT, you indicate your voluntary agreement to
-        participate in this study.</p>
 
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         <% if (askForDemographics) out.println("be asked for some basic demographic information and then ")%>
@@ -67,7 +57,7 @@
         </p>
 
         <p>
-            <button ng-click="stage = <%= beginStage %>; wf.request_id = <%=
+            <button class="button" ng-click="stage = <%= beginStage %>; wf.request_id = <%=
                 nr.id
             %>; ">Begin</button>
         </p>
@@ -196,7 +186,7 @@
         <input ng-click="wf.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
         <input ng-click="wf.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
 
-        <p><button ng-click="stage = 3">Continue</button></p>
+        <p><button class="button" ng-click="stage = 3">Continue</button></p>
     </div>
 
 
@@ -208,7 +198,7 @@
         will be rejected.
         </p>
 
-        <p><button ng-click="stage = 4; wf.startTimer();">Continue to Story</button></p>
+        <p><button class="button" ng-click="stage = 4; wf.startTimer();">Continue to Story</button></p>
 
     </div>
     <div ng-show="stage === 4" id="img-div">
@@ -221,6 +211,8 @@
             } %>.png"/></p>
 
         <p>Time Remaining: {{ timeRemaining + " seconds" }}</p>
+
+        <p><button class="button" ng-click="wf.st(wf); stage = 5">Skip Remaining Time</button></p>
     </div>
 
     <div ng-show="stage === 5">
@@ -385,19 +377,14 @@
         In the text box below, please retell the story for the next person.
         <form>
             <textarea ng-model="wf.story" name="story"></textarea><br>
-            This story is so short that it is trivial to remember it perfectly.<br>
-            <input type="radio" ng-model="wf.tooSimple" name="tooSimple" value="Yes"> Yes
-            <input type="radio" ng-model="wf.tooSimple" name="tooSimple" value="No"> No
 
-
-        <button ng-click="wf.rt(wf); stage = 7">Continue</button>
+        <button class="button" ng-click="wf.rt(wf); stage = 7">Continue</button>
         </form>
     </div>
 
     <div ng-show="stage === 7">
         <p>Thank you for your participation in this study.  Clicking the button below will submit
-        your answers and complete this HIT.  If you would like, you can complete this task up to
-        6 times, each with a different story.</p>
+        your answers and complete this HIT.</p>
 
         <form action="complete" method="POST">
 
@@ -409,12 +396,12 @@
             <input type="hidden" name="gender" value="{{ wf.gender }}">
             <input type="hidden" name="education" value="{{ wf.education }}">
             <% } %>
+            <input type="hidden" name="storyTime" value="{{ wf.storyTime }}">
             <input type="hidden" name="distractorTime" value="{{ wf.distractorTime }}">
             <input type="hidden" name="retellTime" value="{{ wf.retellTime }}">
-            <input type="hidden" name="tooSimple" value="{{ wf.tooSimple }}">
 
 
-            <g:submitButton name="Complete HIT">Complete HIT</g:submitButton>
+            <g:submitButton name="Complete HIT" class="button">Complete HIT</g:submitButton>
         </form>
 
 

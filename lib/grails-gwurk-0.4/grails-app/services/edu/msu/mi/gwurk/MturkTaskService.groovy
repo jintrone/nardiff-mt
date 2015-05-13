@@ -31,6 +31,7 @@ class MturkTaskService {
 
     def onTaskStarting(TaskRun taskRun) {
         log.info("On Task Starting: ${taskRun.task.name}")
+        log.info("Dumping taskStartingFX: " + taskStartingFx.toString());
         taskStartingFx[taskRun.task.name](new GwurkEvent(taskRun))
     }
 

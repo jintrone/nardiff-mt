@@ -2,587 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f7d731-353a-4488-af69-d565d0a9ec87" name="Default" comment="Let's try a different way of changing port to 8001">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/narratives/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/AccessControlBuilder$_permission_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/AccessControlBuilder$_role_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/AccessControlBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/annotations/AnnotationHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$Status.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$__clinit__closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$__clinit__closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$_extractAnswers_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView$_getFileKey_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AssignmentView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/AuthController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/AuthorizationAttributeSourceAdvisor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/BeatListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_insertStory_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_insertStory_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_insertStory_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure3_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Credentials$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Credentials.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/CredentialsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/DefaultRealmGrailsClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/DistributionManagementInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/print/DryRunDeployer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/ErrorResponse$_getJson_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/ErrorResponse$_getText_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/ErrorResponse$_getXml_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/ErrorResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/FilterAccessControlBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/portal/GrailsCentralDeployer$_deployPlugin_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/portal/GrailsCentralDeployer$_deployPlugin_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/portal/GrailsCentralDeployer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/GwurkEvent$Type.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/GwurkEvent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin$_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/GwurkGrailsPlugin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$Status.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$__clinit__closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_getApprovedAssignments_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_getRejectedAssignments_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_getReviewedAssignments_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_getSubmittedAssignments_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_update_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_update_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView$_update_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/HitView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/JavascriptController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/LegacyIniSecurityManagerFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/annotations/LegacyPermissionAnnotationHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/annotations/LegacyRoleAnnotationHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/LegacyShiroFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/MasterPluginList$_update_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/MasterPluginList$_update_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/MasterPluginList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/maven/MavenDeployer$_deployPlugin_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/maven/MavenDeployer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkAwsFacadeService$_expire_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkAwsFacadeService$_launchHit_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkAwsFacadeService$_recycle_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkAwsFacadeService$_refresh_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkAwsFacadeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkHitProperties.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_$tt__beat_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_$tt__beat_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_beat_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_cleanup_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_halt_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_init_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_launch_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService$_restart_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkMonitorService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkStateException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_$tt__installTask_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_$tt__installTask_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_$tt__installTask_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_$tt__installTask_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_$tt__installWorkflow_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_advanceToTask_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_installConditional_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_installTask_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_installWorkflow_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_onAssignment_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_onHit_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_onTaskComplete_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_onTaskStarting_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService$_onWorkflow_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/MturkTaskService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NardiffStuff$_assignRequestToTurker_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NardiffStuff$_findRequest_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NardiffStuff.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__delete_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__save_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__update_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_complete_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_delete_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_edit_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure11_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure11_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_preview_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_save_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_start_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure14_closure21.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure14_closure22.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure12_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure12_closure18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure13_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure13_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_update_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequest$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_$tt__delete_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_$tt__save_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_$tt__update_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_create_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_delete_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_edit_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_index_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_notFound_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_notFound_closure8_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_notFound_closure8_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_save_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_show_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__delete_closure11_closure18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__delete_closure11_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__save_closure9_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__save_closure9_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__update_closure10_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_tt__update_closure10_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController$_update_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/authc/credential/PasswordHashAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/annotations/PermissionRequired.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/PluginDeployer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/PluginPublisher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginResources$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginResources$_run_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginResources.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginUrlMappings$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginUrlMappings$__clinit__closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginUrlMappings$__clinit__closure1_closure2_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/PluginUrlMappings.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmArtefactHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmGrailsClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmWrapper$_hasAllRoles_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmWrapper$_isPermittedAll_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/RealmWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/ReleaseGrailsPlugin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/Repository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RequestCustomizer$_accept_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RequestCustomizer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RestBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/RestClientBuilderGrailsPlugin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RestResponse$_getJson_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RestResponse$_getText_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RestResponse$_getXml_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/rest/client/RestResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/annotations/RoleRequired.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroAnnotationHandlerService$_afterPropertiesSet_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroAnnotationHandlerService$_processController_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroAnnotationHandlerService$_processController_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroAnnotationHandlerService$_processController_closure3_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroAnnotationHandlerService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroBasicPermission.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_hasAllRoles_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_hasAllRoles_closure2_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_hasRole_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_hasRole_closure1_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_isPermitted_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm$_isPermitted_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroDbRealm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters$_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters$_closure1_closure2_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters$_closure1_closure2_closure3_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters$_closure1_closure2_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroFilters.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure16_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure1_closure18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure2_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure2_closure21.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure22.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure23.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure23_closure28.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure23_closure29.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure24.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure25.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure26.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure3_closure27.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure30.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure30_closure34.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure30_closure34_closure35.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure30_closure34_closure36.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure30_closure34_closure37.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure31.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure32.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure33.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure4_closure33_closure38.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure6_closure39.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_closure6_closure40.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_processAnnotations_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_processController_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin$_processController_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ShiroGrailsPlugin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroRole$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroRole$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroRole.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroSecurityFilters$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroSecurityFilters$_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroSecurityFilters$_closure1_closure2_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroSecurityFilters.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroSecurityService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib$_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/apache/shiro/grails/ShiroTagLib.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroUser$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroUser$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/ShiroUser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/SingleHitTask$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/SingleHitTask$_update_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/SingleHitTask.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_deployPlugin_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_isVersionAlreadyPublished_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer$_updatePluginList_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/grails/plugins/publish/svn/SvnDeployer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Task$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskDecorator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskProperties$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskProperties$_copyFrom_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskProperties.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskRun$Status.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskRun$__clinit__closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskRun$_hasAllAssignments_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskRun$_hasPendingAssignments_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TaskRun.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TestWorkflow$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/TestWorkflow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Turker$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Workflow$__clinit__closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Workflow$_initStartingTasks_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/Workflow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$Status.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$__clinit__closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_addTask_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_beat_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_beat_closure4_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_beat_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$_kickoff_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRunController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/resources/nardiff/mt/NardiffStuff.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/resources/plugins/gwurk-0.4/grails-app/i18n/messages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/resources/plugins/shiro-1.2.1/grails-app/i18n/messages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/shiro.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/work/resources/plugins/gwurk-0.4/grails-app/i18n/shiro.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stacktrace (Kendall’s iMac's conflicted copy 2015-03-25).log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace (Glyph's conflicted copy 2015-02-25).xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__delete_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__delete_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__save_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__save_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__update_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_$tt__update_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_delete_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_edit_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_initStories_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure8_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure8_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_notFound_closure8_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_save_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure11_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure12_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__delete_closure12_closure20.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure10_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure9_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__save_closure9_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure10_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure11_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_tt__update_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController$_update_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequests$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequests.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_$tt__delete_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_$tt__save_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_$tt__update_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_create_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_delete_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_edit_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_index_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_notFound_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_notFound_closure8_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_notFound_closure8_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_save_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_show_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__delete_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__delete_closure11_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__save_closure9_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__save_closure9_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__update_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_tt__update_closure10_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController$_update_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequestsController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Narratives$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Narratives.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_$tt__delete_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_$tt__save_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_$tt__update_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_create_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_delete_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_edit_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_index_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_notFound_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_notFound_closure8_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_notFound_closure8_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_save_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_show_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__delete_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__delete_closure11_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__save_closure9_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__save_closure9_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__update_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_tt__update_closure10_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController$_update_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativesController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStories$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStories.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_$tt__delete_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_$tt__save_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_$tt__update_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_create_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_delete_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_edit_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_index_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_notFound_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_notFound_closure8_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_notFound_closure8_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_save_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_show_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__delete_closure11_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__delete_closure11_closure19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__save_closure9_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__save_closure9_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__update_closure10_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_tt__update_closure10_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController$_update_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/TurkerStoriesController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugins/h2/DBInitializer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/TomcatGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/grails-plugin-tomcat-7.0.55.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/scripts/Tomcat.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/InlineExplodedTomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatLoader.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatServerFactory.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/ForkedTomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatExecutionContext.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatWarRunner.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/java/org/grails/plugins/tomcat/ParentDelegatingClassLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.55/src/java/org/grails/plugins/tomcat/TomcatKillSwitch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateController$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateViews$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateViews.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure2_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Turker$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/edu/msu/mi/gwurk/WorkflowRun$__clinit__closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AbstractProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetCompiler.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetCompiler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetHelper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetMethodTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetMethodTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineBootStrap.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineBootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetPipelineFilter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetPipelineFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetPipelineGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetProcessorService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetProcessorService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetResourceLocator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetResourceLocator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/AssetUrlMappings.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/AssetUrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/AssetsTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure2.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure3.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CacheManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CacheManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/CachingLinkGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/CachingLinkGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5_closure6.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure7.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure8.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure3.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CssAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/CssAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssMinifyPostProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssMinifyPostProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/CssProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/DirectiveProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/DirectiveProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/ForkedTomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/ForkedTomcatServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange$1.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition$1.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/Hibernate4GrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/Hibernate4GrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/HtmlAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/HtmlAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/InlineExplodedTomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/InlineExplodedTomcatServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/JsAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/JsAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/LinkGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/LinkGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/LinkedProperties.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/LinkedProperties.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/ListEnumeration.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/ListEnumeration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/ManifestAssetFile.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/ManifestAssetFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative$__clinit__closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative$__clinit__closure2.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative$__clinit__closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Narrative.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequest$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequest$__clinit__closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequest.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/NarrativeRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Text2PNG.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Text2PNG.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatExecutionContext.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatExecutionContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatLoader.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServerFactory.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatWarRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatWarRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nardiff/mt/Turker.class" afterPath="$PROJECT_DIR$/target/classes/nardiff/mt/Turker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/UglifyJsProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/processors/UglifyJsProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/const.js" afterPath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/const.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gwurk-inplacePlugin.iml" afterPath="$PROJECT_DIR$/gwurk-inplacePlugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/if.js" afterPath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/if.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/ifreturn.js" afterPath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/ifreturn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nardiff-mt-grailsPlugins.iml" afterPath="$PROJECT_DIR$/nardiff-mt-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nardiff-mt.iml" afterPath="$PROJECT_DIR$/nardiff-mt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/layouts/turkerLayout.gsp" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/layouts/turkerLayout.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/var.js" afterPath="$PROJECT_DIR$/target/work/resources/uglifyjs/test/unit/compress/test/var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/web.xml.tmp" afterPath="$PROJECT_DIR$/target/work/web.xml.tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nardiff-mt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -680,11 +102,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Narrative.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Narrative.groovy">
+      <file leaf-file-name="AssignmentView.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state vertical-scroll-proportion="-7.090909" vertical-offset="0" max-vertical-offset="2250">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -693,7 +118,7 @@
       <file leaf-file-name="nardiff.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/nardiff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1005">
               <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
@@ -703,8 +128,8 @@
       <file leaf-file-name="NardiffStuff.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/nardiff/mt/NardiffStuff.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="781" max-vertical-offset="2640">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640">
+              <caret line="26" column="13" selection-start-line="19" selection-start-column="12" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="e#20#59#0" expanded="true" />
               </folding>
@@ -712,11 +137,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="5415">
+              <caret line="186" column="79" selection-start-line="186" selection-start-column="79" selection-end-line="186" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MturkTaskService.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23159145" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.5177994" vertical-offset="0" max-vertical-offset="1260">
+              <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -755,7 +200,6 @@
         <option value="$PROJECT_DIR$/web-app/manual.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/narrative/complete.gsp" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/distract.1.html" />
         <option value="$PROJECT_DIR$/web-app/distract/1.html" />
@@ -769,7 +213,6 @@
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/workflow/external.gsp" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/layouts/turkerLayout.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/narrative/preview.gsp" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/narrative/start.gsp" />
         <option value="$PROJECT_DIR$/src/java/nardiff/mt/NardiffStuff.groovy" />
@@ -777,6 +220,8 @@
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" />
         <option value="$PROJECT_DIR$/web-app/js/nardiff.js" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" />
       </list>
     </option>
   </component>
@@ -791,9 +236,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
+    <option name="x" value="45" />
     <option name="y" value="23" />
-    <option name="width" value="1250" />
+    <option name="width" value="1371" />
     <option name="height" value="1389" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -939,24 +384,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1008,6 +435,128 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-gwurk-0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-gwurk-0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-gwurk-0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-gwurk-0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gwurk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-gwurk-0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gwurk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1152,7 +701,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="form&#9;ACTION&#9;GuiDesigner.FormSource&#10;javado&#9;ACTION&#9;GuiDesigner.QuickJavadoc&#10;reformat&#9;ACTION&#9;ReformatCode&#10;format&#9;ACTION&#9;ReformatCode&#10;line numbers&#9;null&#9;null&#10;split&#9;ACTION&#9;SplitVertically&#10;rename&#9;ACTION&#9;RenameElement&#10;rest&#9;ACTION&#9;WebServicesPlugin.CreateRestfulWebServiceClient&#10;spl&#9;ACTION&#9;SplitVertically" />
+    <property name="SearchEverywhereHistoryKey" value="find&#9;ACTION&#9;FindModal&#10;search&#9;ACTION&#9;StructuralSearchPlugin.StructuralSearchAction&#10;form&#9;ACTION&#9;GuiDesigner.FormSource&#10;javado&#9;ACTION&#9;GuiDesigner.QuickJavadoc&#10;reformat&#9;ACTION&#9;ReformatCode&#10;format&#9;ACTION&#9;ReformatCode&#10;line numbers&#9;null&#9;null&#10;split&#9;ACTION&#9;SplitVertically&#10;rename&#9;ACTION&#9;RenameElement&#10;rest&#9;ACTION&#9;WebServicesPlugin.CreateRestfulWebServiceClient&#10;spl&#9;ACTION&#9;SplitVertically" />
     <property name="LayoutCode.rearrangeEntriesGSP" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -1567,6 +1116,7 @@
       <workItem from="1430884064024" duration="9080000" />
       <workItem from="1430921798644" duration="6869000" />
       <workItem from="1431317097926" duration="2360000" />
+      <workItem from="1431527876614" duration="2669000" />
     </task>
     <task id="LOCAL-00001" summary="Save output to DB&#10;Include timings of each stage.&#10;Validate age&#10;When output is saved, automatically insert new task requests.&#10;Time out uncompleted tasks.&#10;Put demographics at the beginning, not the end.&#10;HTML front end for not asking for demographics.&#10;Automatically generate image when narrative is saved.&#10;Add indexes&#10;Add checkbox that the starting text is unintelligable">
       <created>1427259113686</created>
@@ -1638,7 +1188,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125652000" />
+    <option name="totallyTimeSpent" value="128321000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1661,7 +1211,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1250" height="1389" extended-state="0" />
+    <frame x="45" y="23" width="1371" height="1389" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1674,33 +1224,33 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26291442" sideWeight="0.50030696" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2459522" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2459522" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33006245" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34768212" sideWeight="0.49955475" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31602708" sideWeight="0.49955475" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31380108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917038" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33384734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26291442" sideWeight="0.49969307" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32845026" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18684958" sideWeight="0.50044525" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16329037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917038" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31380108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32235086" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3342246" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26291442" sideWeight="0.49969307" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32845026" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1775,34 +1325,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/local/grails-2.4.4/lib/org.springframework/spring-web/jars/spring-web-4.0.7.RELEASE-sources.jar!/org/springframework/web/context/support/WebApplicationContextUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5073948" vertical-offset="676" max-vertical-offset="5338">
-          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/workflow/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1268">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/workflow/launchWorkflow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51642036" vertical-offset="0" max-vertical-offset="1218">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/manual.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19162641" vertical-offset="0" max-vertical-offset="1242">
@@ -1838,16 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Task.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3924155" vertical-offset="0" max-vertical-offset="1213">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Workflow.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1877,16 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55350196" vertical-offset="519" max-vertical-offset="1547">
           <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-63.75" vertical-offset="0" max-vertical-offset="2584">
-          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1929,17 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33243608" vertical-offset="6604" max-vertical-offset="16048">
           <caret line="438" column="0" selection-start-line="438" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33284885" vertical-offset="842" max-vertical-offset="1717">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2059,25 +1550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7208238" vertical-offset="1035" max-vertical-offset="2250">
-          <caret line="116" column="59" selection-start-line="116" selection-start-column="59" selection-end-line="116" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35414425" vertical-offset="721" max-vertical-offset="1650">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/local/grails-2.4.4/lib/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5-sources.jar!/org/apache/commons/logging/LogFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326157" vertical-offset="3546" max-vertical-offset="6150">
@@ -2093,17 +1565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Narrative.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-36.6" vertical-offset="0" max-vertical-offset="1440">
@@ -2115,15 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19417475" vertical-offset="0" max-vertical-offset="1050">
           <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/start.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-83.4375" vertical-offset="1965" max-vertical-offset="6270">
-          <caret line="398" column="77" selection-start-line="398" selection-start-column="77" selection-end-line="398" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2137,14 +1589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5415">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/nardiff.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
@@ -2153,20 +1597,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="5415">
+          <caret line="186" column="79" selection-start-line="186" selection-start-column="79" selection-end-line="186" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/nardiff/mt/NardiffStuff.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="781" max-vertical-offset="2640">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640">
+          <caret line="26" column="13" selection-start-line="19" selection-start-column="12" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="e#20#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeRequest.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02473207" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Turker.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02473207" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Narrative.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02473207" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7790602" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/SingleHitTask.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.074196205" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Task.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34624898" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02473207" vertical-offset="0" max-vertical-offset="1213">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1129432" vertical-offset="0" max-vertical-offset="2280">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/start.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-83.4375" vertical-offset="1965" max-vertical-offset="6270">
+          <caret line="398" column="77" selection-start-line="398" selection-start-column="77" selection-end-line="398" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.090909" vertical-offset="0" max-vertical-offset="2250">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23159145" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.5177994" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
           <folding />
         </state>
       </provider>

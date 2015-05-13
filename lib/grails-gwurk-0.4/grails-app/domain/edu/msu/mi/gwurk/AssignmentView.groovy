@@ -20,7 +20,7 @@ class AssignmentView {
     }
 
     static mapping = {
-        rawAnswer column: "raw_answer", sqlType: "char", length: 8192
+        rawAnswer column: "raw_answer", sqlType: "text" //, length: 8192
         data sqlType: "blob"
 
     }

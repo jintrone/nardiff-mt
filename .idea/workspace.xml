@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6f7d731-353a-4488-af69-d565d0a9ec87" name="Default" comment="Let's try a different way of changing port to 8001">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nardiff-mt.iws" />
@@ -150,7 +149,7 @@
       <file leaf-file-name="MturkTaskService.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5177994" vertical-offset="0" max-vertical-offset="1260">
+            <state vertical-scroll-proportion="0.3785489" vertical-offset="0" max-vertical-offset="1268">
               <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
               <folding />
             </state>
@@ -1116,7 +1115,7 @@
       <workItem from="1430884064024" duration="9080000" />
       <workItem from="1430921798644" duration="6869000" />
       <workItem from="1431317097926" duration="2360000" />
-      <workItem from="1431527876614" duration="2669000" />
+      <workItem from="1431527876614" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="Save output to DB&#10;Include timings of each stage.&#10;Validate age&#10;When output is saved, automatically insert new task requests.&#10;Time out uncompleted tasks.&#10;Put demographics at the beginning, not the end.&#10;HTML front end for not asking for demographics.&#10;Automatically generate image when narrative is saved.&#10;Add indexes&#10;Add checkbox that the starting text is unintelligable">
       <created>1427259113686</created>
@@ -1184,11 +1183,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431359456145</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added some debug information on task start">
+      <created>1431539798586</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1431539798586</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128321000" />
+    <option name="totallyTimeSpent" value="128363000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1238,9 +1243,10 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33384734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26291442" sideWeight="0.49969307" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26291442" sideWeight="0.49969307" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845026" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18684958" sideWeight="0.50044525" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16329037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1250,7 +1256,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32235086" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32845026" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1278,7 +1283,8 @@
     <MESSAGE value="Changes to the processing of answers" />
     <MESSAGE value="Separated out try/catch blocks" />
     <MESSAGE value="Various small changes in anticipation of production deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various small changes in anticipation of production deployment" />
+    <MESSAGE value="Added some debug information on task start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some debug information on task start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1732,7 +1738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkTaskService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5177994" vertical-offset="0" max-vertical-offset="1260">
+        <state vertical-scroll-proportion="0.3785489" vertical-offset="0" max-vertical-offset="1268">
           <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
           <folding />
         </state>

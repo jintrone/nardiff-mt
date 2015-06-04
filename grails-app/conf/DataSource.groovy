@@ -1,11 +1,11 @@
 dataSource {
     pooled = true
 //    jmxExport = true
-//    driverClassName = "org.h2.Driver"
+    driverClassName = "org.h2.Driver"
 //    username = "sa"
 //    password = ""
 
-    driverClassName = "com.mysql.jdbc.Driver"
+
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 
 
@@ -24,7 +24,7 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:file:/Users/kkoning/tmp/nardiff-mt;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            url = "jdbc:h2:file:~/tmp/nardiff-mt;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
     }
     test {
@@ -35,6 +35,7 @@ environments {
     }
     production {
         dataSource {
+            driverClassName = "com.mysql.jdbc.Driver"
             dbCreate = "update"
             url = "jdbc:mysql://localhost/nardiff?useUnicode=yes&characterEncoding=UTF-8"
             username = "nardiff"

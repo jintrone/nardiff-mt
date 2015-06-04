@@ -163,7 +163,19 @@ class BootStrap {
 
         if (Narrative.count() < 3) {
 
-            for (String story : initialStories) {
+            Workflow w = new Workflow("Narrative Diffusion", "An experiment similar to a game of telephone", [
+                    rewardAmount      : 0.03f,
+                    relaunchInterval  : 1000 * 60 * 60,
+                    autoApprove       : true,
+                    lifetime          : 60 * 60 * 10,
+                    assignmentDuration: 600,
+                    keywords          : "research",
+                    maxAssignments    : 10,
+                    height            : 1000,
+                    requireApproval   : true
+            ])
+
+           List tasks = initialStories.collect { story->
 
                 WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(servletContext);
                 ServletContext sc = context.getServletContext();
@@ -171,17 +183,7 @@ class BootStrap {
 
                 Narrative narrative = insertStory(story, 5, 10, imagePath);
 
-                Workflow w = new Workflow("Narrative Diffusion #" + narrative.id, "An experiment similar to a game of telephone", [
-                        rewardAmount      : 0.03f,
-                        relaunchInterval  : 1000 * 60 * 60,
-                        autoApprove       : true,
-                        lifetime          : 60 * 60 * 10,
-                        assignmentDuration: 600,
-                        keywords          : "research",
-                        maxAssignments    : 10,
-                        height            : 1000,
-                        requireApproval   : true
-                ])
+
 
 
                 Task t = new SingleHitTask("Narrative Task #" + narrative.id, [
@@ -192,10 +194,7 @@ class BootStrap {
                         description: "This research is to help understand certain aspects of how information spreads.  No sensitive information is collected, and identities will be erased after data collection is complete.",
                 ]).save()
 
-                w.initStartingTasks(t);
 
-                //Remember to save!
-                w.save()
 
 
 
@@ -224,13 +223,17 @@ class BootStrap {
                     }
 
                 }
-
-                mturkTaskService.installWorkflow(w) { a, b ->
-                    log.info("Workflow complete!")
-                }
-
+               t
             }
-            log.info("Installed nardiff tasks")
+            w.initStartingTasks(tasks as Task[])
+
+            //Remember to save!
+            w.save()
+
+            mturkTaskService.installWorkflow(w) { a, b ->
+                log.info("Workflow complete!")
+            }
+
         }
 
         log.info("Bootstrap Complete")

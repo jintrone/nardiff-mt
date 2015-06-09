@@ -69,6 +69,13 @@ public class Text2PNG implements org.springframework.context.ResourceLoaderAware
         }
     }
 
+    public static BufferedImage getImage(String story) {
+        System.setProperty("java.awt.headless", "true");
+        String[] text = cleanInput(story);
+        BufferedImage img = renderTextToImage(text,500);
+        return img;
+    }
+
     public static void writeImageFile(String story, Long id, String dir) {
         System.setProperty("java.awt.headless", "true");
         String[] text = cleanInput(story);

@@ -20,7 +20,7 @@
       "question": "Based on the passage above, which of the following is false about the Zuangzi?",
       "answers": [
         "One of its main themes is freedom from the human world and its conventions",
-        "It is an ancient Chinese world",
+        "It is an ancient Chinese literary work",
         "It is one of the foundational texts of Daoism",
         "It was written by Confucius"
       ],
@@ -52,21 +52,21 @@
         "Pressing a pedal that rubs a stick across the strings",
         "None of the above"
       ],
-      "correct": 0
+      "correct": 3
     }
   },
   {
     "story": "A miser sold all that he had and bought a lump of gold, which he buried in a hole in the ground by the side of an old wall and went to look at daily. One of his workmen observed his frequent visits to the spot and decided to watch his movements. He soon discovered the secret of the hidden treasure, and digging down, came to the lump of gold, and stole it. The Miser, on his next visit, found the hole empty and began to tear his hair and to make loud lamentations. A neighbor, seeing him overcome with grief and learning the cause, said, 'Pray do not grieve so; but go and take a stone, and place it in the hole, and fancy that the gold is still lying there. It will do you quite the same service; for when the gold was there, you had it not, as you did not make the slightest use of it.'",
     "distractor": {
-      "probe": "The Nile  is a major north-flowing river in northeastern Africa, generally regarded as the longest river in the world.[2] It is 6,853 km (4,258 miles) long. The Nile is an 'international' river as its water resources are shared by eleven countries, namely, Tanzania, Uganda, Rwanda, Burundi, Congo-Kinshasa, Kenya, Ethiopia, Eritrea, South Sudan, Sudan and Egypt. In particular, the Nile is the primary water source of Egypt and Sudan. The Nile has two major tributaries, the White Nile and Blue Nile. The White Nile is considered to be the headwaters and primary stream of the Nile itself. The Blue Nile, however, is the source of most of the water and silt. The White Nile is longer and rises in the Great Lakes region of central Africa, with the most distant source still undetermined but located in either Rwanda or Burundi. It flows north through Tanzania, Lake Victoria, Uganda and South Sudan. The Blue Nile begins at Lake Tana in Ethiopia and flows into Sudan from the southeast. The two rivers meet near the Sudanese capital of Khartoum.",
-      "question": "Based on the passage above, which of the following countries does <b>not</b> use the Nile River?",
+      "probe": "The Nile  is a major north-flowing river in northeastern Africa, generally regarded as the longest river in the world. It is 6,853 km (4,258 miles) long. The Nile is an 'international' river as its water resources are shared by eleven countries, namely, Tanzania, Uganda, Rwanda, Burundi, Congo-Kinshasa, Kenya, Ethiopia, Eritrea, South Sudan, Sudan and Egypt. In particular, the Nile is the primary water source of Egypt and Sudan. The Nile has two major tributaries, the White Nile and Blue Nile. The White Nile is considered to be the headwaters and primary stream of the Nile itself. The Blue Nile, however, is the source of most of the water and silt. The White Nile is longer and rises in the Great Lakes region of central Africa, with the most distant source still undetermined but located in either Rwanda or Burundi. It flows north through Tanzania, Lake Victoria, Uganda and South Sudan. The Blue Nile begins at Lake Tana in Ethiopia and flows into Sudan from the southeast. The two rivers meet near the Sudanese capital of Khartoum.",
+      "question": "Based on the passage above, which of the following countries does not use the Nile River?",
       "answers": [
         "Kenya",
+        "Chad",
         "Sudan",
-        "Eritrea",
-        "Chad"
+        "Eritrea"
       ],
-      "correct": 2
+      "correct": 1
     }
   }
 ]

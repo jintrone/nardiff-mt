@@ -4,13 +4,16 @@ import edu.msu.mi.gwurk.Task
 import org.apache.commons.lang3.StringUtils
 import org.springframework.core.io.ResourceLoader
 
+import javax.imageio.ImageIO
+import java.awt.image.BufferedImage
+
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class NarrativeController implements org.springframework.context.ResourceLoaderAware {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", demographics: "POST"]
 
     ResourceLoader resourceLoader
 
@@ -38,8 +41,32 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     }
 
+    def storyImage() {
+        println("Got request in ${params}")
+        NarrativeRequest request = NarrativeRequest.get(params.narrativeRequestId)
+        BufferedImage image = Text2PNG.getImage(request.parent_narrative.text)
+        response.setContentType("image/png")
+        OutputStream os = response.getOutputStream()
+        ImageIO.write(image,"png",os)
+        os.close()
+
+    }
+
+    @Transactional
     def demographics() {
         println "$params"
+        Turker t = Turker.findByMturk_id(params.workerid)
+        if (!t) {
+            t = new Turker()
+            t.mturk_id = params.workerid
+        }
+        t.age = params.age as Integer
+        t.gender = params.gender
+        t.education = params.education as Integer
+        t.save()
+
+        response.status = 200
+        render "OK"
     }
 
     @Transactional
@@ -102,8 +129,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
         String narrativeImagePath = servletContext.getRealPath("/images/narratives/");
 
-        Text2PNG.writeImageFile(parentNarrative.text,parentNarrative.id, narrativeImagePath);
-
+        Text2PNG.writeImageFile(parentNarrative.text, parentNarrative.id, narrativeImagePath);
 
 //        NarrativeRequest nr = NardiffStuff.findRequest(params.get("narrative_id"));
 //        boolean askForDemographics = NardiffStuff.assignRequestToTurker(workerId);

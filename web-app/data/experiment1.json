@@ -1,0 +1,72 @@
+[
+  {
+    "story": "Once there was a little boy who lived in a hot country.  One day his mother told him to take some cake to his grandmother.  She warned him to hold it carefully so it wouldnt break into crumbs.  The little boy put the cake in a leaf under his arm and carried it to his grandmother's. \nWhen he got there the cake had crumbled into tiny pieces. His grandmother told him he was a silly boy and that he should have carried the cake on top of his head so it wouldn't break.  Then she gave him a pat of butter to take back to his mother's house.\nThe little boy wanted to be very careful with the butter, so he put it on top of his head and carried it home.  The sun was shining hard and when he got home the butter had all melted. \nHis mother told him that he was a silly boy and that he should have put the butter in a leaf so that it would have gotten home safe and sound.",
+    "distractor": {
+      "probe": "The Walcheren Campaign was an unsuccessful British expedition to the Netherlands in 1809 intended to open another front in the Austrian Empire's struggle with France during the War of the Fifth Coalition. Around 40,000 soldiers, 15,000 horses together with field artillery and two siege trains crossed the North Sea and landed at Walcheren on 30 July.  The primary aim of the campaign was to destroy the French fleet thought to be in Flushing whilst providing a diversion for the hard-pressed Austrians.",
+      "question": "Which country conducted the Walcheren Campaign, and what was its aim?",
+      "answers": [
+        "France, to attack the Austrian ground forces",
+        "Britain, to destroy the French naval fleet",
+        "Austria, to attack the French naval fleet",
+        "Britain, to destroy Dutch ground forces"
+      ],
+      "correct": 1
+    }
+  },
+  {
+    "story": "Once there was a woman who needed a tiger’s whisker.  She was afraid of tigers, but she needed a whisker to make a medicine for her husband who had gotten very sick.  She thought and thought about how to get a tiger’s whisker. She decided to use a trick.\nShe know that tigers loved food and music.  She thought that if she brought food to a lonely tiger and played soft music, the tiger would be nice to her and she could get the whisker.\nShe went to a tiger’s cave where a lonely tiger lived.  She put a bowl of food in front of the opening of the cave.  Then she sang soft music.  The tiger came out and ate the food.  He then walked over to the lady and thanked her for the delicious food and lovely music. \nThe lady then cut off one of his whiskers and ran down the hill very quickly. The tiger felt lonely and sad again.",
+    "distractor": {
+      "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+      "question": "Based on the passage above, which of the following is true about the city of Mumbai?",
+      "answers": [
+        "It is the most populous city in the world",
+        "It is the capital city of India",
+        "It is on located on the east coast of India",
+        "It has a deep natural harbor"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "story": "There was a fox and a bear who were friends.  One day they decided to catch a chicken for supper.  They decided to go together, because neither one wanted to be left alone and they both liked fried chicken.\nThey waited until night time.  Then they ran very quickly to a nearby farm where they knew chickens lived.  The bear, who felt very lazy climbed up on the roof to watch.  The fox then opened the door of the henhouse very carefully.  He grabbed a chicken and killed it.\nAs he was carrying it out the henhouse the weight of the bear on the roof caused the roof to crack.  The fox heard the noise and was frightened but it was too late to run out.  The root and the bear fell in, killing five of the chickens. \nThe fix and the bear were trapped in the broken henhouse.  Soon the farmer came out to see what was the matter.",
+    "distractor": {
+      "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+      "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?",
+      "answers": [
+        "Weekend Evenings",
+        "Weekday Mornings",
+        "Weekday Evenings",
+        "None, the station is now closed."
+      ]
+      "correct": 3
+    }
+  },
+  {
+    "story": "Judy is going to have a birthday party.  She is ten years old.  She wants a hammer and a saw for presents.  Then she could make a coat rack and fix her doll house.  She asked her father to get them for her.  \nHer father did not want to get them for her.  He did not think that girls should play with a hammer and a saw.  But he wanted to get her something.  So he bought her a beautiful new dress.  Judy liked the dress, but she still wanted the hammer and the saw.\nLater, she told her grandmother about her wish.  Her grandmother knew that Judy really wanted a hammer and a saw.  She decided to get them for her, because when Judy grows up and becomes a woman she will have to fix things when they break.\nThen her grandmother went out that very day and bought the tools for Judy.  She gave them to Judy that night.  Judy was very happy.  Now she could build things with her hammer and saw.",
+    "distractor": {
+      "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+      "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?",
+      "answers": [
+        "To find food",
+        "To find other paddlefish",
+        "To navigate rivers",
+        "None of the above"
+      ],
+      "correct": 0
+    }
+  },
+  {
+    "story": "A few weeks ago, health care professionals saw an alarming spike in the number of people seeking medical care after being infected with measles.  Measles is a highly contagious disease that the World Health Organization estimates used to cause ~2.6 million deaths per year globally.\nIn the United States, the development and widespread use of vaccines has virtually eradicated the disease, but measles is periodically re-introduced when people travel to parts of the world where it is still prevalent.\nWidespread vaccination protects even those who have not been vaccinated themselves, because people who have been vaccinated cannot infect others.  This 'herd immunity' reduces the risk that unvaccinated people will be exposed to the measles virus in the first place.\nHerd immunity is useful, because some people (e.g., very young children) cannot be vaccinated.  Unfortunately, vaccination rates have dropped in some parts of the U.S., allowing the disease to spread there and increasing the risk of a more widespread outbreak.",
+    "distractor": {
+      "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+      "question": "Based on the passage above, which of the following are associated with the Colorado River?",
+      "answers": [
+        "John Wesley Powell",
+        "The Grand Canyon",
+        "The Hoover Dam",
+        "All of the Above"
+      ],
+      "correct": 2
+    }
+  }
+]

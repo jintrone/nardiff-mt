@@ -6,9 +6,9 @@
     var app = angular.module('nardiff', []);
     app.controller('WorkflowController', ['$scope', '$interval','$http', function ($scope, $interval, $http) {
         $scope.stage = 1;
-        $scope.demographics = {};
-        $scope.timeRemaining = 120;
 
+        $scope.timeRemaining = 120;
+        $scope.demographics = {};
         this.request_id = null;
         this.parent_story_id = null;
         this.distractorAnswer = null;
@@ -30,11 +30,12 @@
             img_div.removeChild(to_remove);
         };
 
-        this.submitDemographics = function () {
+        this.submitDemographics = function (payload) {
+
             $http({
                 method: 'POST',
-                url: '/nardiff-mt/workflow/demographics',
-                data: $.param($scope.demographics),  // pass in data as strings
+                url: '/nardiff-mt/narrative/demographics',
+                data: $.param(payload),  // pass in data as strings
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}  // set the headers so angular passing info as form data (not request payload)
             });
 

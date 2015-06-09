@@ -87,6 +87,7 @@ class NardiffStuff {
             thisNarrative.root_narrative_id = parentNarrative.root_narrative_id;
             thisNarrative.completed_by = worker;
             thisNarrative.text = params.get("story");
+            thisNarrative.distractorTask = parentNarrative.distractorTask
             thisNarrative.distractor_answer = params.get("distractorAnswer");
             try {
                 thisNarrative.time_distrator = Integer.parseInt(params.get("distractorTime"));
@@ -157,6 +158,8 @@ class NardiffStuff {
                 newRequest.priority = newPriority;
                 newRequest.depth = newNarrativeDepth;
                 newRequest.root_narrative = nr.root_narrative;
+
+                //this is a problem
                 newRequest.parent_narrative = thisNarrative;
                 newRequest.save();
             }

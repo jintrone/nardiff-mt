@@ -1,7 +1,7 @@
 <script type="application/javascript">
 jQuery(document).ready(function() {
 
-    jQuery("form").attr("action",'${submiturl}');
+    jQuery("form:not('.gwurkignore')").attr("action",'${submiturl}');
     if ('${assignmentId}'=='ASSIGNMENT_ID_NOT_AVAILABLE') {
         jQuery(":submit").hide();
     } else {

@@ -1,0 +1,72 @@
+[
+  {
+    "story": "One night two frogs found themselves in a dairy. Hopping and jumping around as frogs do  they both jumped into a milk pail half full of milk. After swimming around for some time they tried to get out. But the inside of the pail was too slippery and there was nothing on which they could rest so that they could jump out. One frog thought it was useless trying to swim on and just gave up hope and sunk and was drowned. The other carried on swimming hoping against hope that something would turn up. He swam and he swam until he began to feel tired. But by this time the milk which was full of cream had become thick. When the frog had swum some more the cream had been stirred so much that it became a solid lump of butter. On this the frog could scramble and rest. And from it he could easily jump out of the pail into safety.",
+    "distractor": {
+      "probe": "Tardigrades can survive in extreme environments. For example, they can withstand temperatures from just above absolute zero to well above the boiling point of water (100 °C), pressures about six times greater than those found in the deepest ocean trenches, ionizing radiation at doses hundreds of times higher than the lethal dose for a human, and the vacuum of outer space. They can go without food or water for more than 10 years, drying out to the point where they are 3% or less water, only to rehydrate, forage, and reproduce. They are not considered extremophilic because they are not adapted to exploit these conditions. This means that their chances of dying increase the longer they are exposed to the extreme environments, whereas true extremophiles thrive in a physically or geochemically extreme condition that would harm most other organisms.",
+      "question": "Which of the following is a true statement about tardigrades?",
+      "answers": [
+        "They can survive indefinitely without water",
+        "They are considered to be extremophiles",
+        "The can survive in outer space",
+        "Boiling water will kill a tardigrade"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "story": "A farmer's daughter had been out to milk the cows, and was returning to the dairy carrying her pail of milk upon her head. As she walked along, she fell a-musing after this fashion: The milk in this pail will provide me with cream, which I will make into butter and take to market to sell. With the money I will buy a number of eggs, and these, when hatched, will produce chickens, and by and by I shall have quite a large poultry yard. Then I shall sell some of my fowls, and with the money which they will bring in I will buy myself a new gown, which I shall wear when I go to the fair; and all the young fellows will admire it, and come and make love to me, but I shall toss my head and have nothing to say to them. Forgetting all about the pail, and suiting the action to the word, she tossed her head. Down went the pail, all the milk was spilled, and all her fine castles in the air vanished in a moment!",
+    "distractor": {
+      "probe": "The Zhuangzi is an ancient Chinese work from the late Warring States period (3rd century BC) which contains stories and anecdotes that exemplify the carefree nature of the ideal Daoist sage. Named for its traditional author, 'Master Zhuang', the Zhuangzi is one of the two foundational texts of Daoism, along with the Laozi (Dao De Jing). It is composed of a large collection of anecdotes, allegories, parables, and fables, which are often humorous or irreverent in nature. Its main themes are of spontaneity in action and of freedom from the human world and its conventions. The fables and anecdotes in the text attempt to illustrate the falseness of human distinctions between good and bad, large and small, life and death, and human and nature. While other philosophers wrote of moral and personal duty, Zhuangzi promoted carefree wandering and becoming one with 'the Way' by following nature.",
+      "question": "Based on the passage above, which of the following is false about the Zuangzi?",
+      "answers": [
+        "One of its main themes is freedom from the human world and its conventions",
+        "It is an ancient Chinese world",
+        "It is one of the foundational texts of Daoism",
+        "It was written by Confucius"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "story": "A Fox once saw a Crow fly off with a piece of cheese in its beak and settle on a branch of a tree. 'That's for me, as I am a Fox,' said Master Fox, and he walked up to the foot of the tree. 'Good day, Mistress Crow,' he cried. 'How well you are looking today: how glossy your feathers; how bright your eye. I feel sure your voice must surpass that of other birds, just as your figure does; let me hear but one song from you that I may greet you as the Queen of Birds.' The Crow lifted up her head and began to caw her best, but the moment she opened her mouth the piece of cheese fell to the ground, only to be snapped up by Master Fox. 'That will do,' said he. 'That was all I wanted. In exchange for your cheese I will give you a piece of advice for the future: Do not trust flatterers.'",
+    "distractor": {
+      "probe": "Aspen is a common name for certain tree species; some, but not all, are classified by botanists in the section Populus, of the poplar genus. All of the aspens typically grow in large clonal colonies, derived from a single seedling, and spread by means of root suckers; new stems in the colony may appear at up to 30–40 m (98–131 ft) from the parent tree. Each individual tree can live for 40–150 years above ground, but the root system of the colony is long-lived. In some cases, this is for thousands of years, sending up new trunks as the older trunks die off above ground. For this reason, it is considered to be an indicator of ancient woodlands. One such colony in Utah, given the nickname of 'Pando', is estimated to be 80,000 years old, making it possibly the oldest living colony of aspens. Some aspen colonies become very large with time, spreading about 1 m (3.3 ft) per year, eventually covering many hectares. They are able to survive forest fires, because the roots are below the heat of the fire, with new sprouts growing after the fire burns out.",
+      "question": "Based on the passage above, how do aspens reproduce?",
+      "answers": [
+        "They produce nuts, which are carried by animals to other areas where they germinate",
+        "They drop airborne seeds which are dispersed by the wind.",
+        "They males search for mates in the Spring, and the females give birth in late winter",
+        "The spread by means of root suckers"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "story": "An ass, belonging to an herb seller who gave him too little food and too much work made a petition to Jupiter to be released from his present service and provided with another master. Jupiter, after warning him that he would repent his request, caused him to be sold to a tile-maker. Shortly afterwards, finding that he had heavier loads to carry and harder work in the brick-field, he petitioned for another change of master. Jupiter, telling him that it would be the last time that he could grant his request, ordained that he be sold to a tanner. The ass found that he had fallen into worse hands, and noting his master's occupation, said groaning 'It would have been better for me to have been either starved by the one, or to have been overworked by the other of my former masters, than to have been bought by my present owner, who will even after I am dead tan my hide, and make me useful to him.'",
+    "distractor": {
+      "probe": "The hurdy-gurdy is a stringed instrument that produces sound by a crank-turned, rosined wheel rubbing against the strings. The wheel functions much like a violin bow, and single notes played on the instrument sound similar to those of a violin. Melodies are played on a keyboard that presses tangents — small wedges, typically made of wood — against one or more of the strings to change their pitch. Like most other acoustic stringed instruments, it has a sound board to make the vibration of the strings audible.\nMost hurdy-gurdies have multiple drone strings, which give a constant pitch accompaniment to the melody, resulting in a sound similar to that of bagpipes. For this reason, the hurdy-gurdy is often used interchangeably or along with bagpipes, particularly in Occitan, Catalan, Sardinian, Cajun French and contemporary Galician and Hungarian folk music",
+      "question": "According to the passage, the hurdy-gurdy is a stringed instrument, which one plays by:?",
+      "answers": [
+        "Dragging a bow across the strings, like a violin",
+        "Plucking notes and strumming chords",
+        "Pressing a pedal that rubs a stick across the strings",
+        "None of the above"
+      ],
+      "correct": 0
+    }
+  },
+  {
+    "story": "A miser sold all that he had and bought a lump of gold, which he buried in a hole in the ground by the side of an old wall and went to look at daily. One of his workmen observed his frequent visits to the spot and decided to watch his movements. He soon discovered the secret of the hidden treasure, and digging down, came to the lump of gold, and stole it. The Miser, on his next visit, found the hole empty and began to tear his hair and to make loud lamentations. A neighbor, seeing him overcome with grief and learning the cause, said, 'Pray do not grieve so; but go and take a stone, and place it in the hole, and fancy that the gold is still lying there. It will do you quite the same service; for when the gold was there, you had it not, as you did not make the slightest use of it.'",
+    "distractor": {
+      "probe": "The Nile  is a major north-flowing river in northeastern Africa, generally regarded as the longest river in the world.[2] It is 6,853 km (4,258 miles) long. The Nile is an 'international' river as its water resources are shared by eleven countries, namely, Tanzania, Uganda, Rwanda, Burundi, Congo-Kinshasa, Kenya, Ethiopia, Eritrea, South Sudan, Sudan and Egypt. In particular, the Nile is the primary water source of Egypt and Sudan. The Nile has two major tributaries, the White Nile and Blue Nile. The White Nile is considered to be the headwaters and primary stream of the Nile itself. The Blue Nile, however, is the source of most of the water and silt. The White Nile is longer and rises in the Great Lakes region of central Africa, with the most distant source still undetermined but located in either Rwanda or Burundi. It flows north through Tanzania, Lake Victoria, Uganda and South Sudan. The Blue Nile begins at Lake Tana in Ethiopia and flows into Sudan from the southeast. The two rivers meet near the Sudanese capital of Khartoum.",
+      "question": "Based on the passage above, which of the following countries does <b>not</b> use the Nile River?",
+      "answers": [
+        "Kenya",
+        "Sudan",
+        "Eritrea",
+        "Chad"
+      ],
+      "correct": 2
+    }
+  }
+]

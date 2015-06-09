@@ -10,6 +10,7 @@ class Narrative {
     Integer time_distrator;
     Integer time_writing;
     String text;
+    String distractorTask;
     Boolean too_simple;
 
 
@@ -25,6 +26,7 @@ class Narrative {
 
     static mapping = {
         text type: "text"
+        distractorTask type: "text"
         root_narrative_id index: "root_narrative_id_idx"
     }
 

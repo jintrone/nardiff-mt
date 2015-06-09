@@ -3,6 +3,8 @@ import edu.msu.mi.gwurk.SingleHitTask
 import edu.msu.mi.gwurk.Task
 import edu.msu.mi.gwurk.TaskRun
 import edu.msu.mi.gwurk.Workflow
+import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
 import groovy.util.logging.Log4j
 import nardiff.mt.NardiffStuff
 import nardiff.mt.Narrative
@@ -22,6 +24,10 @@ class BootStrap {
     def mturkTaskService
 
     def grailsApplication
+
+
+
+
 
 
     static String[] initialStories = [
@@ -117,10 +123,11 @@ class BootStrap {
                     "widespread outbreak."
     ]
 
-    public static Narrative insertStory(String story, int numInitialRequests, int numLPRequests, String imagePath) {
+    public static Narrative insertStory(def storydata, int numInitialRequests, int numLPRequests, String imagePath) {
 
         Narrative narrative = new Narrative();
-        narrative.text = story;
+        narrative.text = storydata.story;
+        narrative.distractorTask = new JsonBuilder(storydata.distractor).toPrettyString()
         narrative.too_simple = false;
 
         Narrative.withTransaction { tx ->
@@ -161,6 +168,11 @@ class BootStrap {
 
     def init = { servletContext ->
 
+        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment2.json")))
+
+
+        //println "$experimentData"
+
         if (Narrative.count() < 3) {
 
             Workflow w = new Workflow("Narrative Diffusion", "An experiment similar to a game of telephone", [
@@ -175,13 +187,13 @@ class BootStrap {
                     requireApproval   : true
             ])
 
-           List tasks = initialStories.collect { story->
+           List tasks = experimentData.collect { storydata ->
 
                 WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(servletContext);
                 ServletContext sc = context.getServletContext();
                 String imagePath = sc.getRealPath("/images/narratives");
 
-                Narrative narrative = insertStory(story, 5, 10, imagePath);
+                Narrative narrative = insertStory(storydata, 5, 10, imagePath);
 
 
 

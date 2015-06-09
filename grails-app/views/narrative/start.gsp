@@ -40,7 +40,7 @@
         NarrativeRequest nr = params.get("narrativeRequest")
         boolean askForDemographics = params.get("askForDemographics")
         int beginStage = 2;
-        if (askForDemographics == false)
+        if (!askForDemographics)
             beginStage = 3;
 
     %>
@@ -48,8 +48,8 @@
 
     <div ng-show="stage === 1">
 
-        <p><b>Instructions.</b>  When you press the “begin” button below, you will
-        <% if (askForDemographics) out.println("be asked for some basic demographic information and then ")%>
+        <p><b>Instructions.</b>  When you click the 'begin' button, you will
+        <% if (askForDemographics) out.println("be asked for some basic demographic information and then ") %>
         be given 2 minutes to read a very short story. Afterward, you will be asked to
         retell as much of the story as possible in your own words for the
         next person. Do not copy/paste; any assignment that is copied / pasted will be
@@ -57,7 +57,7 @@
         </p>
 
         <p>
-            <button class="button" ng-click="stage = <%= beginStage %>; wf.request_id = <%=
+            <button class="button" ng-click="stage = <%=beginStage%>; wf.request_id = <%=
                 nr.id
             %>; ">Begin</button>
         </p>
@@ -67,132 +67,133 @@
     <div ng-show="stage === 2">
         <p>To start with, we need a small amount of demographic information.</p>
 
-        <p>Year of Birth:
+        <form ng-submit="wf.submitDemographics()" class="gwurkignore">
+            <p>Year of Birth:
 
-            <select id="age" name="age" ng-model="wf.age">
-                <option value="1998">1998</option>
-                <option value="1997">1997</option>
-                <option value="1996">1996</option>
-                <option value="1995">1995</option>
-                <option value="1994">1994</option>
-                <option value="1993">1993</option>
-                <option value="1992">1992</option>
-                <option value="1991">1991</option>
-                <option value="1990">1990</option>
-                <option value="1989">1989</option>
-                <option value="1988">1988</option>
-                <option value="1987">1987</option>
-                <option value="1986">1986</option>
-                <option value="1985">1985</option>
-                <option value="1984">1984</option>
-                <option value="1983">1983</option>
-                <option value="1982">1982</option>
-                <option value="1981">1981</option>
-                <option value="1980">1980</option>
-                <option value="1979">1979</option>
-                <option value="1978">1978</option>
-                <option value="1977">1977</option>
-                <option value="1976">1976</option>
-                <option value="1975">1975</option>
-                <option value="1974">1974</option>
-                <option value="1973">1973</option>
-                <option value="1972">1972</option>
-                <option value="1971">1971</option>
-                <option value="1970">1970</option>
-                <option value="1969">1969</option>
-                <option value="1968">1968</option>
-                <option value="1967">1967</option>
-                <option value="1966">1966</option>
-                <option value="1965">1965</option>
-                <option value="1964">1964</option>
-                <option value="1963">1963</option>
-                <option value="1962">1962</option>
-                <option value="1961">1961</option>
-                <option value="1960">1960</option>
-                <option value="1959">1959</option>
-                <option value="1958">1958</option>
-                <option value="1957">1957</option>
-                <option value="1956">1956</option>
-                <option value="1955">1955</option>
-                <option value="1954">1954</option>
-                <option value="1953">1953</option>
-                <option value="1952">1952</option>
-                <option value="1951">1951</option>
-                <option value="1950">1950</option>
-                <option value="1949">1949</option>
-                <option value="1948">1948</option>
-                <option value="1947">1947</option>
-                <option value="1946">1946</option>
-                <option value="1945">1945</option>
-                <option value="1944">1944</option>
-                <option value="1943">1943</option>
-                <option value="1942">1942</option>
-                <option value="1941">1941</option>
-                <option value="1940">1940</option>
-                <option value="1939">1939</option>
-                <option value="1938">1938</option>
-                <option value="1937">1937</option>
-                <option value="1936">1936</option>
-                <option value="1935">1935</option>
-                <option value="1934">1934</option>
-                <option value="1933">1933</option>
-                <option value="1932">1932</option>
-                <option value="1931">1931</option>
-                <option value="1930">1930</option>
-                <option value="1929">1929</option>
-                <option value="1928">1928</option>
-                <option value="1927">1927</option>
-                <option value="1926">1926</option>
-                <option value="1925">1925</option>
-                <option value="1924">1924</option>
-                <option value="1923">1923</option>
-                <option value="1922">1922</option>
-                <option value="1921">1921</option>
-                <option value="1920">1920</option>
-                <option value="1919">1919</option>
-                <option value="1918">1918</option>
-                <option value="1917">1917</option>
-                <option value="1916">1916</option>
-                <option value="1915">1915</option>
-                <option value="1914">1914</option>
-                <option value="1913">1913</option>
-                <option value="1912">1912</option>
-                <option value="1911">1911</option>
-                <option value="1910">1910</option>
-                <option value="1909">1909</option>
-                <option value="1908">1908</option>
-                <option value="1907">1907</option>
-                <option value="1906">1906</option>
-                <option value="1905">1905</option>
-            </select>
+                <select id="age" name="age" ng-model="wf.demographics.age">
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1981">1981</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1976">1976</option>
+                    <option value="1975">1975</option>
+                    <option value="1974">1974</option>
+                    <option value="1973">1973</option>
+                    <option value="1972">1972</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1969">1969</option>
+                    <option value="1968">1968</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1961">1961</option>
+                    <option value="1960">1960</option>
+                    <option value="1959">1959</option>
+                    <option value="1958">1958</option>
+                    <option value="1957">1957</option>
+                    <option value="1956">1956</option>
+                    <option value="1955">1955</option>
+                    <option value="1954">1954</option>
+                    <option value="1953">1953</option>
+                    <option value="1952">1952</option>
+                    <option value="1951">1951</option>
+                    <option value="1950">1950</option>
+                    <option value="1949">1949</option>
+                    <option value="1948">1948</option>
+                    <option value="1947">1947</option>
+                    <option value="1946">1946</option>
+                    <option value="1945">1945</option>
+                    <option value="1944">1944</option>
+                    <option value="1943">1943</option>
+                    <option value="1942">1942</option>
+                    <option value="1941">1941</option>
+                    <option value="1940">1940</option>
+                    <option value="1939">1939</option>
+                    <option value="1938">1938</option>
+                    <option value="1937">1937</option>
+                    <option value="1936">1936</option>
+                    <option value="1935">1935</option>
+                    <option value="1934">1934</option>
+                    <option value="1933">1933</option>
+                    <option value="1932">1932</option>
+                    <option value="1931">1931</option>
+                    <option value="1930">1930</option>
+                    <option value="1929">1929</option>
+                    <option value="1928">1928</option>
+                    <option value="1927">1927</option>
+                    <option value="1926">1926</option>
+                    <option value="1925">1925</option>
+                    <option value="1924">1924</option>
+                    <option value="1923">1923</option>
+                    <option value="1922">1922</option>
+                    <option value="1921">1921</option>
+                    <option value="1920">1920</option>
+                    <option value="1919">1919</option>
+                    <option value="1918">1918</option>
+                    <option value="1917">1917</option>
+                    <option value="1916">1916</option>
+                    <option value="1915">1915</option>
+                    <option value="1914">1914</option>
+                    <option value="1913">1913</option>
+                    <option value="1912">1912</option>
+                    <option value="1911">1911</option>
+                    <option value="1910">1910</option>
+                    <option value="1909">1909</option>
+                    <option value="1908">1908</option>
+                    <option value="1907">1907</option>
+                    <option value="1906">1906</option>
+                    <option value="1905">1905</option>
+                </select>
             </p>
 
 
-         <!--   <input type="number" min="18" max="110" name="age" ng-model="wf.age" required="Please enter a whole number 18 or greater"></p> -->
+            <!--   <input type="number" min="18" max="110" name="age" ng-model="wf.age" required="Please enter a whole number 18 or greater"></p> -->
 
-        <p>Sex:
+            <p>Sex:
 
-        <input ng-click="wf.gender = 'M'" type="radio" name="gender"> Male,
-            <input ng-click="wf.gender = 'F'" type="radio" name="gender"> Female,
-            <input ng-click="wf.gender = 'O'" type="radio" name="gender"> Other</p>
+                <input ng-click="wf.demographics.gender = 'M'" type="radio" name="gender"> Male,
+                <input ng-click="wf.demographics.gender = 'F'" type="radio" name="gender"> Female,
+                <input ng-click="wf.demographics.gender = 'O'" type="radio" name="gender"> Other</p>
 
-        <p>Education:</p>
+            <p>Education:</p>
 
-        <input ng-click="wf.education = '1'" type="radio" name="edu" value="1">Less than High School<br/>
-        <input ng-click="wf.education = '2'" type="radio" name="edu" value="2">High School<br/>
-        <input ng-click="wf.education = '3'" type="radio" name="edu" value="3">Some College<br/>
-        <input ng-click="wf.education = '4'" type="radio" name="edu" value="4">Associate Degree<br/>
-        <input ng-click="wf.education = '5'" type="radio" name="edu" value="5">Bachelors Degree<br/>
-        <input ng-click="wf.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
-        <input ng-click="wf.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
+            <input ng-click="wf.demographics.education = '1'" type="radio" name="edu" value="1">Less than High School<br/>
+            <input ng-click="wf.demographics.education = '2'" type="radio" name="edu" value="2">High School<br/>
+            <input ng-click="wf.demographics.education = '3'" type="radio" name="edu" value="3">Some College<br/>
+            <input ng-click="wf.demographics.education = '4'" type="radio" name="edu" value="4">Associate Degree<br/>
+            <input ng-click="wf.demographics.education = '5'" type="radio" name="edu" value="5">Bachelors Degree<br/>
+            <input ng-click="wf.demographics.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
+            <input ng-click="wf.demographics.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
 
-        <p><button class="button" ng-click="stage = 3">Continue</button></p>
+            <p><button type="submit" class="button">Continue</button></p>
+        </form>
     </div>
 
 
-
     <div ng-show="stage === 3">
-        <p><b>Instructions.</b>  Please spend the next <em>2 minutes</em> reading the story below.
+        <p><b>Instructions.</b>  Please spend up to <em>2 minutes</em> reading the story below.
         Afterward, you will be asked to retell as much of the story as possible in your own
         words for the next person. Do not copy/paste; any assignment that is copied / pasted
         will be rejected.
@@ -201,8 +202,8 @@
         <p><button class="button" ng-click="stage = 4; wf.startTimer();">Continue to Story</button></p>
 
     </div>
-    <div ng-show="stage === 4" id="img-div">
 
+    <div ng-show="stage === 4" id="img-div">
 
         <p id="toremove"><img src="../images/narratives/<%
             NarrativeRequest.withTransaction { tx ->
@@ -370,7 +371,6 @@
 
         <% } %>
 
-
     </div>
 
     <div ng-show="stage === 6">
@@ -378,7 +378,7 @@
         <form>
             <textarea ng-model="wf.story" name="story"></textarea><br>
 
-        <button class="button" ng-click="wf.rt(wf); stage = 7">Continue</button>
+            <button class="button" ng-click="wf.rt(wf); stage = 7">Continue</button>
         </form>
     </div>
 
@@ -391,11 +391,7 @@
             <input type="hidden" name="request_id" value="{{ wf.request_id }}">
             <input type="hidden" name="distractorAnswer" value="{{ wf.distractorAnswer }}">
             <input type="hidden" name="story" value="{{ wf.story }}">
-            <% if (askForDemographics) { %>
-            <input type="hidden" name="age" value="{{ wf.age }}">
-            <input type="hidden" name="gender" value="{{ wf.gender }}">
-            <input type="hidden" name="education" value="{{ wf.education }}">
-            <% } %>
+
             <input type="hidden" name="storyTime" value="{{ wf.storyTime }}">
             <input type="hidden" name="distractorTime" value="{{ wf.distractorTime }}">
             <input type="hidden" name="retellTime" value="{{ wf.retellTime }}">
@@ -403,8 +399,6 @@
 
             <g:submitButton name="Complete HIT" class="button">Complete HIT</g:submitButton>
         </form>
-
-
 
     </div>
 </div>

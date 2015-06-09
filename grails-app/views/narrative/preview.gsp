@@ -39,23 +39,10 @@
 
     <div ng-show="stage === 1">
         <p>This HIT is part of a research study. You will be given two minutes to read a brief story, and then
-        write what you can remember of the story for someone else to read. An example of a story is:</p>
+        write what you can remember of the story for someone else to read.  You will be asked an unrelated question between
+        reading the story and writing it down.</p>
 
-        <p>A GOATHERD, driving his flock from their pasture at eventide, found some
-        Wild Goats mingled among them, and shut them up together with his own
-        for the night. The next day it snowed very hard, so that he could not
-        take the herd to their usual feeding places, but was obliged to keep
-        them in the fold. He gave his own goats just sufficient food to keep
-        them alive, but fed the strangers more abundantly in the hope of
-        enticing them to stay with him and of making them his own. When the thaw
-        set in, he led them all out to feed, and the Wild Goats scampered away
-        as fast as they could to the mountains. The Goatherd scolded them for
-        their ingratitude in leaving him, when during the storm he had taken
-        more care of them than of his own herd. One of them, turning about,
-        said to him: "That is the very reason why we are so cautious; for if you
-        yesterday treated us better than the Goats you have had so long, it is
-        plain also that if others came after us, you would in the same manner
-        prefer them to ourselves."  (from Aesop's Fables)</p>
+        <p>The whole task should take you about 5 min.  Based on this estimate, the pay rate for this task is about $7.00 / hr.</p>
 
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         be asked for some basic demographic information and then

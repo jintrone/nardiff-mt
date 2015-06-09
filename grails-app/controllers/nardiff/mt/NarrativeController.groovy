@@ -38,6 +38,10 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     }
 
+    def demographics() {
+        println "$params"
+    }
+
     @Transactional
     def start() {
         //  [taskrun: params.task, workerId: params.workerId, action: run.taskProperties.action,controller: run.taskProperties.controller, submiturl: run.submitUrl, assignmentId: params.assignmentId]

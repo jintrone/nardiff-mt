@@ -1,11 +1,14 @@
 package edu.msu.mi.gwurk
 
+import com.amazonaws.mturk.requester.Comparator
 import com.amazonaws.mturk.requester.HIT
 import com.amazonaws.mturk.requester.QualificationRequirement
 import com.amazonaws.mturk.service.axis.RequesterService
 import grails.transaction.Transactional
 import groovy.util.logging.Log4j
 import org.codehaus.groovy.grails.web.mapping.LinkGenerator
+
+import static com.amazonaws.mturk.requester.Comparator.*
 
 @Log4j
 @Transactional
@@ -32,6 +35,20 @@ class MturkAwsFacadeService {
     HitView launchHit(RequesterService requesterService, TaskRun taskRun) {
         taskRun.attach()
         MturkHitProperties props = getProperties(taskRun.taskProperties)
+
+        QualificationRequirement qualReq = new QualificationRequirement();
+        qualReq.setQualificationTypeId(RequesterService.LOCALE_QUALIFICATION_TYPE_ID);
+        qualReq.setComparator(EqualTo);
+        com.amazonaws.mturk.requester.Locale country = new com.amazonaws.mturk.requester.Locale();
+        country.setCountry("US");
+        qualReq.setLocaleValue(country);
+
+        QualificationRequirement qualReq1 = new QualificationRequirement();
+        qualReq1 = new QualificationRequirement();
+        qualReq1.setQualificationTypeId(RequesterService.APPROVAL_RATE_QUALIFICATION_TYPE_ID)
+        qualReq1.setComparator(com.amazonaws.mturk.requester.Comparator.GreaterThanOrEqualTo);
+        qualReq1.setIntegerValue(98)
+
         log.info("Launch hit with taskrun id: "+taskRun.id)
         String url = "https://${grailsApplication.config.gwurk.hostname}:${grailsApplication.config.gwurk.port}${grailsLinkGenerator.link(action:"external",controller: "workflow", params:[task:taskRun.id])}"
         log.info("Would link: ${url}")
@@ -47,11 +64,12 @@ class MturkAwsFacadeService {
                 taskRun.taskProperties.lifetime,
                 props.getMaxAssignments(1),
                 "", // requesterAnnotation
-                props.getQualificationRequirements(new QualificationRequirement[0]), // qualificationRequirements
+                [qualReq,qualReq1] as QualificationRequirement[], // qualificationRequirements
                 (String[])["Minimal", "HITDetail", "HITQuestion", "HITAssignmentSummary"] as String[], // responseGroup
                 null, // uniqueRequestToken
                 null, // assignmentReviewPolicy
                 null); // hitReviewPolicy
+
         HitView result = new HitView(taskRun,h)
         result.save()
         taskRun.addActive(result)
@@ -70,6 +88,7 @@ class MturkAwsFacadeService {
         props.assignmentDuration = properties.assignmentDuration
         props.rewardAmount = properties.rewardAmount
         props.lifetime = properties.lifetime as String
+
         props
     }
 

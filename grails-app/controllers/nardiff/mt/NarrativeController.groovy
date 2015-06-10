@@ -42,19 +42,18 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
     }
 
     def storyImage() {
-        println("Got request in ${params}")
-        NarrativeRequest request = NarrativeRequest.get(params.narrativeRequestId)
-        BufferedImage image = Text2PNG.getImage(request.parent_narrative.text)
+
+        Narrative parent = Narrative.get(params.narrative)
         response.setContentType("image/png")
         OutputStream os = response.getOutputStream()
-        ImageIO.write(image,"png",os)
+        ImageIO.write(Text2PNG.getImage(parent.text),"png",os)
         os.close()
 
     }
 
     @Transactional
     def demographics() {
-        println "$params"
+
         Turker t = Turker.findByMturk_id(params.workerid)
         if (!t) {
             t = new Turker()
@@ -67,6 +66,19 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
         response.status = 200
         render "OK"
+    }
+
+    @Transactional
+    def turkerTask() {
+        if (!params.workerId) {
+            render(view: "preview.gsp")
+        } else {
+            Task t = Task.get(params.taskID)
+            Narrative parent = NardiffStuff.getNarrativeToExpand(t.taskProperties.parameter as Long)
+            Turker turker = Turker.get(params.workerId)
+            render(view: 'start', model: [narrative: parent, askForDemographics:(turker && turker.age && turker.education && turker.gender)])
+        }
+
     }
 
     @Transactional

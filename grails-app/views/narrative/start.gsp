@@ -5,6 +5,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="/nardiff-mt/js/nardiff.js"></script>
 
+
     <title></title>
 
     <style>
@@ -35,19 +36,13 @@
             color: #555555;
         }
     </style>
+
 </head>
 
 <body>
-<div ng-controller="WorkflowController as wf" id="mainPanel">
-
-    <%
-        NarrativeRequest nr = params.get("narrativeRequest")
-        boolean askForDemographics = params.get("askForDemographics")
-        int beginStage = askForDemographics?2:3;
+<div ng-controller="WorkflowController as wf" ng-init="askForDemographics = ${params.askForDemographics}" id="mainPanel">
 
 
-
-    %>
     <timer></timer>
     <div>
         <em class="grayish">This HIT is under development; please <a href="mailto:jintrone@msu.edu" target="_blank">email</a> if you encounter problems.</em>
@@ -56,7 +51,7 @@
     <div ng-show="stage === 1">
 
         <p><b>Instructions.</b>  When you click the 'begin' button, you will
-        ${askForDemographics?"be asked for some basic demographic information and then ":"be "}
+        ${params.askForDemographics?"be asked for some basic demographic information and then ":"be "}
         given 2 minutes to read a very short story. Afterward, you will be asked to
         retell as much of the story as possible in your own words for the
         next person.</p>
@@ -65,9 +60,7 @@
         </p>
 
         <p>
-            <button class="button" ng-click="stage = <%=beginStage%>; wf.request_id = <%=
-                nr.id
-            %>; ">Begin</button>
+            <button class="button" ng-click="wf.advance()">Begin</button>
         </p>
     </div>
 
@@ -75,10 +68,10 @@
     <div ng-show="stage === 2">
         <p>To start with, we need a small amount of demographic information.</p>
 
-        <form ng-submit="wf.demographics.workerid='${workerId}';wf.submitDemographics(wf.demographics)" class="gwurkignore">
+        <form ng-submit="demographics.workerid='${workerId}';wf.submitDemographics(demographics);wf.advance()" class="gwurkignore">
             <p>Year of Birth:
 
-                <g:select id="age" name="age" ng-model="wf.demographics.age" from="${((1905..1998) as List).reverse()}" noSelection="['':'-Choose your birth year-']"/>
+                <g:select id="age" name="age" ng-model="demographics.age" from="${((1905..1998) as List).reverse()}" noSelection="['':'-Choose your birth year-']"/>
 
             </p>
 
@@ -87,19 +80,19 @@
 
             <p>Sex:
 
-                <input ng-click="wf.demographics.gender = 'M'" type="radio" name="gender"> Male,
-                <input ng-click="wf.demographics.gender = 'F'" type="radio" name="gender"> Female,
-                <input ng-click="wf.demographics.gender = 'O'" type="radio" name="gender"> Other</p>
+                <input ng-click="demographics.gender = 'M'" type="radio" name="gender"> Male,
+                <input ng-click="demographics.gender = 'F'" type="radio" name="gender"> Female,
+                <input ng-click="demographics.gender = 'O'" type="radio" name="gender"> Other</p>
 
             <p>Education:</p>
 
-            <input ng-click="wf.demographics.education = '1'" type="radio" name="edu" value="1">Less than High School<br/>
-            <input ng-click="wf.demographics.education = '2'" type="radio" name="edu" value="2">High School<br/>
-            <input ng-click="wf.demographics.education = '3'" type="radio" name="edu" value="3">Some College<br/>
-            <input ng-click="wf.demographics.education = '4'" type="radio" name="edu" value="4">Associate Degree<br/>
-            <input ng-click="wf.demographics.education = '5'" type="radio" name="edu" value="5">Bachelors Degree<br/>
-            <input ng-click="wf.demographics.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
-            <input ng-click="wf.demographics.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
+            <input ng-click="demographics.education = '1'" type="radio" name="edu" value="1">Less than High School<br/>
+            <input ng-click="demographics.education = '2'" type="radio" name="edu" value="2">High School<br/>
+            <input ng-click="demographics.education = '3'" type="radio" name="edu" value="3">Some College<br/>
+            <input ng-click="demographics.education = '4'" type="radio" name="edu" value="4">Associate Degree<br/>
+            <input ng-click="demographics.education = '5'" type="radio" name="edu" value="5">Bachelors Degree<br/>
+            <input ng-click="demographics.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
+            <input ng-click="demographics.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
 
 
             <p><button type="submit" class="button">Continue</button></p>
@@ -116,25 +109,25 @@
         will be rejected.
         </p>
 
-        <p><button class="button" ng-click="stage = 4; wf.startTimer();">Continue to Story</button></p>
+        <p><button class="button" ng-click="wf.advance()">Continue to Story</button></p>
 
     </div>
 
     <div ng-show="stage === 4" id="img-div">
 
 
-        <p id="toremove"><img src="/nardiff-mt/narrative/storyImage?narrativeRequestId=${nr.id}"/>
+        <p id="toremove"><img src="/nardiff-mt/narrative/storyImage?narrative=${narrative.id as Long}"/>
 
-        <p>Time Remaining: {{ timeRemaining + " seconds" }}</p>
+        <p>Time Remaining: {{(120-elapsedTime) + " seconds" }}</p>
 
-        <p><button class="button" ng-click="wf.st(wf); stage = 5">Skip Remaining Time</button></p>
+        <p><button class="button" ng-click="wf.advance()">Skip Remaining Time</button></p>
     </div>
 
     <div ng-show="stage === 5">
         <p>
         <%
          JsonSlurper slurper = new JsonSlurper()
-         def distractor = slurper.parse(nr.parent_narrative.distractorTask as char[])
+         def distractor = slurper.parse(narrative.root_narrative.distractorTask as char[])
 
         %>
             ${distractor.probe}
@@ -146,7 +139,7 @@
 
         <form>
             <g:each in="${distractor.answers}" var="answer" status="idx">
-            <input ng-click="wf.distractorAnswer = '${idx}'; wf.dt(wf); stage = 6" type="radio"
+            <input ng-click="distractorAnswer = '${idx}'; wf.advance()" type="radio"
                    name="dt">${answer}<br/>
             </g:each>
         </form>
@@ -156,9 +149,9 @@
     <div ng-show="stage === 6">
         In the text box below, please retell the story for the next person.
         <form>
-            <textarea ng-model="wf.story" name="story"></textarea><br>
+            <textarea ng-model="story" name="story"></textarea><br>
 
-            <button class="button" ng-click="wf.rt(wf); stage = 7">Continue</button>
+            <button class="button" ng-click="wf.advance()">Continue</button>
         </form>
     </div>
 
@@ -168,13 +161,13 @@
 
         <form action="complete" method="POST">
 
-            <input type="hidden" name="request_id" value="{{ wf.request_id }}">
-            <input type="hidden" name="distractorAnswer" value="{{ wf.distractorAnswer }}">
-            <input type="hidden" name="story" value="{{ wf.story }}">
+            <input type="hidden" name="parent" value="${narrative.id}">
+            <input type="hidden" name="distractorAnswer" value="{{ distractorAnswer }}">
+            <input type="hidden" name="story" value="{{ story }}">
 
-            <input type="hidden" name="storyTime" value="{{ wf.storyTime }}">
-            <input type="hidden" name="distractorTime" value="{{ wf.distractorTime }}">
-            <input type="hidden" name="retellTime" value="{{ wf.retellTime }}">
+            <input type="hidden" name="storyTime" value="{{ storyTime }}">
+            <input type="hidden" name="distractorTime" value="{{ distractorTime }}">
+            <input type="hidden" name="retellTime" value="{{ retellTime }}">
 
 
             <g:submitButton name="Complete HIT" class="button">Complete HIT</g:submitButton>

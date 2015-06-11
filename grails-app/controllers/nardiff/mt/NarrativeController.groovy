@@ -1,6 +1,7 @@
 package nardiff.mt
 
 import edu.msu.mi.gwurk.Task
+import edu.msu.mi.gwurk.TaskRun
 import org.apache.commons.lang3.StringUtils
 import org.springframework.core.io.ResourceLoader
 
@@ -70,87 +71,24 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     @Transactional
     def turkerTask() {
+
+        println "$params"
         if (!params.workerId) {
             render(view: "preview.gsp")
         } else {
-            Task t = Task.get(params.taskID)
+
+            Task t = TaskRun.get(params.task).task
+
             Narrative parent = NardiffStuff.getNarrativeToExpand(t.taskProperties.parameter as Long)
-            Turker turker = Turker.get(params.workerId)
-            render(view: 'start', model: [narrative: parent, askForDemographics:(turker && turker.age && turker.education && turker.gender)])
+            Turker turker = Turker.findByMturk_id(params.workerId)
+            boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
+            println "Should I ask? $shouldAsk"
+            render(view: 'start', model: [narrative: parent, askForDemographics:shouldAsk])
         }
 
     }
 
-    @Transactional
-    def start() {
-        //  [taskrun: params.task, workerId: params.workerId, action: run.taskProperties.action,controller: run.taskProperties.controller, submiturl: run.submitUrl, assignmentId: params.assignmentId]
 
-        Integer taskID;
-        String assignmentID;
-        String workerID;
-        String rootNarrativeIDString;
-
-        try {
-            taskID = Integer.parseInt(params.get("task"))
-        } catch (Exception e) {
-            log.info("start() hit with no taskID, rendering preview");
-            render(view: "preview.gsp");
-            return;
-        }
-
-        assignmentID = params.get("assignmentId");
-        if (assignmentID == null) {
-            log.info("start() hit without assignmentID = \"" + assignmentID + "\", rendering preview");
-            render(view: "preview.gsp");
-            return;
-        }
-
-        workerID = params.get("workerId");
-        if (workerID == null) {
-            log.info("start() hit without workerID, rendering preview");
-            render(view: "preview.gsp");
-            return;
-        }
-
-        // Now that we have a taskID, assignmentID, and workerID, we can make
-        // the assignment and have the user start working on it.
-        log.info("start() called with assignmentID = \"" + assignmentID + "\"")
-
-        Long rootNarrativeID = null;
-        try {
-            rootNarrativeID = Long.parseLong(params.get("rootNarrativeId"));
-        } catch (Exception e) {
-            rootNarrativeID = null;
-        }
-
-        Task t = null;
-        if (rootNarrativeID == null) {
-            t = Task.get(taskID);
-            rootNarrativeID = Long.parseLong((t.getProperties().get("taskProperties")).getAt("parameter"));
-        }
-
-        NarrativeRequest nr = NardiffStuff.findRequest(rootNarrativeID);
-        boolean askForDemographics = NardiffStuff.assignRequestToTurker(nr, workerID, assignmentID);
-        params.setProperty("askForDemographics", askForDemographics);
-        params.setProperty("narrativeRequest", nr);
-        params.setProperty("task", t);
-
-        // Generate the image
-        nr.attach();
-        Narrative parentNarrative = nr.getParent_narrative();
-
-        String narrativeImagePath = servletContext.getRealPath("/images/narratives/");
-
-        Text2PNG.writeImageFile(parentNarrative.text, parentNarrative.id, narrativeImagePath);
-
-//        NarrativeRequest nr = NardiffStuff.findRequest(params.get("narrative_id"));
-//        boolean askForDemographics = NardiffStuff.assignRequestToTurker(workerId);
-//        int beginStage = 2;
-//        if (askForDemographics == false)
-//            beginStage = 3;
-
-        log.info(params);
-    }
 
     @Transactional
     def save(Narrative narrativeInstance) {

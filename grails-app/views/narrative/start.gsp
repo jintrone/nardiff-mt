@@ -32,46 +32,36 @@
         font-size: 125%;
     }
 
-        .grayish {
-            color: #555555;
-        }
+    .grayish {
+        color: #555555;
+    }
     </style>
 
 </head>
 
 <body>
-<div ng-controller="WorkflowController as wf" ng-init="askForDemographics = ${params.askForDemographics}" id="mainPanel">
-
+<div ng-controller="WorkflowController as wf" ng-init="askForDemographics = ${askForDemographics};wf.advance()" id="mainPanel">
 
     <timer></timer>
+
     <div>
-        <em class="grayish">This HIT is under development; please <a href="mailto:jintrone@msu.edu" target="_blank">email</a> if you encounter problems.</em>
+        <em class="grayish">This HIT is under development; please <a href="mailto:jintrone@msu.edu"
+                                                                     target="_blank">email</a> if you encounter problems.
+        </em>
     </div>
 
-    <div ng-show="stage === 1">
 
-        <p><b>Instructions.</b>  When you click the 'begin' button, you will
-        ${params.askForDemographics?"be asked for some basic demographic information and then ":"be "}
-        given 2 minutes to read a very short story. Afterward, you will be asked to
-        retell as much of the story as possible in your own words for the
-        next person.</p>
-        <p>
-        Please retell the story as best you can and do not copy/paste. Any assignment not meeting these criteria will be <b>rejected</b>.
-        </p>
-
-        <p>
-            <button class="button" ng-click="wf.advance()">Begin</button>
-        </p>
-    </div>
 
 
     <div ng-show="stage === 2">
-        <p>To start with, we need a small amount of demographic information.</p>
+        <p>To start with, we need a small amount of demographic information.  This will be the only time we ask for this information.</p>
 
-        <form ng-submit="demographics.workerid='${workerId}';wf.submitDemographics(demographics);wf.advance()" class="gwurkignore">
+        <form ng-submit="demographics.workerid='${workerId}';wf.submitDemographics(demographics);wf.advance()"
+              class="gwurkignore">
             <p>Year of Birth:
 
-                <g:select id="age" name="age" ng-model="demographics.age" from="${((1905..1998) as List).reverse()}" noSelection="['':'-Choose your birth year-']"/>
+            <g:select id="age" name="age" ng-model="demographics.age" from="${((1905..1998) as List).reverse()}"
+                      noSelection="['': '-Choose your birth year-']"/>
 
             </p>
 
@@ -92,29 +82,32 @@
             <input ng-click="demographics.education = '4'" type="radio" name="edu" value="4">Associate Degree<br/>
             <input ng-click="demographics.education = '5'" type="radio" name="edu" value="5">Bachelors Degree<br/>
             <input ng-click="demographics.education = '6'" type="radio" name="edu" value="6">Masters Degree<br/>
-            <input ng-click="demographics.education = '7'" type="radio" name="edu" value="7">Graduate/Professional Degree<br/>
+            <input ng-click="demographics.education = '7'" type="radio" name="edu"
+                   value="7">Graduate/Professional Degree<br/>
 
 
             <p><button type="submit" class="button">Continue</button></p>
         </form>
 
-
     </div>
 
 
     <div ng-show="stage === 3">
-        <p><b>Instructions.</b>  Please spend up to <em>2 minutes</em> reading the story below.
-        Afterward, you will be asked to retell as much of the story as possible in your own
-        words for the next person. Do not copy/paste; any assignment that is copied / pasted
-        will be rejected.
+        <p><b>Instructions.</b>  Please read the story on the following page. You will have up to <em>2 minutes</em>.
+        Afterward, you will be asked to
+        retell as much of the story as possible in your own words for the
+        next person.</p>
+
+        <p>
+            Please retell the story as best you can and do not copy/paste. Any assignment not meeting these criteria will be <b>rejected</b>.
         </p>
+
 
         <p><button class="button" ng-click="wf.advance()">Continue to Story</button></p>
 
     </div>
 
     <div ng-show="stage === 4" id="img-div">
-
 
         <p id="toremove"><img src="/nardiff-mt/narrative/storyImage?narrative=${narrative.id as Long}"/>
 
@@ -125,22 +118,23 @@
 
     <div ng-show="stage === 5">
         <p>
-        <%
-         JsonSlurper slurper = new JsonSlurper()
-         def distractor = slurper.parse(narrative.root_narrative.distractorTask as char[])
+            <%
+                JsonSlurper slurper = new JsonSlurper()
+                def distractor = slurper.parse(narrative.root_narrative.distractorTask as char[])
 
-        %>
+            %>
             ${distractor.probe}
         </p>
+
         <p>
 
-           ${distractor.question}
+            ${distractor.question}
         </p>
 
         <form>
             <g:each in="${distractor.answers}" var="answer" status="idx">
-            <input ng-click="distractorAnswer = '${idx}'; wf.advance()" type="radio"
-                   name="dt">${answer}<br/>
+                <input ng-click="distractorAnswer = '${idx}'; wf.advance()" type="radio"
+                       name="dt">${answer}<br/>
             </g:each>
         </form>
 

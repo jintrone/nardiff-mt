@@ -1,4 +1,4 @@
-<%@ page import="groovy.json.JsonSlurper; nardiff.mt.NarrativeRequest; nardiff.mt.NardiffStuff" contentType="text/html;charset=UTF-8" %>
+<%@ page import="groovy.json.JsonSlurper; nardiff.mt.NardiffStuff" contentType="text/html;charset=UTF-8" %>
 <html ng-app="nardiff">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>

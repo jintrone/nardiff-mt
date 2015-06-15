@@ -25,9 +25,9 @@ environments {
         dataSource {
             driverClassName = "com.mysql.jdbc.Driver"
             dbCreate = "create-drop"
-            url = "jdbc:mysql://localhost/nardiffDev?useUnicode=yes&characterEncoding=UTF-8"
-            username = "nardiff"
-            password = "mturk123"
+            url = "jdbc:mysql://localhost/nardiff2?useUnicode=yes&characterEncoding=UTF-8"
+            username = "root"
+            password = "lji123"
             properties {
                 // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                 jmxEnabled = true

@@ -93,7 +93,7 @@
 
 
     <div ng-show="stage === 3">
-        <p><b>Instructions.</b>  Please read the story on the following page. You will have up to <em>2 minutes</em>.
+        <p><b>Instructions.</b>  Please read the story on the following page. You will have up to <em>1 minute</em>.
         Afterward, you will be asked to
         retell as much of the story as possible in your own words for the
         next person.</p>
@@ -111,7 +111,7 @@
 
         <p id="toremove"><img src="/nardiff-mt/narrative/storyImage?narrative=${narrative.id as Long}"/>
 
-        <p>Time Remaining: {{(120-elapsedTime) + " seconds" }}</p>
+        <p>Time Remaining: {{(60-elapsedTime) + " seconds" }}</p>
 
         <p><button class="button" ng-click="wf.advance()">Skip Remaining Time</button></p>
     </div>

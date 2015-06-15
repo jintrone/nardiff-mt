@@ -46,9 +46,10 @@
 
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         be asked for some basic demographic information and then
-        be given 2 minutes to read a very short story. Afterward, you will be asked to
+        be given 1 minute to read a very short story. Afterward, you will be asked to
         retell as much of the story as possible in your own words for the
-        next person. Do not copy/paste; any assignment that is copied / pasted will be
+        next person. Do not try to copy the story, because we seek to understand how people remember stories.
+        Any assignment that appears to be a simple copy will be
         rejected.
 
         <p><b>Research Disclosure.</b> The task below is part of a research study

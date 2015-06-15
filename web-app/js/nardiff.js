@@ -37,10 +37,11 @@
         this.startTimer = function () {
 
             $scope.elapsedTime = 0;
+            var context = this;
             $interval(function () {
                 $scope.elapsedTime++;
-                if ($scope.stage === 4 && $scope.elapsedTime > 120) {
-                    advance();
+                if ($scope.stage == 4 && $scope.elapsedTime > 60) {
+                    context.advance();
                 }
 
             }, 1000);

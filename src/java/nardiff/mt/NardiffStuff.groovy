@@ -92,8 +92,8 @@ class NardiffStuff {
             child.text = view.answer.story
             child.distractor_answer = view.answer.distractorAnswer
             child.time_distrator = view.answer.distractorTime as int
-            child.time_writing = view.answer.storyTime as int
-            child.time_reading = view.answer.retellTime as int
+            child.time_writing = view.answer.retellTime as int
+            child.time_reading = view.answer.storyTime as int
             child.too_simple = isAnswerTooSimple(child.text, parent.text, child.depth)
             child.save()
         }

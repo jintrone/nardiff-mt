@@ -57,7 +57,7 @@ class BootStrap {
                     autoApprove       : true,
                     lifetime          : 60 * 60 * 10,
                     assignmentDuration: 600,
-                    keywords          : "research, memory",
+                    keywords          : "research, memory, study, experiment",
                     maxAssignments    : 10,
                     height            : 1000,
                     requireApproval   : true

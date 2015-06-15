@@ -38,7 +38,7 @@
 
 
     <div ng-show="stage === 1">
-        <p>This HIT is part of a research study. You will be given two minutes to read a brief story, and then
+        <p>This HIT is part of a research study. You will be given 1 minute to read a brief story, and then
         write what you can remember of the story for someone else to read.  You will be asked an unrelated question between
         reading the story and writing it down.</p>
 

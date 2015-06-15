@@ -11,8 +11,8 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-gwurk.port = 8001
-gwurk.hostname = "localhost"
+gwurk.port = 8443
+gwurk.hostname = "cognosis.cas.msu.edu"
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 
@@ -91,12 +91,12 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
-        grails.serverURL = "https://localhost:8001/${appName}"
+       // grails.serverURL = "https://localhost:8001/${appName}"
 
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "https://cognosis.cas.msu.edu:8001/${appName}"
+      //  grails.serverURL = "https://cognosis.cas.msu.edu:8001/${appName}"
 
     }
 }

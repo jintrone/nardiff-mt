@@ -16,8 +16,8 @@ class NardiffStuff {
 
 
     static int getDesiredBranchingFactor(int depth) {
-        //depth > branching.size() ? 1 : branching[depth]
-        1
+        depth > branching.size() ? 1 : branching[depth]
+        //1
     }
 
     static Narrative getNarrativeToExpand(long l) {

@@ -18,6 +18,8 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     ResourceLoader resourceLoader
 
+    def nardiffService
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Narrative.list(params), model: [narrativeInstanceCount: Narrative.count()]
@@ -33,8 +35,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     @Transactional
     def complete() {
-        NardiffStuff n = new NardiffStuff();
-        n.doInsert(params);
+        render "OK"
     }
 
 
@@ -44,17 +45,32 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     def storyImage() {
 
-        Narrative parent = Narrative.get(params.narrative)
+        Narrative parent = Narrative.get(params.narrative).parent_narrative
         response.setContentType("image/png")
-        OutputStream os = response.getOutputStream()
-        ImageIO.write(Text2PNG.getImage(parent.text),"png",os)
-        os.close()
+
+//        os.close()
+
+        def outputStream = response.getOutputStream()
+        try {
+            ImageIO.write(Text2PNG.getImage(parent.text), "png", outputStream)
+
+        } catch (IOException e) {
+            log.debug('Canceled download?', e)
+        } finally {
+            if (outputStream != null) {
+                try {
+                    outputStream.close()
+                } catch (IOException e) {
+                    log.debug('Exception on close', e)
+                }
+            }
+        }
 
     }
 
     @Transactional
     def demographics() {
-
+        println "$params"
         Turker t = Turker.findByMturk_id(params.workerid)
         if (!t) {
             t = new Turker()
@@ -70,103 +86,64 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
     }
 
     @Transactional
+    def submitStage() {
+        println "Received $params"
+        Narrative n = Narrative.findByAssignmentId(params.assignmentId)
+
+        if (!n) {
+            println("Could not get narrative!")
+            render "Not good"
+        } else {
+
+            int nstage = Integer.parseInt(params.stage)
+            //including this condition to avoid the hassle of
+            //making sure the {@link NardiffService#finalizeMethod} isn't writing to the same
+            //row in the db
+            if (nstage < 7) {
+                n.stage = nstage
+                n.save([flush: true])
+            }
+
+            render "Ok"
+        }
+        response.status = 200
+    }
+
+
+    @Transactional
+    def submitNarrative() {
+        println "Received $params"
+        Narrative n = Narrative.get(params.narrativeId)
+        if (!n) {
+            println("Could not get narrative!")
+            render "Not good"
+        } else {
+            nardiffService.finalizeNarrative(n, params)
+            render "Ok"
+        }
+        response.status = 200
+    }
+
+    @Transactional
     def turkerTask() {
 
-        println "$params"
         if (!params.workerId) {
             render(view: "preview.gsp")
         } else {
 
-            Task t = TaskRun.get(params.task).task
-
-            Narrative parent = NardiffStuff.getNarrativeToExpand(t.taskProperties.parameter as Long)
+            Narrative n = nardiffService.openNarrative(params.workerId, params.assignmentId)
             Turker turker = Turker.findByMturk_id(params.workerId)
             boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
-            println "Should I ask? $shouldAsk"
-            render(view: 'start', model: [narrative: parent, askForDemographics:shouldAsk])
-        }
 
-    }
-
-
-
-    @Transactional
-    def save(Narrative narrativeInstance) {
-        if (narrativeInstance == null) {
-            notFound()
-            return
-        }
-
-        if (narrativeInstance.hasErrors()) {
-            respond narrativeInstance.errors, view: 'create'
-            return
-        }
-
-        narrativeInstance.save flush: true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'narrative.label', default: 'Narrative'), narrativeInstance.id])
-                redirect narrativeInstance
+            if (n.stage > 0 && n.stage < 7 && n.stage!=4) {
+                n.stage--
+                n.save(flush: true)
             }
-            '*' { respond narrativeInstance, [status: CREATED] }
+
+            render(view: 'start', model: [narrative: n, askForDemographics: shouldAsk])
         }
+
     }
 
-    def edit(Narrative narrativeInstance) {
-        respond narrativeInstance
-    }
-
-    @Transactional
-    def update(Narrative narrativeInstance) {
-        if (narrativeInstance == null) {
-            notFound()
-            return
-        }
-
-        if (narrativeInstance.hasErrors()) {
-            respond narrativeInstance.errors, view: 'edit'
-            return
-        }
-
-        narrativeInstance.save flush: true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Narrative.label', default: 'Narrative'), narrativeInstance.id])
-                redirect narrativeInstance
-            }
-            '*' { respond narrativeInstance, [status: OK] }
-        }
-    }
-
-    @Transactional
-    def delete(Narrative narrativeInstance) {
-
-        if (narrativeInstance == null) {
-            notFound()
-            return
-        }
-
-        narrativeInstance.delete flush: true
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Narrative.label', default: 'Narrative'), narrativeInstance.id])
-                redirect action: "index", method: "GET"
-            }
-            '*' { render status: NO_CONTENT }
-        }
-    }
-
-    protected void notFound() {
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'narrative.label', default: 'Narrative'), params.id])
-                redirect action: "index", method: "GET"
-            }
-            '*' { render status: NOT_FOUND }
-        }
-    }
 
 }

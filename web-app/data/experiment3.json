@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Ant and grasshopper",
+    "story": "In a field one summer's day a Grasshopper was hopping about, chirping and singing to its heart's content. An Ant passed by, bearing along with great toil an ear of corn he was taking to the nest. 'Why not come and chat with me,' said the Grasshopper, 'instead of toiling and moiling in that way?' 'I am helping to lay up food for the winter,' said the Ant, 'and recommend you to do the same.' 'Why bother about winter?' said the Grasshopper; 'We have got plenty of food at present.' But the Ant went on its way and continued its toil. When the winter came the Grasshopper had no food and found itself dying of hunger - while it saw the ants distributing every day corn and grain from the stores they had collected in the summer. Then the Grasshopper knew, it is best to prepare for days of need.",
+    "distractor": {
+      "probe": "Goose barnacles (order Pedunculata), also called stalked barnacles or gooseneck barnacles, are filter-feeding crustaceans that live attached to hard surfaces of rocks and flotsam in the ocean intertidal zone. Some species of goose barnacles such as Lepas anatifera are pelagic and are most frequently found on tidewrack on oceanic coasts. In the days before it was realised that birds migrate, it was thought that Barnacle Geese, Branta leucopsis, developed from this crustacean, since they were never seen to nest in temperate Europe,[2] hence the English names 'goose barnacle', 'barnacle goose' and the scientific name Lepas anserifera (Latin anser = 'goose'). The confusion was prompted by the similarities in colour and shape. Because they were often found on driftwood, it was assumed that the barnacles were attached to branches before they fell in the water. The Welsh monk, Giraldus Cambrensis, made this claim in his Topographia Hiberniae. Since barnacle geese were thought to be 'neither flesh, nor born of flesh', they were allowed to be eaten on days when eating meat was forbidden by religion.",
+      "question": "Which of the following is a true statement about goose barnacles?",
+      "answers": [
+        "They look like goose eggs",
+        "Prior to knowledge of evolution, they were thought to grow from rocks",
+        "Prior to knowledge of migration, they were thought not to be 'of flesh' ",
+        "None of the above"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "title": "Man and wife",
+    "story": "Once upon a time an old man lived with his wife. One day, after he had held a service in memory of his ancestors, one of their neighbours sent them a present of some food. He sent them cooked rice and vegetables, but only one cake. They were unwilling to divide it and so they agreed that the first to speak should forfeit the cake. So they left it on the table, and sat gazing at it in silence. Just then a thief broke into the house, and when he saw the old man and his wife sitting there in silence, he concluded that they must be blind and deaf. So he calmly helped himself to everything he could find, and then began a violent assault on the old woman. But her husband just sat and watched in silence. At last his wife could stand it no longer. She shouted at him, 'You heartless old man! You sit there quietly while this fellow beats me!' Then the old man said, 'The cake is mine,' and coolly popped it into his mouth.",
+    "distractor": {
+      "probe": "The Book of Kells (Irish: Leabhar Cheanannais, sometimes known as the Book of Columba) is an illuminated manuscript Gospel book in Latin, containing the four Gospels of the New Testament together with various prefatory texts and tables. It was created in a Columban monastery in either Britain or Ireland or may have had contributions from various Columban institutions from both Britain and Ireland. It is believed to have been created ca. 800 AD. The text of the Gospels is largely drawn from the Vulgate, although it also includes several passages drawn from the earlier versions of the Bible known as the Vetus Latina. It is a masterwork of Western calligraphy and represents the pinnacle of Insular illumination. It is also widely regarded as Ireland's finest national treasure. The manuscript today comprises 340 folios and, since 1953, has been bound in four volumes. The leaves are on high-quality calf vellum, and the unprecedentedly elaborate ornamentation that covers them includes ten full-page illustrations and text pages that are vibrant with decorated initials and interlinear miniatures and mark the furthest extension of the anti-classical and energetic qualities of Insular art. The Insular majuscule script of the text itself appears to be the work of at least three different scribes. The lettering is in iron gall ink, and the colours used were derived from a wide range of substances, many of which were imports from distant lands.",
+      "question": "Based on the passage above, which of the following is false about the Book of Kells?",
+      "answers": [
+        "The lettering is in iron gall ink",
+        "It has been bound in five volumes",
+        "It was written in Latin",
+        "It is a masterwork of Western calligraphy"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "title": "How the old man lost his hair",
+    "story": "Long, long ago an old man had a young mistress, though he kept the affair secret. He let her pull out all his white hair, so that he might not look so old. His wife noticed that he had less white hair, and guessed that he must be keeping a mistress. So she abused him roundly for deceiving her. Her husband feigned ignorance and protested, 'Certainly not! I would never do a thing like that.' Then to prove his innocence he let his wife pull out his black hair. In her jealousy she pulled it all out, so that he might no longer be attractive to his mistress. And so the old man became completely bald.'",
+    "distractor": {
+      "probe": "Aesop was an Ancient Greek fabulist or story teller credited with a number of fables now collectively known as Aesop's Fables. Although his existence remains uncertain and (if he ever existed) no writings by him survive, numerous tales credited to him were gathered across the centuries and in many languages in a storytelling tradition that continues to this day. Many of the tales are characterized by animals and inanimate objects that speak, solve problems, and generally have human characteristics. Scattered details of Aesop's life can be found in ancient sources, including Aristotle, Herodotus, and Plutarch. An ancient literary work called The Aesop Romance tells an episodic, probably highly fictional version of his life, including the traditional description of him as a strikingly ugly slave  who by his cleverness acquires freedom and becomes an adviser to kings and city-states.The body of work identified as Aesop's Fables was transmitted by a series of authors writing in both Greek and Latin.",
+      "question": "Based on the passage above, where are Aesop's fables likely to come from?",
+      "answers": [
+        "A strikingly ugly Greek slave named Aesop",
+        "Aristotle, who used Aesop as a pen-name",
+        "Most likely from many different authors",
+        "Confucius"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "title": "Eagle and Fox",
+    "story": "An Eagle and a Fox formed an intimate friendship and decided to live near each other.  The Eagle built her nest in the branches of a tall tree, while the Fox crept into the underwood and there produced her young.  Not long after they had agreed upon this plan, the Eagle, being in want of provision for her young ones, swooped down while the Fox was out, seized upon one of the little cubs, and feasted herself and her brood.  The Fox on her return, discovered what had happened, but was less grieved for the death of her young than for her inability to avenge them.  A just retribution, however, quickly fell upon the Eagle.  While hovering near an altar, on which some villagers were sacrificing a goat, she suddenly seized a piece of the flesh, and carried it, along with a burning cinder, to her nest.  A strong breeze soon fanned the spark into a flame, and the eaglets, as yet unfledged and helpless, were roasted in their nest and dropped down dead at the bottom of the tree.  There, in the sight of the Eagle, the Fox gobbled them up. ",
+    "distractor": {
+      "probe": "The Nibiru cataclysm is a supposed disastrous encounter between the Earth and a large planetary object (either a collision or a near-miss) which certain groups believe will take place in the early 21st century. Believers in this doomsday event usually refer to this object as Planet X or Nibiru. The idea that a planet-sized object will collide with or pass by Earth in the near future is not supported by any scientific evidence and has been rejected as pseudoscience and an internet hoax by astronomers and planetary scientists. The idea was first put forward in 1995 by Nancy Lieder, founder of the website ZetaTalk. Lieder describes herself as a contactee with the ability to receive messages from extraterrestrials from the Zeta Reticuli star system through an implant in her brain. She states that she was chosen to warn mankind that the object would sweep through the inner Solar System in May 2003 (though that date was later postponed) causing Earth to undergo a physical pole shift that would destroy most of humanity. The prediction has subsequently spread beyond Lieder's website and has been embraced by numerous Internet doomsday groups, most of which linked the event to the 2012 phenomenon. The name 'Nibiru' is derived from the works of the ancient astronaut writer Zecharia Sitchin and his interpretations of Babylonian and Sumerian mythology; he denied any connection between his work and various claims of a coming apocalypse.",
+      "question": "According to the passage, the Nibru cataclysm is:?",
+      "answers": [
+        "A doomsday scenario",
+        "A prediction that a large planetary object will collide with or pass by Earth in the future ",
+        "A modern myth",
+        "All of the above"
+      ],
+      "correct": 4
+    }
+  },
+  {
+    "title": "The Dophin & The Monkey",
+    "story": "A sailor, bound on a long voyage, took with him a Monkey to amuse him while on shipboard.  As he sailed off the coast of Greece, a violent tempest arose in which the ship was wrecked and he, his Monkey, and all the crew were obliged to swim for their lives.  A Dolphin saw the Monkey contending with the waves, and supposing him to be a man (whom he is always said to befriend), came and placed himself under him, to convey him on his back in safety to the shore.  When the Dolphin arrived with his burden in sight of land not far from Athens, he asked the Monkey if he were an Athenian.  The latter replied that he was, and that he was descended from one of the most noble families in that city.  The Dolphin then inquired if he knew the Piraeus (the famous harbor of Athens).  Supposing that a man was meant, the Monkey answered that he knew him very well and that he was an intimate friend.  The Dolphin, indignant at these falsehoods, dipped the Monkey under the water and drowned him.'",
+    "distractor": {
+      "probe": "Prince Jerzy Ossoliński h. Topór (1595–1650) was a Polish nobleman, Crown Court Treasurer from 1632, governor (voivode) of Sandomierz from 1636, Reichsfürst (Imperial Prince) since 1634, Crown Deputy Chancellor from 1639, Great Crown Chancellor from 1643, sheriff (starost) of Bydgoszcz (1633), Lubomel (1639), Puck and Bolim (1647), magnate, politician and diplomat. Famous for being extensively educated, he was a skillful politician and a persuasive public speaker. He was sent with diplomatic missions to the Pope in Rome in 1633. He negotiated with Brandenburgians of Duchy of Prussia in 1635 and led another diplomatic mission to Emperor Ferdinand II and his parliament in Regensburg (Polish Ratyzbona) in 1636. As a leader of the pro-Habsburg faction at the royal court, he found an ally in the first wife of Władysław IV Waza, Cecilia Renata of Austria, daughter of Ferdinand II. In 1639 and 1641 he once again negotiated with envoys from the Duchy of Prussia. A Catholic, he opposed Protestants and advocated limiting their rights and privileges. In his pro-Habsburg and anti-Protestant stance he was allied with Chancellor Albrycht Stanisław Radziwiłł and Queen Cecilia Renata.",
+      "question": "Which of the following are not true about Prince Jerzy Ossoliński?",
+      "answers": [
+        "He led a diplomatic mission to Emperor Ferdinand II in 1635",
+        "He was anti-Protestant",
+        "He was famously well-educated",
+        "He was a Polish nobleman"
+      ],
+      "correct": 1
+    }
+  }
+]

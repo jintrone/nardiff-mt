@@ -40,7 +40,7 @@
 </head>
 
 <body>
-<div ng-controller="WorkflowController as wf" ng-init="askForDemographics = ${askForDemographics};wf.advance()" id="mainPanel">
+<div ng-controller="WorkflowController as wf" ng-init="stage=${narrative.stage};askForDemographics = ${askForDemographics};assignmentId='${params.assignmentId}';wf.advance()" id="mainPanel">
 
     <timer></timer>
 
@@ -56,7 +56,7 @@
     <div ng-show="stage === 2">
         <p>To start with, we need a small amount of demographic information.  This will be the only time we ask for this information.</p>
 
-        <form ng-submit="demographics.workerid='${workerId}';wf.submitDemographics(demographics);wf.advance()"
+        <form ng-submit="demographics.workerid='${params.workerId}';wf.submitDemographics();wf.advance()"
               class="gwurkignore">
             <p>Year of Birth:
 
@@ -108,7 +108,9 @@
     </div>
 
     <div ng-show="stage === 4" id="img-div">
-
+        <h3>
+            ${narrative.root_narrative.title}
+        </h3>
         <p id="toremove"><img src="/nardiff-mt/narrative/storyImage?narrative=${narrative.id as Long}"/>
 
         <p>Time Remaining: {{(60-elapsedTime) + " seconds" }}</p>
@@ -117,6 +119,9 @@
     </div>
 
     <div ng-show="stage === 5">
+        <p>
+            <b>Please read the following brief passage and answer the question as best as you can.</b>
+        </p>
         <p>
             <%
                 JsonSlurper slurper = new JsonSlurper()
@@ -141,31 +146,30 @@
     </div>
 
     <div ng-show="stage === 6">
-        In the text box below, please retell the story for the next person.
-        <form>
+        <p>
+        In the text box below, please retell the <b>initial</b> story (called "${narrative.root_narrative.title}") for the next person. Please tell the story as best as you can.
+        </p>
+        <form ng-submit="narrative='${narrative.id}';wf.submitStory();wf.advance()"
+              class="gwurkignore">
+
             <textarea ng-model="story" name="story"></textarea><br>
 
-            <button class="button" ng-click="wf.advance()">Continue</button>
+            <p><button type="submit" class="button">Continue</button></p>
+
         </form>
+
     </div>
 
     <div ng-show="stage === 7">
         <p>Thank you for your participation in this study.  Clicking the button below will submit
         your answers and complete this HIT.</p>
-
         <form action="complete" method="POST">
-
-            <input type="hidden" name="parent" value="${narrative.id}">
-            <input type="hidden" name="distractorAnswer" value="{{ distractorAnswer }}">
-            <input type="hidden" name="story" value="{{ story }}">
-
-            <input type="hidden" name="storyTime" value="{{ storyTime }}">
-            <input type="hidden" name="distractorTime" value="{{ distractorTime }}">
-            <input type="hidden" name="retellTime" value="{{ retellTime }}">
-
+            <input type="hidden" name="narrative" value="${narrative.id}">
 
             <g:submitButton name="Complete HIT" class="button">Complete HIT</g:submitButton>
         </form>
+
+
 
     </div>
 </div>

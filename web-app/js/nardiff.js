@@ -7,17 +7,56 @@
     app.controller('WorkflowController', ['$scope', '$interval', '$http', function ($scope, $interval, $http) {
         $scope.stage = 1;
         $scope.elapsedTime = 0;
+        $scope.distractorAnswer = "";
         $scope.demographics = {};
         $scope.story = "";
         $scope.storyTime = 0;
         $scope.distractorTime = 0;
         $scope.retellTime = 0;
         $scope.askForDemographics = false;
+        $scope.workerId = "";
+        $scope.assignmentId = "";
 
         this.removeImage = function () {
             var img_div = document.getElementById("img-div");
             var to_remove = document.getElementById("toremove");
             img_div.removeChild(to_remove);
+        };
+
+
+        this.submitStage = function () {
+
+            var form = {
+                "assignmentId":$scope.assignmentId,
+                "stage":$scope.stage
+
+            };
+
+            $http({
+                method: 'POST',
+                url: '/nardiff-mt/narrative/submitStage',
+                data: $.param(form),  // pass in data as strings
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}  // set the headers so angular passing info as form data (not request payload)
+            });
+        };
+
+        this.submitStory = function () {
+
+            var form = {
+                "narrativeId":$scope.narrative,
+               "text":$scope.story,
+                "distractorAnswer":$scope.distractorAnswer,
+                "timeDistractor":$scope.distractorTime,
+                "timeReading":$scope.storyTime,
+                "timeWriting":$scope.retellTime
+            };
+
+            $http({
+                method: 'POST',
+                url: '/nardiff-mt/narrative/submitNarrative',
+                data: $.param(form),  // pass in data as strings
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}  // set the headers so angular passing info as form data (not request payload)
+            });
         };
 
         this.submitDemographics = function () {
@@ -51,6 +90,7 @@
 
         this.advance = function () {
             switch ($scope.stage) {
+                case 0:
                 case 1:
                     var ask = $scope.askForDemographics;
                     if (ask) {
@@ -84,10 +124,14 @@
                     $scope.stage = 7;
                     break;
 
+                case 7:
+                    break;
+
                 default:
                     $scope.stage++;
 
             }
+            this.submitStage();
 
 
         };

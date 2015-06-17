@@ -9,7 +9,13 @@ import grails.test.spock.IntegrationSpec
  */
 class NarrativeSpec extends IntegrationSpec {
 
-    static String storytext = "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+    static String storytext = "It is a long established fact that a reader will be distracted by the readable" +
+            " content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a " +
+            "more-or-less normal distribution of letters, as opposed to using 'Content here, content here', " +
+            "making it look like readable English. Many desktop publishing packages and web page editors now use " +
+            "Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many " +
+            "web sites still in their infancy. Various versions have evolved over the years, sometimes " +
+            "by accident, sometimes on purpose (injected humour and the like)."
 
     static Narrative generateNarrative(Narrative parent) {
         Narrative n = new Narrative(parent, "AGGSIGNMENT")
@@ -17,11 +23,141 @@ class NarrativeSpec extends IntegrationSpec {
         n.save([flush: true, failOnError: true])
     }
 
-    def setup() {
+    def Narrative finishNarrative(Narrative n) {
+        nardiffService.finalizeNarrative(n,[
+                text:storytext,
+                timeDistractor:10,
+                timeReading:10,
+                timeWriting:10])
     }
 
-    def cleanup() {
+
+
+    def nardiffService
+
+
+    void "test cascading within during narrative construction"() {
+
+        when:
+        Narrative n = new Narrative(NarrativeSeed.list().first())
+        n.save(flush:true,failOnError: true)
+
+        then:
+        n.root_narrative == NarrativeSeed.list().first()
+        n in n.root_narrative.narratives
+
+        when:
+        Narrative n2 = new Narrative(n,"assignment","worker")
+        n.save(flush:true,failOnError: true)
+
+        then:
+        n2.root_narrative == NarrativeSeed.list().first()
+        n2 in n.root_narrative.narratives
+        n2 in n.children
+        n2.parent_narrative == n
+
+
     }
+
+
+    void "test that narratives are pruned when they are too old"() {
+
+        when:
+        List narratives = (1..NarrativeSeed.count()).collect {
+            nardiffService.openNarrative("a","b")
+        }
+
+        then:
+        narratives.each { Narrative n ->
+            n.abandoned = false
+        }
+
+        when:
+        narratives.each { Narrative n->
+            n.opened = new Date(System.currentTimeMillis() - 1000*60*11)
+            n.save flush:true,failOnError: true
+        }
+        Narrative n = nardiffService.openNarrative("a","b")
+
+        then:
+        n==null
+        narratives.each {
+            it.abandoned
+        }
+
+
+
+    }
+
+
+    void "test that workers can only get NarrativeSeed.count stories when calling openNarrative"() {
+
+        when:
+        List narratives = (1..NarrativeSeed.count()).collect {
+            nardiffService.openNarrative("a","b")
+        }
+        Narrative last = nardiffService.openNarrative("a","b")
+        Narrative other = nardiffService.openNarrative("b","c")
+
+        then:
+        (narratives*.root_narrative.id as Set).size() ==NarrativeSeed.count()
+        last == null
+        other!=null
+
+    }
+
+    void "test that tree construction happens correctly"() {
+
+        setup:
+        nardiffService.setBranching([2,2,2])
+        def rootNarratives = Narrative.list()
+
+
+        when:
+        ["a","b","c"].each {workerid->
+            (1..rootNarratives.size()).each {
+                 nardiffService.openNarrative(workerid,"x")
+            }
+        }
+
+        then:
+        nardiffService.findNarrativeToExpandForWorker("d").depth == 0
+        rootNarratives.each {
+            it.children.size() == 3
+        }
+
+
+        when:
+        Narrative.findAllByRoot_narrativeAndDepth(NarrativeSeed.list().first(),1).each {
+            finishNarrative(it)
+        }
+
+        then:
+        nardiffService.findNarrativeToExpandForWorker("d").depth == 1
+        Narrative.findAllByRoot_narrativeAndDepth(NarrativeSeed.list().first(),1).collect {
+            it.expanding
+        }.findAll {
+            it == true
+        }.size() == 2
+
+        when:
+        List<Narrative> ns = ["e","f","g","h","i","j","k","l"].collect {
+            nardiffService.openNarrative(it,"x")
+        }
+
+        then:
+        ns.each {
+            it.depth == 2
+        }
+
+        when:
+        Narrative last = nardiffService.openNarrative("m","x")
+
+        then:
+        last.depth == 1
+
+    }
+
 
     void "Nardiff story expansion"() {
 

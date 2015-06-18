@@ -47,7 +47,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
         Narrative parent = Narrative.get(params.narrative).parent_narrative
         response.setContentType("image/png")
-        println "${parent.text}"
+
         String text = parent?.text?:"Our apologies for the inconvenience, but we encountered an internal problem; please notify the experimenter and return this hit."
 
         def outputStream = response.getOutputStream()
@@ -132,6 +132,12 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         } else {
 
             Narrative n = nardiffService.openNarrative(params.workerId, params.assignmentId)
+
+            if (!n) {
+                render(view: "error.gsp")
+                return
+            }
+
             Turker turker = Turker.findByMturk_id(params.workerId)
             boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
 

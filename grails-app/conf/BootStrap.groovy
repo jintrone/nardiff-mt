@@ -47,7 +47,7 @@ class BootStrap {
 
         nardiffService.setBranching([2, 2, 2])
 
-        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment3.json")))
+        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment4.json")))
 
         experimentData.each { Map m ->
             if (!NarrativeSeed.findAllByTitle(m.title)) {

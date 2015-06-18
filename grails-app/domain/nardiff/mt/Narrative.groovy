@@ -57,14 +57,12 @@ class Narrative {
     }
 
     public Narrative(Narrative parent, String assignmentId, String workerId) {
-        this.parent_narrative = parent
+        //this.parent_narrative = parent
         this.depth = parent.depth+1
         this.assignmentId = assignmentId
         this.workerId = workerId
         this.opened = new Date()
 
-        parent.root_narrative.addToNarratives(this)
-        parent.addToChildren(this)
     }
 
 

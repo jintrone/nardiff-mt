@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Puppy and Kitten",
+    "story": "Puppy and Kitten had the same owner. When the owner was gone, Puppy always wanted to play. Sometimes Kitten would play; sometimes not. Sometimes she felt it more important to look around the house and find where things were. 'How silly not to have fun every moment you can,' harrumphed Puppy. 'If ever you should need something, Owner will give it to you.' One day Owner, who had been in an accident, didn't come home. Kitten was able to find food for herself. Puppy had nothing and soon found himself starving. When Owner finally came home from the hospital, he found Kitten meowing contentedly. Puppy was nothing more than skin and bone, and hadn't even the energy left to wag his tail. Sadly, once Owner had nursed him back to health, Puppy no longer knew how to have fun. He was too busy worrying all the time about having enough food.",
+    "distractor": {
+      "probe": "Visuospatial Dysgnosia is a loss of the sense of 'whereness' in the relation of oneself to one’s environment and in the relation of objects to each other. Visuospatial dysgnosia is often linked with topographical disorientation. Studies have narrowed the area of the brain that, when damaged, causes visuospatial dysgnosia to the border of the occipito-temporoparietal region. Predominantly, lesions (damage, often from stroke) are found in the angular gyrus of the right hemisphere (in people with left-hemisphere language), and are usually unilateral, meaning in one hemisphere of the brain. Bilateral lesions produce more complex dysgnosic signs such as object anomia (inability to name an object), prosopagnosia (inability to recognize faces), alexia (inability to read), dressing apraxia, and memory impairment in conjunction with visuospatial dysgnosia symptoms.",
+      "question": "Which of the following is a true statement about Visuospatial Dysgnosia?",
+      "answers": [
+        "It is a disease of the cornea",
+        "It is linked with Alzheimer's disease.",
+        "It can occur as a result of bilateral lesions to the brain.",
+        "None of the above"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "title": "Fox and Stork",
+    "story": "In the past, when all animals were friends, the fox invited the stork to dinner. But being a sly little animal, the fox decided to play a joke on the stork and served her soup in a shallow dish. While the fox lapped up his serving, the stork found she could not drink the soup with her long bill. She tried valiantly to drink the soup, but all she could do was wet the very tip of her beak, leaving her as hungry as she was when she first arrived. Trying to hold back his laughter, the fox apologised. The stork gallantly accepted his apology and suggested that maybe the fox might like to return the favour and come to dinner with her. When the fox arrived at the stork's home the next night, he was dismayed to see that the stork had set out two very long-necked jars at opposite ends of the table. The stork began drinking comfortably from the jar, but the fox couldn't even get his nose into the jar and was forced to lick the jar-rim hungrily.",
+    "distractor": {
+      "probe": "Shivta is an ancient city in the Negev Desert of Israel located 43 kilometers southwest of Beersheba. Shivta was declared a UNESCO World Heritage Site in June 2005. Long considered a classic Nabataean town on the ancient spice route, archaeologists are now considering the possibility that Shivta was a Byzantine agricultural colony and a way station for pilgrims en route to the Saint Catherine's Monastery in the Sinai Peninsula. Roman ruins from the first century BCE have been unearthed in the southern part of the town, but most of the archaeological findings date to the Byzantine period. Shivta’s water supply was based on surface runoff collected in large reservoirs. Three Byzantine churches (a main church and two smaller churches), 2 wine-presses, residential areas and administrative buildings have been excavated at Shivta. After the Arab conquest in the 7th century CE, the population dwindled. It was finally abandoned in the 8th or 9th Century CE. The wine presses at Shivta give an insight into the scale of wine production at the time. According to the calculations of archaeologists, the Nabatean/Byzantine village of Shivta produced about two million liters of wine.",
+      "question": "Based on the passage above, which of the following statements is false?",
+      "answers": [
+        "Shivta may have been a Byzantine agricultural colony",
+        "Wine presses were invented in the 10th century CE",
+        "Shivta is a UNESCO World Heritage Site",
+        "All of these statements are false"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "title": "Oak and Reeds",
+    "story": "One Summer's day, by a river, a proud oak tree stood strong and tall. The reeds were all nestling by the bubbling river, bending gracefully in the breeze. Then there was a laugh, followed by a snort of derision. The reeds turned their heads to find the majestic oak laughing at them.'Look at you weaklings!' the tree heckled, 'Such a light breeze, and you're bending already - whereas I, firmly rooted, do not move a jot!' The reeds ignored the tree, who carried on amusing itself greatly with this declaration - and carried on regardless. Summer turned to Autumn, and the breezes turned more gusty, to a storm of Biblical proportions. At first it was just the wind which battered the old oak. Then twigs, and then quite sizable pebbles. The oak held to its roots as much as it could. The reeds relaxed, and thought of a finer day. The pebbles turned to stones, until finally, the oak could hold on no longer.'",
+    "distractor": {
+      "probe": "The Husafell Stone is a legendary lifting stone located in Húsafell, Iceland. The stone weighs roughly 190 kg (418 lbs) and is kept near a goat pen built by pastor Snorri Björnsson over two hundred years ago. The stone has been used as a test of strength by either simply lifting the stone, or by lifting and carrying the stone around the goat pen where it is located. The Husafell Stone is also named Kviahellan (pen slab) by pastor Snorri, who used the stone as a door to his sheep pen. The test to achieve fullsterkur 'full-strong' status is to lift the stone up and carry it the 50 metres around the perimeter of the goat pen. Successfully walking the full distance around the pen is considered a widely recognized feat of strength in the field of stone carrying, and is referred to as achieving fullsterkur status. Fullsterkur status refers to the weight of the actual stone; for this status the stone must weigh a minimum of 155 kg (341 lbs). Hálfsterkur ('half strength') stones weigh up to 104 kg (228.8 lbs), hálfdrættingur ('weakling') stone up to 49 kg (107.8 lbs), and amlóði ('useless') stone up to 23 kg (50.6 lbs).",
+      "question": "Based on the passage above, which of the following statements is true?",
+      "answers": [
+        "Achieving 'strong-bad' status involves carrying a stone of at least 155kg (341lbs).",
+        "The Husafell stone is also used as a paperweight by pastor Snorri",
+        "The Husafell stone weighs more than nine 'useless' stones",
+        "None of these statements are true"
+      ],
+      "correct": 4
+    }
+  },
+  {
+    "title": "Sarah",
+    "story": "Ten long years, but I remember it like it was yesterday. One minute we were laughing over the 'prediction' Sarah had gotten from the fortune teller’s booth in the arcade, the next minute she was gone. Vanished. I never saw my fifteen year old best friend again. I hadn’t been to Folly Park since. Until today. I felt drawn to the auction of equipment in the now closed park. I had to see that booth one last time. I wanted the closure that I knew would never come. I wanted to make sense of Sarah’s disappearance. My stomach was in knots as I approached the booth. I dug a quarter from my purse, dropped it in the slot. The fortune teller began moving, her hand sliding mechanically across her tarot cards. Seconds later, a card popped out. I picked it up, thinking about what had been on Sarah’s card. Hers read, 'You will meet a mysterious stranger.' I looked at my card, not seeing the words through my tears. 'I knew you would come,' a voice behind me said. Even after all this time I recognized it. I turned around. 'Sarah.'",
+    "distractor": {
+      "probe": "In sociolinguistics a variety, also called a lect, is a specific form of a language or language cluster. This may include languages, dialects, registers, styles or other forms of language, as well as a standard variety. The use of the word 'variety' to refer to these different forms avoids the use of the term language, which many people associate only with the standard language, and the term dialect, which is often associated with non-standard varieties thought of as less prestigious or 'correct' than the standard. Linguists speak of both standard and non-standard varieties. 'Lect' avoids the problem in ambiguous cases of deciding whether or not two varieties are distinct languages or dialects of a single language. Variation at the level of the lexicon, such as slang and argot, is often considered in relation to particular styles or levels of formality (also called registers), but such uses are sometimes discussed as varieties themselves.",
+      "question": "Based on the above passage, what is the best definition of a lect?",
+      "answers": [
+        "A small group of lecturers",
+        "A dialect",
+        "A form of language or language cluster, possibly classified as standard or non-standard",
+        "The most formal form of communication in a social group"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "title": "Nuclear fusion",
+    "story": "Nuclear fusion is the process of making a single heavy nucleus (part of an atom) from two lighter nuclei. This process is called a nuclear reaction. It releases a large amount of energy. The nucleus made by fusion is heavier than either of the starting nuclei. However, it is not as heavy as the combination of the original mass of the starting nuclei (atoms). This lost mass is changed into lots of energy. This is shown in Einstein's famous E=mc2 equation. Fusion happens in the middle of stars, like the Sun. Hydrogen atoms are fused together to make helium. This releases lots of energy. This energy powers the heat and light of the star. Not all elements can be joined. Heavier elements are less easily joined than lighter ones. Iron (a metal) cannot fuse with other atoms. This is what causes stars to die. Stars join all of their atoms together to make heavier atoms of different types, until they start to make iron. The iron nucleus cannot fuse with other nuclei. The reactions stop. The star eventually will cool down and die.",
+    "distractor": {
+      "probe": "Cavitation, which affects gas nuclei in human tissue, and heating can result from exposure to ultrasound and can damage tissue and organs. Studies have found that exposure to high intensity ultrasound at frequencies from 700 kHz to 3.6 MHz can cause lung and intestinal damage in mice. Heart rate patterns following vibroacoustic stimulation have resulted in serious arterial flutter and bradycardia. Researchers have concluded that generating pain through the auditory system using high intensity sound risked permanent hearing damage. A multi-organization research program involved high intensity audible sound experiments on human subjects. Extra-aural (unrelated to hearing) bioeffects on various internal organs and the central nervous system included auditory shifts, vibrotactile sensitivity change, muscle contraction, cardiovascular function change, central nervous system effects, vestibular (inner ear) effects, and chest wall/lung tissue effects. Researchers found that low frequency sonar exposure could result in significant cavitations, hypothermia, and tissue shearing. Follow-on experiments were not recommended. Tests performed on mice show the threshold for both lung and liver damage occurs at about 184 dB. Damage increases rapidly as intensity is increased. Noise-induced neurological disturbances in humans exposed to continuous low frequency tones for durations longer than 15 minutes involved development of immediate and long-term problems affecting brain tissue. The symptoms resembled those of individuals who had suffered minor head injuries. One theory for a causal mechanism is that the prolonged sound exposure resulted in enough mechanical strain to brain tissue to induce an encephalopathy.",
+      "question": "Which of the following is true of cavitation?",
+      "answers": [
+        "It is a result of high-intensity, low-frequency sound",
+        "It can produce neurologcical disturbances in humans",
+        "It can cause serious heart problems",
+        "All are true"
+      ],
+      "correct": 3
+    }
+  }
+]

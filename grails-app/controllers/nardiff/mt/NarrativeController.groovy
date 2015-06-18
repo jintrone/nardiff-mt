@@ -47,12 +47,12 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
         Narrative parent = Narrative.get(params.narrative).parent_narrative
         response.setContentType("image/png")
-
-//        os.close()
+        println "${parent.text}"
+        String text = parent?.text?:"Our apologies for the inconvenience, but we encountered an internal problem; please notify the experimenter and return this hit."
 
         def outputStream = response.getOutputStream()
         try {
-            ImageIO.write(Text2PNG.getImage(parent.text), "png", outputStream)
+            ImageIO.write(Text2PNG.getImage(text), "png", outputStream)
 
         } catch (IOException e) {
             log.debug('Canceled download?', e)

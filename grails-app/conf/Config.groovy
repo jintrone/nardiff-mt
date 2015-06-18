@@ -12,7 +12,7 @@
 // }
 
 gwurk.port = 8443
-gwurk.hostname = "cognosis.cas.msu.edu"
+
 
 //gwurk.port = 8001
 //gwurk.hostname = "localhost"
@@ -94,11 +94,13 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        gwurk.hostname = "localhost"
        // grails.serverURL = "https://localhost:8001/${appName}"
 
     }
     production {
         grails.logging.jul.usebridge = false
+        gwurk.hostname = "cognosis.cas.msu.edu"
       //  grails.serverURL = "https://cognosis.cas.msu.edu:8001/${appName}"
 
     }

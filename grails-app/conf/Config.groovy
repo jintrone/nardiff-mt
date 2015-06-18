@@ -12,6 +12,7 @@
 // }
 
 gwurk.port = 8443
+gwurk.hostname = "cognosis.cas.msu.edu"
 
 
 //gwurk.port = 8001

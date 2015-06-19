@@ -29,27 +29,40 @@ class NardiffService {
     def Narrative findNarrativeToExpandForWorker(String workerid) {
         List<NarrativeSeed> available = NarrativeSeed.list() - Narrative.findAllByWorkerId(workerid)*.root_narrative
         Collections.shuffle(available)
-        List<Narrative> expandable = available.sum { NarrativeSeed seed ->
-            Narrative.findAllByRoot_narrativeAndExpanding(seed, true)
+        if (!available) {
+            log.error("No avialable roots for ${workerid}")
+            return null
         }
-        if (expandable) {
-            expandable.sort { l, r ->
-                def children = [l, r].collect {
-                    def data = new HashSet(it.children ?: Collections.emptySet())
-                    data.removeAll {
-                        it.abandoned
+        Map<Narrative, Map> expandable = available.sum { NarrativeSeed seed ->
+            Narrative.findAllByRoot_narrativeAndAbandonedAndToo_simpleAndClosedIsNotNull(seed, false, false)
+        }.collectEntries { Narrative node ->
+            def closed = []
+            def open = []
+            node.children.each {
+                if (!it.too_simple && !it.abandoned) {
+                    if (it.closed) {
+                        closed << it
+                    } else {
+                        open << it
                     }
-                    data
                 }
-                int lbf = getBranchingFactor(l.depth), rbf = getBranchingFactor(r.depth)
-                if (children[0].size() < lbf == children[1].size() < rbf) {
-                    children[0].size() <=> children[1].size()
-                } else (children[1].size() < rbf) ? 1 : -1
+            }
+            [node, [closed: closed.size() - getBranchingFactor(node.depth), open: open.size()]]
+        }
 
+        if (!expandable) {
+            log.error("No expandable nodes?!?!")
+        }
+
+        expandable = expandable.sort { a, b ->
+            if (a.value.closed == b.value.closed) {
+                a.value.open <=> b.value.open
+            } else {
+                a.value.closed <=> b.value.closed
             }
         }
 
-        return expandable ? expandable.first() : null
+        return expandable ? expandable.keySet().first() : null
     }
 
     /**
@@ -75,7 +88,7 @@ class NardiffService {
                 failure++
             }
         }
-        if (failure>=maxAttempts) {
+        if (failure >= maxAttempts) {
             log.error("Error updating object ${object}")
         }
 
@@ -84,7 +97,7 @@ class NardiffService {
 
     def Narrative openNarrative(String workerId, String assignmentId) {
         pruneNarratives()
-        Narrative n = Narrative.findByAssignmentId(assignmentId)
+        Narrative n = Narrative.findByAssignmentIdAndWorkerId(assignmentId, workerId)
         if (n) {
             n
         } else {
@@ -96,6 +109,7 @@ class NardiffService {
                 slowUpdate(parent, { Narrative p -> p.addToChildren(narr) })
                 narr
             } else {
+                log.error("Could not find a parent for worker ${workerId} and assignment ${assignmentId}")
                 null
             }
         }
@@ -109,7 +123,7 @@ class NardiffService {
         d.time_reading = Integer.parseInt(data.timeReading)
         d.time_writing = Integer.parseInt(data.timeWriting)
         d.stage = 7
-        d.save([flush:true,failOnError: true])
+        d.save([flush: true, failOnError: true])
 
         slowUpdate(n) {
             it.closed = new Date()
@@ -118,19 +132,7 @@ class NardiffService {
     }
 
 
-     def updateExpansion(Narrative n) {
-         List<Narrative> siblings = Narrative.findAllByParent_narrativeAndClosedNotIsNotNull(n.parent_narrative)
-        if (siblings.size() >= getBranchingFactor(n.parent_narrative.depth)) {
-            n.parent_narrative.expanding = false
-            siblings.each {Narrative s->
-                slowUpdate(s) {
-                    it.expanding = true
-                }
-            }
 
-        }
-        n
-    }
 
 
     boolean isAnswerTooSimple(String test, String parent, int depth) {

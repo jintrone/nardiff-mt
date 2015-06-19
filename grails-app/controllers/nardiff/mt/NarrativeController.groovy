@@ -22,7 +22,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
 
 
-    @Transactional
+
     def complete() {
         render "OK"
     }
@@ -33,9 +33,10 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     }
 
+    @Transactional
     def storyImage() {
-
-        Narrative parent = Narrative.get(params.narrative).parent_narrative
+        Narrative mine = Narrative.get(params.narrative)
+        Narrative parent = mine.parent_narrative
         response.setContentType("image/png")
 
 
@@ -49,8 +50,10 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
                 text+="[NO DATA]"
             } else {
                 if (!data.text) {
-                    data.fresh = true
-                    data.save([flush:true,failOnError: true])
+                    log.error("Parent has no data!!!")
+                    NarrativeData mydata = mine.data
+                    mydata.fresh = true
+                    mydata.save([flush:true,failOnError: false])
                     text = parent.root_narrative.text
                 } else {
                     text = data.text
@@ -128,7 +131,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
             render "Not good"
         } else {
             nardiffService.finalizeNarrative(n, params)
-            nardiffService.updateExpansion(n)
+
             render "Ok"
         }
         response.status = 200

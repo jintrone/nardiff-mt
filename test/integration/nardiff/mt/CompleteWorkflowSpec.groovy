@@ -22,7 +22,7 @@ class CompleteWorkflowSpec extends Specification {
 
         setup:
         ExecutorService executor = Executors.newFixedThreadPool(8)
-        nardiffService.setBranching([5,5,5])
+        nardiffService.setBranching([2,2,2])
 
         def tasks = (1..40).collect { int worker->
             { ->  (1..5).each { int task->
@@ -41,7 +41,7 @@ class CompleteWorkflowSpec extends Specification {
         Narrative.count() == 205
         Narrative.list().each {
             if (it.parent_narrative) {
-                it.data.text == "${it.workerId}${it.root_narrative.text}" as String
+                it.data.text.contains("${it.root_narrative.text}")
             }
         }
 
@@ -96,7 +96,7 @@ class CompleteWorkflowSpec extends Specification {
         setStage(5, n.id)
         Thread.sleep(200l+rand.nextInt(500))
         setStage(6, n.id)
-        Thread.sleep(200l+rand.nextInt(500))
+        Thread.sleep(200l+rand.nextInt(1500))
         setStage(7, n.id)
         nc = controller
         nc.params.narrativeId = n.id

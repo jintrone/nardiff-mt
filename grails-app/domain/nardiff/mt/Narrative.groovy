@@ -1,6 +1,5 @@
 package nardiff.mt
 
-import grails.transaction.Transactional
 
 class Narrative {
 
@@ -13,7 +12,7 @@ class Narrative {
 
     Boolean too_simple = false
     Boolean abandoned = false
-    Boolean expanding = false
+
 
 
 
@@ -41,7 +40,7 @@ class Narrative {
         this.depth = 0
         this.opened = new Date()
         this.closed = new Date()
-        this.expanding = true
+
     }
 
     public Narrative(Narrative parent, String assignmentId, String workerId) {

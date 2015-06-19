@@ -27,7 +27,7 @@
         this.submitStage = function () {
 
             var form = {
-                "assignmentId":$scope.assignmentId,
+                "narrativeId":$scope.narrative,
                 "stage":$scope.stage
 
             };

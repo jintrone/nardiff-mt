@@ -14,29 +14,19 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class NarrativeController implements org.springframework.context.ResourceLoaderAware {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", demographics: "POST"]
+   // static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", demographics: "POST"]
 
     ResourceLoader resourceLoader
 
     def nardiffService
 
-    def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Narrative.list(params), model: [narrativeInstanceCount: Narrative.count()]
-    }
 
-    def show(Narrative narrativeInstance) {
-        respond narrativeInstance
-    }
-
-    def create() {
-        respond new Narrative(params)
-    }
 
     @Transactional
     def complete() {
         render "OK"
     }
+
 
 
     def preview() {
@@ -48,7 +38,25 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         Narrative parent = Narrative.get(params.narrative).parent_narrative
         response.setContentType("image/png")
 
-        String text = parent?.text?:"Our apologies for the inconvenience, but we encountered an internal problem; please notify the experimenter and return this hit."
+
+        def text = "We encountered an internal problem; please notify the experimenter of the following code and return this hit: "
+        if (!parent) {
+            log.error("Parent does not exist")
+            text += "[NO PARENT]"
+        } else {
+            NarrativeData data = parent.data
+            if (!data) {
+                text+="[NO DATA]"
+            } else {
+                if (!data.text) {
+                    data.fresh = true
+                    data.save([flush:true,failOnError: true])
+                    text = parent.root_narrative.text
+                } else {
+                    text = data.text
+                }
+            }
+        }
 
         def outputStream = response.getOutputStream()
         try {
@@ -70,7 +78,6 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     @Transactional
     def demographics() {
-        println "$params"
         Turker t = Turker.findByMturk_id(params.workerid)
         if (!t) {
             t = new Turker()
@@ -79,19 +86,21 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         t.age = params.age as Integer
         t.gender = params.gender
         t.education = params.education as Integer
-        t.save()
+        t.save([flush: true, failOnError: true])
 
         response.status = 200
-        render "OK"
+        render "Ok demographics"
     }
+
+
 
     @Transactional
     def submitStage() {
         println "Received $params"
-        Narrative n = Narrative.findByAssignmentId(params.assignmentId)
+        NarrativeData d = NarrativeData.findByNarrativeId(params.narrativeId)
 
-        if (!n) {
-            println("Could not get narrative!")
+        if (!d) {
+            log.error("Could not get narrative data!")
             render "Not good"
         } else {
 
@@ -100,8 +109,8 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
             //making sure the {@link NardiffService#finalizeMethod} isn't writing to the same
             //row in the db
             if (nstage < 7) {
-                n.stage = nstage
-                n.save([flush: true])
+                d.stage = nstage
+                d.save([flush:true,failOnError: true])
             }
 
             render "Ok"
@@ -115,10 +124,11 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         println "Received $params"
         Narrative n = Narrative.get(params.narrativeId)
         if (!n) {
-            println("Could not get narrative!")
+            log.error("Could not get narrative to save")
             render "Not good"
         } else {
             nardiffService.finalizeNarrative(n, params)
+            nardiffService.updateExpansion(n)
             render "Ok"
         }
         response.status = 200
@@ -131,20 +141,23 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
             render(view: "preview.gsp")
         } else {
 
+
             Narrative n = nardiffService.openNarrative(params.workerId, params.assignmentId)
 
             if (!n) {
+                log.error("Could not retrieve new narrative for ${params.workerId}")
                 render(view: "error.gsp")
                 return
             }
 
             Turker turker = Turker.findByMturk_id(params.workerId)
             boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
-
-            if (n.stage > 0 && n.stage < 7 && n.stage!=4) {
-                n.stage--
-                n.save(flush: true)
+            NarrativeData data = n.data
+            if (data.stage > 0 && data.stage < 7 && data.stage!=4) {
+                data.stage--
+                data.save(flush: true)
             }
+
 
             render(view: 'start', model: [narrative: n, askForDemographics: shouldAsk])
         }

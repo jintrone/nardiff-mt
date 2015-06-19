@@ -59,8 +59,8 @@ class NardiffService {
      * @param update
      * @param maxAttempts
      */
-    def slowUpdate(Object object, Closure update, int maxAttempts = 20) {
-
+    def slowUpdate(Object object, Closure update) {
+        int maxAttempts = 20
         int failure = 0
         while (failure > -1 && failure < maxAttempts) {
             try {
@@ -74,6 +74,9 @@ class NardiffService {
                 object.refresh()
                 failure++
             }
+        }
+        if (failure>=maxAttempts) {
+            log.error("Error updating object ${object}")
         }
 
     }
@@ -99,22 +102,30 @@ class NardiffService {
     }
 
     def finalizeNarrative(Narrative n, Map data) {
-        n.closed = new Date()
-        n.text = data.text
-        n.distractor_answer = data.distractorAnswer
-        n.time_distrator = Integer.parseInt(data.timeDistractor)
-        n.time_reading = Integer.parseInt(data.timeReading)
-        n.time_writing = Integer.parseInt(data.timeWriting)
-        n.too_simple = isAnswerTooSimple(n.text, n.parent_narrative.text, n.depth)
-        n.stage = 7
-        n.save(flush: true, failOnError: true)
+        NarrativeData d = n.data
+        d.text = data.text
+        d.distractor_answer = data.distractorAnswer
+        d.time_distrator = Integer.parseInt(data.timeDistractor)
+        d.time_reading = Integer.parseInt(data.timeReading)
+        d.time_writing = Integer.parseInt(data.timeWriting)
+        d.stage = 7
+        d.save([flush:true,failOnError: true])
 
-        List<Narrative> siblings = Narrative.findAllByParent_narrativeAndClosedNotIsNotNull(n.parent_narrative)
+        slowUpdate(n) {
+            it.closed = new Date()
+            it.too_simple = isAnswerTooSimple(d.text, it.parent_narrative.data.text, it.depth)
+        }
+    }
+
+
+     def updateExpansion(Narrative n) {
+         List<Narrative> siblings = Narrative.findAllByParent_narrativeAndClosedNotIsNotNull(n.parent_narrative)
         if (siblings.size() >= getBranchingFactor(n.parent_narrative.depth)) {
             n.parent_narrative.expanding = false
-            siblings.each {
-                it.expanding = true
-                it.save([flush: true, failOnError: true])
+            siblings.each {Narrative s->
+                slowUpdate(s) {
+                    it.expanding = true
+                }
             }
 
         }

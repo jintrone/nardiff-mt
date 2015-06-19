@@ -7,6 +7,7 @@ import groovy.json.JsonSlurper
 import groovy.util.logging.Log4j
 import nardiff.mt.NardiffStuff
 import nardiff.mt.Narrative
+import nardiff.mt.NarrativeData
 import nardiff.mt.NarrativeSeed
 import org.springframework.web.context.WebApplicationContext
 import org.springframework.web.context.support.WebApplicationContextUtils
@@ -38,6 +39,18 @@ class BootStrap {
             result.save flush: true, failOnError: true
         }
 
+        NarrativeData data = result.data
+
+        if (!data) {
+            println "Well this is odd"
+        }
+
+        data.text = seed.text
+
+        NarrativeData.withTransaction {tx->
+            data.save flush:true, failOnError:true
+        }
+
         result
 
     }
@@ -47,7 +60,7 @@ class BootStrap {
 
         nardiffService.setBranching([2, 2, 2])
 
-        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment4.json")))
+        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment5.json")))
 
         experimentData.each { Map m ->
             if (!NarrativeSeed.findAllByTitle(m.title)) {

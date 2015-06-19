@@ -40,7 +40,7 @@
 </head>
 
 <body>
-<div ng-controller="WorkflowController as wf" ng-init="stage=${narrative.stage};askForDemographics = ${askForDemographics};assignmentId='${params.assignmentId}';wf.advance()" id="mainPanel">
+<div ng-controller="WorkflowController as wf" ng-init="stage=${narrative.data.stage};narrative=${narrative.id};askForDemographics = ${askForDemographics};assignmentId='${params.assignmentId}';wf.advance()" id="mainPanel">
 
     <timer></timer>
 

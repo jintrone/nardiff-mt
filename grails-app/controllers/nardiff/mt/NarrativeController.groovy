@@ -1,5 +1,7 @@
 package nardiff.mt
 
+import com.amazonaws.mturk.requester.QualificationType
+import com.amazonaws.mturk.service.axis.RequesterService
 import edu.msu.mi.gwurk.Task
 import edu.msu.mi.gwurk.TaskRun
 import org.apache.commons.lang3.StringUtils
@@ -14,19 +16,17 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class NarrativeController implements org.springframework.context.ResourceLoaderAware {
 
-   // static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", demographics: "POST"]
+    // static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE", demographics: "POST"]
 
     ResourceLoader resourceLoader
 
     def nardiffService
-
-
+    def mturkAwsFacadeService
 
 
     def complete() {
         render "OK"
     }
-
 
 
     def preview() {
@@ -47,13 +47,13 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         } else {
             NarrativeData data = parent.data
             if (!data) {
-                text+="[NO DATA]"
+                text += "[NO DATA]"
             } else {
                 if (!data.text) {
                     log.error("Parent has no data!!!")
                     NarrativeData mydata = mine.data
                     mydata.fresh = true
-                    mydata.save([flush:true,failOnError: false])
+                    mydata.save([flush: true, failOnError: false])
                     text = parent.root_narrative.text
                 } else {
                     text = data.text
@@ -88,13 +88,37 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         }
         t.age = params.age as Integer
         t.gender = params.gender
+        t.hispanic = params.hispanic
+        t.race = params.race
+
         t.education = params.education as Integer
+        t.student = params.student
         t.save([flush: true, failOnError: true])
 
         response.status = 200
         render "Ok demographics"
     }
 
+    @Transactional
+    def survey() {
+        Survey t = Survey.findByMturk_id(params.workerid)
+        if (!t) {
+            t = new Survey()
+            t.mturk_id = params.workerid
+        }
+
+        params.each { k,v->
+            if (k!="mturk_id" && t.hasProperty(k)) {
+                t[k]=v as Integer
+            }
+
+        }
+
+        t.save([flush: true, failOnError: true])
+
+        response.status = 200
+        render "Ok survey"
+    }
 
 
     @Transactional
@@ -113,7 +137,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
             //row in the db
             if (nstage < 7) {
                 d.stage = nstage
-                d.save([flush:true,failOnError: true])
+                d.save([flush: true, failOnError: true])
             }
 
             render "Ok"
@@ -139,31 +163,45 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     @Transactional
     def turkerTask() {
+        println(params)
 
         if (!params.workerId) {
-            render(view: "preview.gsp")
+            render(view: "preview.gsp", model: [storycount: NarrativeSeed.count])
+
         } else {
 
+            TaskRun tr = TaskRun.get(params.taskRun)
+            log.info(tr.toString())
+            //String qstring = tr.taskProperties.qualificationString
+            //RequesterService rs = mturkAwsFacadeService.getRequesterService(tr)
+
+            //QualificationType qt = rs.searchQualificationTypes(qstring, false, true, null, null, null, null).qualificationType[0]
+
+            //rs.assignQualification(qt.qualificationTypeId, params.workerId, null, false)
 
             Narrative n = nardiffService.openNarrative(params.workerId, params.assignmentId)
 
             if (!n) {
                 log.error("Could not retrieve new narrative for ${params.workerId}")
-                render(view: "error.gsp")
+                render(view: "notavailable")
                 return
+            } else {
+
+                Turker turker = Turker.findByMturk_id(params.workerId)
+                boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
+                NarrativeData data = n.data
+                if (data.stage > 0 && data.stage < 8 && data.stage != 4) {
+                    data.stage--
+                    data.save(flush: true)
+                }
+
+
+                render(view: 'start', model: [narrative: n, askForDemographics: shouldAsk])
             }
 
-            Turker turker = Turker.findByMturk_id(params.workerId)
-            boolean shouldAsk = !(turker && turker.age && turker.education && turker.gender)
-            NarrativeData data = n.data
-            if (data.stage > 0 && data.stage < 7 && data.stage!=4) {
-                data.stage--
-                data.save(flush: true)
-            }
 
-
-            render(view: 'start', model: [narrative: n, askForDemographics: shouldAsk])
         }
+
 
     }
 

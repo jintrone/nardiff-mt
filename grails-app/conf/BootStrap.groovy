@@ -1,5 +1,5 @@
 import edu.msu.mi.gwurk.GwurkEvent
-import edu.msu.mi.gwurk.SingleHitTask
+import edu.msu.mi.gwurk.MultiHitTask
 import edu.msu.mi.gwurk.Task
 import edu.msu.mi.gwurk.Workflow
 import groovy.json.JsonBuilder
@@ -28,7 +28,7 @@ class BootStrap {
     public static Narrative insertStory(def storydata) {
 
         NarrativeSeed seed = new NarrativeSeed(distractorTask: new JsonBuilder(storydata.distractor).toPrettyString(),
-                expandingLevel: 0, title: storydata.title, text: storydata.story)
+                expandingLevel: 0, title: storydata.title, text: storydata.story, survey: new JsonBuilder(storydata.survey).toPrettyString())
         NarrativeSeed.withTransaction {
             seed.save flush: true, failOnError: true
         }
@@ -58,7 +58,7 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        nardiffService.setBranching([2, 2, 2])
+        nardiffService.setBranching([6, 3, 3, 1])
 
         def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment2.json")))
 
@@ -76,12 +76,12 @@ class BootStrap {
                     lifetime          : 60 * 60 * 10,
                     assignmentDuration: 600,
                     keywords          : "research, memory, study, experiment",
-                    maxAssignments    : 10,
+                    maxAssignments    : 3,
                     height            : 1000,
                     requireApproval   : true
             ]).save([flush: true, failOnError: true])
             w.initStartingTasks((1..NarrativeSeed.count).collect { id ->
-                new SingleHitTask("Narrative Task #" + id, [
+                new MultiHitTask("Narrative Task #" + id, [
                         controller : "narrative",
                         action     : "turkerTask",
                         title      : "Read a story and try to tell it to someone else.",

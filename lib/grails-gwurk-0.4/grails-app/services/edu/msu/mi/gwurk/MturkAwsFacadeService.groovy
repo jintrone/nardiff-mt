@@ -3,6 +3,7 @@ package edu.msu.mi.gwurk
 import com.amazonaws.mturk.requester.Comparator
 import com.amazonaws.mturk.requester.HIT
 import com.amazonaws.mturk.requester.QualificationRequirement
+import com.amazonaws.mturk.requester.SearchQualificationTypesResult
 import com.amazonaws.mturk.service.axis.RequesterService
 import grails.transaction.Transactional
 import groovy.util.logging.Log4j
@@ -17,10 +18,20 @@ class MturkAwsFacadeService {
     def grailsApplication
     LinkGenerator grailsLinkGenerator
 
+
     HitView recycle(RequesterService requesterService, HitView hitView) {
         expire(requesterService,hitView)
         launchHit(requesterService,hitView.taskRun)
     }
+
+    def RequesterService getRequesterService(TaskRun run) {
+        if (run.activeWorkflowRun.real) {
+
+        } else {
+
+        }
+    }
+
 
     def expire(RequesterService requesterService, HitView hitView) {
         hitView.expire(requesterService)
@@ -32,9 +43,34 @@ class MturkAwsFacadeService {
         taskRun.activeHit.update(requesterService)
     }
 
-    HitView launchHit(RequesterService requesterService, TaskRun taskRun) {
+
+
+    HitView launchOneHit(RequesterService requesterService, TaskRun taskRun) {
+
+
+        TaskProperties p = taskRun.taskProperties.clone() as TaskProperties
+        p.maxAssignments = 1
         taskRun.attach()
-        MturkHitProperties props = getProperties(taskRun.taskProperties)
+        HitView result = new HitView(taskRun,launchHit(requesterService,p,taskRun.id))
+        result.save()
+        taskRun.addActive(result)
+        result
+    }
+
+
+    HitView launchHit(RequesterService requesterService, TaskRun taskRun) {
+
+        taskRun.attach()
+        HitView result = new HitView(taskRun,launchHit(requesterService,taskRun.taskProperties,taskRun.id))
+        result.save()
+        taskRun.addActive(result)
+        result
+
+    }
+
+    HIT launchHit(RequesterService requesterService, TaskProperties props, Long taskRunId) {
+        //taskRun.attach()
+        MturkHitProperties mprops = getProperties(props)
 
         QualificationRequirement qualReq = new QualificationRequirement();
         qualReq.setQualificationTypeId(RequesterService.LOCALE_QUALIFICATION_TYPE_ID);
@@ -49,20 +85,48 @@ class MturkAwsFacadeService {
         qualReq1.setComparator(com.amazonaws.mturk.requester.Comparator.GreaterThanOrEqualTo);
         qualReq1.setIntegerValue(98)
 
-        log.info("Launch hit with taskrun id: "+taskRun.id)
-        String url = "https://${grailsApplication.config.gwurk.hostname}:${grailsApplication.config.gwurk.port}${grailsLinkGenerator.link(action:"external",controller: "workflow", params:[task:taskRun.id])}"
+
+        if (props.qualificationString) {
+            String[] str = props.qualificationString.split()
+            String qualName = str.length==1?str[0]:str[1]
+            try {
+
+                SearchQualificationTypesResult result = requesterService.searchQualificationTypes(qualName, false, true, null, null, null, null)
+                if (result.numResults != 1) {
+                    println("Could not identify a unique qualification type, creating!")
+                    requesterService.createQualificationType()
+                } else {
+                    //svc.assignQualification(result.getQualificationType(0).qualificationTypeId, workerid, 0, true)
+                    //println "Would assign ${result.getQualificationType(0).qualificationTypeId} to $workerid"
+                }
+            } catch (
+                    Exception e
+                    ) {
+                e.printStackTrace()
+            }
+
+            if (str.length > 1) {
+                if (str[0] == "not") {
+
+                }
+            }
+        }
+
+        log.info("Launch hit with : "+props.maxAssignments+" assignments")
+        String url = "https://${grailsApplication.config.gwurk.hostname}:${grailsApplication.config.gwurk.port}${grailsLinkGenerator.link(action:"external",controller: "workflow", params:[task:taskRunId])}"
         log.info("Would link: ${url}")
-        HIT h = requesterService.createHIT(
+
+        requesterService.createHIT (
                 null, // hitTypeId
-                props.getTitle("No title"),
-                props.getDescription("No description"),
-                props.getKeywords(null), // keywords
-                getExternalQuestion(url, taskRun.taskProperties.height),
-                props.getRewardAmount(0),
-                props.getAssignmentDuration(60 * 5),
-                props.getAutoApprovalDelay(60 * 30),
-                taskRun.taskProperties.lifetime,
-                props.getMaxAssignments(1),
+                mprops.getTitle("No title"),
+                mprops.getDescription("No description"),
+                mprops.getKeywords(null), // keywords
+                getExternalQuestion(url, props.height),
+                mprops.getRewardAmount(0),
+                mprops.getAssignmentDuration(60 * 5),
+                mprops.getAutoApprovalDelay(60 * 30),
+                props.lifetime,
+                mprops.getMaxAssignments(1),
                 "", // requesterAnnotation
                 [qualReq,qualReq1] as QualificationRequirement[], // qualificationRequirements
                 (String[])["Minimal", "HITDetail", "HITQuestion", "HITAssignmentSummary"] as String[], // responseGroup
@@ -70,10 +134,7 @@ class MturkAwsFacadeService {
                 null, // assignmentReviewPolicy
                 null); // hitReviewPolicy
 
-        HitView result = new HitView(taskRun,h)
-        result.save()
-        taskRun.addActive(result)
-        result
+
 
     }
 

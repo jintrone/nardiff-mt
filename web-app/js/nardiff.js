@@ -9,6 +9,7 @@
         $scope.elapsedTime = 0;
         $scope.distractorAnswer = "";
         $scope.demographics = {};
+        $scope.survey = {};
         $scope.story = "";
         $scope.storyTime = 0;
         $scope.distractorTime = 0;
@@ -69,6 +70,17 @@
             });
         };
 
+        this.submitSurvey = function () {
+
+            $http({
+                method: 'POST',
+                url: '/nardiff-mt/narrative/survey',
+                data: $.param($scope.survey),  // pass in data as strings
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}  // set the headers so angular passing info as form data (not request payload)
+            });
+        };
+
+
         this.resetTimer = function () {
             $scope.elapsedTime = 0;
         };
@@ -113,18 +125,24 @@
                     break;
 
                 case 5:
-                    $scope.distractorTime = $scope.elapsedTime;
                     this.resetTimer();
                     $scope.stage = 6;
                     break;
 
+
                 case 6:
-                    $scope.retellTime = $scope.elapsedTime;
+                    $scope.distractorTime = $scope.elapsedTime;
                     this.resetTimer();
                     $scope.stage = 7;
                     break;
 
                 case 7:
+                    $scope.retellTime = $scope.elapsedTime;
+                    this.resetTimer();
+                    $scope.stage = 8;
+                    break;
+
+                case 8:
                     break;
 
                 default:

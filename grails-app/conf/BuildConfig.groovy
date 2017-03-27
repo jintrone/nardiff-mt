@@ -7,8 +7,7 @@ grails.project.target.level = 1.6
 grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
-grails.server.port.http = 8080
-//grails.server.port.https = 8001
+
 
 grails.keystorePath = "/usr/local/apache-tomcat-8.0.18/conf/cognosis.jks"
 grails.tomcat.keystorePassword = "123456"

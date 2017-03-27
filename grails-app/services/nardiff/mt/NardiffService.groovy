@@ -1,6 +1,7 @@
 package nardiff.mt
 
 import grails.transaction.Transactional
+import org.codehaus.groovy.grails.web.servlet.mvc.GrailsParameterMap
 
 
 @Transactional
@@ -28,11 +29,12 @@ class NardiffService {
      **/
     def Narrative findNarrativeToExpandForWorker(String workerid) {
         List<NarrativeSeed> available = NarrativeSeed.list() - Narrative.findAllByWorkerId(workerid)*.root_narrative
-        Collections.shuffle(available)
+
         if (!available) {
             log.error("No avialable roots for ${workerid}")
             return null
         }
+        Collections.shuffle(available)
         Map<Narrative, Map> expandable = available.sum { NarrativeSeed seed ->
             Narrative.findAllByRoot_narrativeAndAbandonedAndToo_simpleAndClosedIsNotNull(seed, false, false)
         }.collectEntries { Narrative node ->
@@ -138,5 +140,6 @@ class NardiffService {
     boolean isAnswerTooSimple(String test, String parent, int depth) {
         (!test || test.length() <= 120 || test == parent)
     }
+
 
 }

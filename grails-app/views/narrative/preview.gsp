@@ -9,7 +9,7 @@
     #mainPanel {
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
+        width: 900px;
 
         font-size: 125%;
     }
@@ -35,14 +35,19 @@
 
 <div ng-controller="WorkflowController as wf" id="mainPanel">
 
-
-
     <div ng-show="stage === 1">
         <p>This HIT is part of a research study. You will be given 1 minute to read a brief story, and then
         write what you can remember of the story for someone else to read.  You will be asked an unrelated question between
         reading the story and writing it down.</p>
 
-        <p>The whole task should take you about 5 min.  Based on this estimate, the pay rate for this task is about $7.00 / hr.</p>
+        <h2>Please note:<br/>
+            <em>Due to Amazon's surcharge on HITs with a large number of assignments, we have implemented a programmatic restriction that will
+            only allow you to complete four HITs from this batch.  If you attempt to do more than ${storycount} of these HITs, you will be notified
+            and asked to return the HIT. This will not affect your reputation.</em>
+        </h2>
+
+
+        <p>We estimate that the whole task should take you less than 10 min.  Based on this estimate, the pay rate for this task is about $8.00 / hr.</p>
 
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         be asked for some basic demographic information and then
@@ -51,6 +56,16 @@
         next person. Do not try to copy the story, because we seek to understand how people remember stories.
         Any assignment that appears to be a simple copy will be
         rejected.
+        </p>
+
+        <p>
+
+
+
+        <p>
+            If you do submit a fifth HIT (this should not be possible), that HIT will be rejected.
+
+        </p>
 
         <p><b>Research Disclosure.</b> The task below is part of a research study
         conducted by a team from the Media and Information department at Michigan
@@ -59,7 +74,8 @@
         the results will be kept confidential, and after the HIT is marked complete
         the data linking your responses to MTurk identifiers will be destroyed.  If
         you have any questions, you can contact
-            <a href="http://cas.msu.edu/people/faculty-staff/staff-listing/name/joshua-introne/" target="_blank">Dr. Joshua Introne</a>
+            <a href="http://cas.msu.edu/people/faculty-staff/staff-listing/name/joshua-introne/"
+               target="_blank">Dr. Joshua Introne</a>
             (<a href="mailto:jintrone@msu.edu" target="_blank">email</a>) or the
             <a href="http://hrpp.msu.edu/" target="_blank">MSU Institutional Review Board</a>
             (<a href="mailto:irb@msu.edu" target="_blank">email</a>).
@@ -69,15 +85,14 @@
         participate in this study.</p>
 
 
-        </p>
+    </p>
 
         <p>
             <button>Begin</button>
         </p>
     </div>
 
-
-    </div>
+</div>
 </div>
 </body>
 </html>

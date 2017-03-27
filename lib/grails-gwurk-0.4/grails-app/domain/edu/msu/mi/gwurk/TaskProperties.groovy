@@ -20,6 +20,8 @@ class TaskProperties implements Cloneable {
         height nullable: true
         requireApproval nullable: true
         parameter nullable: true
+        qualificationString nullable: true
+        preventRepeats nullable: true
 
     }
 
@@ -45,6 +47,9 @@ class TaskProperties implements Cloneable {
 
     // A controller + action isn't specific enough.  Need a parameter too.
     String parameter
+    String qualificationString
+
+    Boolean preventRepeats
 
 
     def TaskProperties copyFrom(TaskProperties props) {
@@ -55,6 +60,17 @@ class TaskProperties implements Cloneable {
         }
         props?.properties?.each {k,v->
            if (v) result[k] = v
+        }
+        result
+    }
+
+    def Object clone() {
+        TaskProperties result = new TaskProperties()
+        if (result.id) {
+            log.warn("Cloned result has an ID!!!! OH NO!!!")
+        }
+        this?.properties?.each {k,v->
+            if (v) result[k] = v
         }
         result
     }

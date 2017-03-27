@@ -1,0 +1,58 @@
+[
+  {
+    "story": "When Jason became a new parent, he and his partner felt very stressed and tired. They started eating badly and experienced chronic fatigue. Their poor eating habits contributed to their tiredness, as well as other health problems. Diets that are low in vitamins and minerals and high in calories and are also high in saturated fat, which is common in fast foods like pizza and burgers can cause people to feel sluggish and tired. To deal with their tiredness, Jason and his partner strived to develop easy to use strategies for eating 2-3 servings of  lean meats or beans and 5 servings fruits and vegetables daily. They learned that planning their meals ahead of time can help, and that others who have children may also be able to provide helpful advice. Oftentimes, family and friends will be happy to pitch in and help out if parents ask. Equipped with such knowledge and support, Jason and his partner developed good eating habits, which not only helped them maintain good energy levels, but also set a good example for their children.",
+    "distractor": {
+      "probe": "The Walcheren Campaign was an unsuccessful British expedition to the Netherlands in 1809 intended to open another front in the Austrian Empire's struggle with France during the War of the Fifth Coalition. Around 40,000 soldiers, 15,000 horses together with field artillery and two siege trains crossed the North Sea and landed at Walcheren on 30 July.  The primary aim of the campaign was to destroy the French fleet thought to be in Flushing whilst providing a diversion for the hard-pressed Austrians.",
+      "question": "Which country conducted the Walcheren Campaign, and what was its aim?",
+      "answers": [
+        "France, to attack the Austrian ground forces",
+        "Britain, to destroy the French naval fleet",
+        "Austria, to attack the French naval fleet",
+        "Britain, to destroy Dutch ground forces"
+      ],
+      "correct": 1
+    }
+  },
+  {
+    "story": "Jenny is a young woman who has a demanding job. As a result, she is  often sleep deprived because of how much she works, and also experiences a lot of stress. Jenny stopped drinking water because of her long hours, and instead drinks coffee to stay awake. Dermatologists say that stress can have detrimental effects on skin, like acne or worsening eczema. Stress can also lead to sleep deprivation, which also affects skin tone and color, and being dehydrated also has negative consequences for skin tone. Jenny noticed her skin was starting to look bad, so she went to her dermatologist.  Her dermatologist told her to start drinking 64 ounces of water daily And to start practicing stress relief techniques, like meditation or breathing exercises for 10 minutes daily.. She also learned being hydrated can help with her feelings of tiredness, And would improve her skin tone and texture. By exercising, practicing stress relief and hydrating enough, Jenny started sleeping better, which helped improve her skin problems. The combination of stress relief and hydration also had benefits for Jenny’s mental health.",
+    "distractor": {
+      "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+      "question": "Based on the passage above, which of the following is true about the city of Mumbai?",
+      "answers": [
+        "It is the most populous city in the world",
+        "It is the capital city of India",
+        "It is on located on the east coast of India",
+        "It has a deep natural harbor"
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "story": "When Judy went to college last year, she did not have enough time to prepare food by herself. She skipped breakfast often and consumed large amounts of unhealthy snack food from convenience stores. Her eating habits made her feel depressed. Skipping breakfast can make people crave high-calorie food (like chips and candy) later in the day. Moreover, junk food often contains many more calories than people need in a day. These extra calories are saved in the body as body fat. Jason, a friend of Judy's, has healthy eating habits. Judy decided to ask for advice from Jason. Jason had developed easy-to-follow strategies for eating well. He suggested eating a healthy breakfast to Judy that includes a lean protein and fruits or vegetables. Judy began eating breakfast and replaced high calorie snack-foods with regular, healthy meals including 5 servings of fruits or vegetables in a day. Her mood improved overall and she did better in school.",
+    "distractor": {
+      "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+      "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?",
+      "answers": [
+        "Weekend Evenings",
+        "Weekday Mornings",
+        "Weekday Evenings",
+        "None, the station is now closed."
+      ],
+      "correct": 3
+    }
+  },
+  {
+    "story": "Ruth, a 50-year-old woman, living in the United States has a sedentary lifestyle. Ruth has healthy eating habits but her sedentary lifestyle puts her at risk for osteoporosis. Light stresses on the skeleton are necessary  for a body to maintain bone mass using Calcium and Vitamin D. This is especially important for middle-aged women. Too much bone loss can result in a condition known as osteoporosis. Ruth had a bone fracture from a fall on a floor one day. So, she visited a doctor to check her injury. The doctor asked about her daily routines as a usual procedure, and also suggested taking an X-ray. Then the doctor diagnosed Ruth with osteoporosis. Such a diagnosis led Ruth to realize that healthy eating habits that include dairy or other food that contains calcium and vitamin D are not enough to maintain healthy bones, and that she also needed to change her lifestyle. She followed suggestions from the doctor such as increasing walking or weight-bearing exercise, and tried to strengthen her bones.",
+    "distractor": {
+      "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+      "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?",
+      "answers": [
+        "To find food",
+        "To find other paddlefish",
+        "To navigate rivers",
+        "None of the above"
+      ],
+      "correct": 0
+    }
+  }
+]

@@ -111,25 +111,44 @@ class WorkflowRun implements BeatListener {
     }
 
     TaskRun addTask(Task t, boolean current, TaskRun... previous) {
+        log.info("Creating a new TaskRun")
         TaskProperties p =  getTaskProperties(t)
+
         p.save()
         def tr = new TaskRun(t, p)
+        tr.workflowRun = this
+        tr.save(flush:true,failOnError: true)
+        log.info("About to save task run")
         addToAllTasks(tr)
-        if (current) addToCurrentTasks(tr)
+        if (current) {
+            log.info("Add ${tr} to current")    
+            addToCurrentTasks(tr)
+        }
         if (previous) previous.each {
             tr.addToPreviousTaskRuns(it)
         }
-        save()
+
+
+        log.info("About to save workflow run")
+        try {
+            save(failOnError: true)
+        } catch (Throwable th) {
+           th.printStackTrace()
+            print this.errors.allErrors
+        }
+        
+        log.info("Done...")
+        log.info("Task run is ${tr}")
         tr
     }
 
     def run(times) {
-        if (currentStatus != Status.WAITING) throw new MturkStateException("Can't reuse a workflow object; plese use 'copy' if you would like to run with existing parameters")
+        if (currentStatus != Status.WAITING) throw new MturkStateException("Can't reuse a workflow object; please use 'copy' if you would like to run with existing parameters")
         currentStatus = Status.RUNNING
         maxIterations = times
         kickoff()
 
-        save()
+        save(failOnError: true)
 
     }
 

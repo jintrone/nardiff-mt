@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Judy exemplified",
+    "story": "When Judy went to college last year, she did not have enough time to prepare food by herself. She skipped breakfast often and consumed large amounts of unhealthy snack food from convenience stores. Her eating habits made her feel depressed. Skipping breakfast can make people crave high-calorie food (like chips and candy) later in the day. Moreover, junk food often contains many more calories than people need in a day. These extra calories are saved in the body as body fat. Jason, a friend of Judy's, has healthy eating habits. Judy decided to ask for advice from Jason. Jason had developed easy-to-follow strategies for eating well. He suggested eating a healthy breakfast to Judy that includes a lean protein and fruits or vegetables. Judy began eating breakfast and replaced high calorie snack-foods with regular, healthy meals including 5 servings of fruits or vegetables in a day. Her mood improved overall and she did better in school.",
+    "survey": ["eat 5 servings of fruits and vegetables","eat lean protein for breakfast"],
+    "distractor": {
+      "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+      "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?",
+      "answers": [
+        "Weekend Evenings",
+        "Weekday Mornings",
+        "Weekday Evenings",
+        "None, the station is now closed."
+      ],
+      "correct": 3
+    }
+  }
+]

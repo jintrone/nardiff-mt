@@ -35,12 +35,10 @@ class MturkAwsFacadeService {
 
     def expire(RequesterService requesterService, HitView hitView) {
         hitView.expire(requesterService)
-        hitView.taskRun.activeHit = null
-        hitView.taskRun.save()
     }
 
     def refresh(RequesterService requesterService, TaskRun taskRun) {
-        taskRun.activeHit.update(requesterService)
+        taskRun.activeHits.hits*.update(requesterService)
     }
 
 
@@ -115,6 +113,8 @@ class MturkAwsFacadeService {
         log.info("Launch hit with : "+props.maxAssignments+" assignments")
         String url = "https://${grailsApplication.config.gwurk.hostname}:${grailsApplication.config.gwurk.port}${grailsLinkGenerator.link(action:"external",controller: "workflow", params:[task:taskRunId])}"
         log.info("Would link: ${url}")
+
+//        log.info("Not really launching")
 
         requesterService.createHIT (
                 null, // hitTypeId

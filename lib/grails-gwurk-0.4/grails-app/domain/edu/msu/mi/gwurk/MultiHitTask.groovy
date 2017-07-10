@@ -16,10 +16,8 @@ class MultiHitTask extends Task {
 
     @Override
     def start(RequesterService service, TaskRun runner) {
-        int numhits = runner.taskProperties.maxAssignments
-        while (numhits-- > 0) {
-            mturkAwsFacadeService.launchOneHit(service, runner)
-        }
+
+        kickoffHits(service,runner)
     }
 
 
@@ -41,15 +39,38 @@ class MultiHitTask extends Task {
                 }
             }
         }
+
+        ([]+runner.activeHits.hits).each { HitView v ->
+           if (v.hitStatus in [HitView.Status.REVIEWABLE, HitView.Status.FINISHED]) {
+               mturkTaskService.onHit(runner,v)
+               runner.removeActive(v)
+           }
+        }
+
         if (runner.hasAllAssignments() || runner.taskStatus == TaskRun.Status.ABORTED) {
-            mturkTaskService.onHit(runner,runner.activeHit)
+            runner.activeHits.hits.each {
+                mturkTaskService.onHit(runner, it)
+
+            }
             runner.taskStatus = TaskRun.Status.COMPLETE
         } else if (runner.hasPendingAssignments()) {
             runner.taskStatus = TaskRun.Status.NEEDS_INPUT
+        } else if (runner.activeHits.hits.size() == 0 && runner.allHits.size() < runner.taskProperties.maxAssignments) {
+            log.info runner.activeHits
+            kickoffHits(service,runner)
         }
-
         save()
 
+
+    }
+
+    def kickoffHits(RequesterService svc, TaskRun runner) {
+        int remaining = runner.taskProperties.maxAssignments - runner.allHits.size()
+        int toLaunch = Math.min(remaining,runner.taskProperties.batchSize?:Integer.MAX_VALUE)
+
+        (1..toLaunch).each {
+            mturkAwsFacadeService.launchOneHit(svc, runner)
+        }
 
     }
 }

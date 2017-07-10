@@ -12,6 +12,7 @@ class Narrative {
 
     Boolean too_simple = false
     Boolean abandoned = false
+    Boolean complete = false
 
 
 

@@ -82,13 +82,18 @@ class MturkMonitorService {
     }
 
     def launch(Workflow w, boolean real, int iterations, Credentials credentials,Map props) {
+        log.info("Attempting to launch workflow")
         WorkflowRun run = new WorkflowRun(w,credentials,real,props)
-        run.save()
+        run.save(flush:true,failOnError: true)
+
+
+
+    }
+
+    def actualLaunch(WorkflowRun run,int iterations) {
         run.run(iterations)
-
-            listeners.add(run)
-
-
+        listeners.add(run)
+        log.info("Done launching workflow: "+run)
     }
 
     def beat() {
@@ -96,8 +101,11 @@ class MturkMonitorService {
         listeners.each {
             if (it instanceof WorkflowRun) {
                 it = WorkflowRun.get(it.id)
+                if (it == null) {
+                    log.warn("Could not retrieve workflow")
+                }
             }
-            it.beat(this,System.currentTimeMillis())
+            if (it!=null)  it.beat(this,System.currentTimeMillis())
         }
         listeners.removeAll {
             it.hasProperty("currentStatus") && it.currentStatus == WorkflowRun.Status.DONE

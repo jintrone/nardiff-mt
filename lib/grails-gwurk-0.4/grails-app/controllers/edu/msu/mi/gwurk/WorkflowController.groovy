@@ -1,5 +1,8 @@
 package edu.msu.mi.gwurk
 
+import groovy.util.logging.Log4j
+
+@Log4j
 class WorkflowController {
 
 
@@ -20,9 +23,21 @@ class WorkflowController {
 
     def doLaunch() {
         Workflow w = flash.workflow
+        log.info("Workflow: ${w}")
+        log.info("Type: ${params.type}")
+        log.info("Type: ${params.iterations}")
+        log.info("Credentials: ${Credentials.get(params.credentials as long)}")
+        log.info("${params.props as Map}")
 
-        mturkMonitorService.launch(w,params.type=="real",params.iterations as int,Credentials.get(params.credentials as long), params.props as Map)
+
+
+
+        WorkflowRun run = mturkMonitorService.launch(w,params.type=="real",params.iterations as int,Credentials.get(params.credentials as long), params.props as Map)
+        log.info("About to launch")
+        mturkMonitorService.actualLaunch(run, params.iterations as int)
+        
         redirect(action:"index",controller:"workflowRun")
+        //log.info("about to leave")
     }
 
 

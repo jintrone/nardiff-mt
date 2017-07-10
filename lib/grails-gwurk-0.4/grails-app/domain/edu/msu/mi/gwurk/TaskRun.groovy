@@ -7,8 +7,9 @@ import groovy.util.logging.Log4j
 class TaskRun implements BeatListener{
 
     static constraints = {
-        activeHit nullable: true
+
         allHits nullable: true
+        activeHits nullable: true
         previousTaskRuns nullable: true
         activeWorkflowRun nullable: true
 
@@ -16,23 +17,25 @@ class TaskRun implements BeatListener{
 
     //Note workflowRun and activeWorkflowRun will never point to two different workflows; activeWorkflowRun is only included
     //to speed up access to active taskruns in a running workflow
-    static belongsTo = [workflowRun:WorkflowRun,activeWorkflowRun:WorkflowRun]
+    static belongsTo = [workflowRun:WorkflowRun]
     static hasMany = [allHits:HitView,previousTaskRuns:TaskRun]
     static mappedBy = [allHits:"taskRun"]
 
 
+    WorkflowRun activeWorkflowRun
     Task task
     Status taskStatus
-    HitView activeHit
+    ActiveHits activeHits
     TaskProperties taskProperties
     Map<String,String> userProperties = [:]
 
 
     public TaskRun(Task task, TaskProperties props) {
-        this.task = task;
+        this.task = task
         this.taskProperties = props
         this.taskStatus = Status.WAITING
-        log.debug "Newly created: ${System.identityHashCode(this)} id: $id"
+        this.activeHits = new ActiveHits()
+        log.info "Newly created: ${System.identityHashCode(this)} id: $id"
     }
 
     def mturkAwsFacadeService
@@ -99,16 +102,23 @@ class TaskRun implements BeatListener{
         }
 
         if (taskStatus == Status.COMPLETE) {
-            if (activeHit) {
-                mturkAwsFacadeService.expire(service,activeHit)
-                activeHit == null
+            ([]+activeHits.hits).each { HitView h->
+                mturkAwsFacadeService.expire(service,h)
+                activeHits.removeFromHits(h)
+
             }
+
         }
 
         //TODO handle abort?
 
-        if (taskStatus in Status.RUN_STATES && activeHit.age > taskProperties.relaunchInterval) {
-            addActive(mturkAwsFacadeService.recycle(service,activeHit))
+        if (taskStatus in Status.RUN_STATES) {
+            ([]+activeHits.hits).each { HitView h->
+                if (h.age > taskProperties.relaunchInterval) {
+                    addActive(mturkAwsFacadeService.recycle(service,h))
+                    mturkAwsFacadeService.expire(service, h)
+                }
+            }
         }
         save()
 
@@ -116,8 +126,15 @@ class TaskRun implements BeatListener{
 
     def addActive(HitView hitView) {
         log.debug "AddActive: This identity: ${System.identityHashCode(this)} id: $id"
-        activeHit = hitView
+        activeHits.addToHits(hitView)
         addToAllHits(hitView)
+        activeHits.save()
+        save()
+    }
+
+    def removeActive(HitView hitView) {
+        log.debug "RemoveActive: This identity: ${System.identityHashCode(this)} id: $id"
+        activeHits.removeFromHits(hitView)
         save()
     }
 

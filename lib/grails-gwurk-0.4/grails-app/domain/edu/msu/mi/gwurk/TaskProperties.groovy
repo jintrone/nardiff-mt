@@ -15,6 +15,7 @@ class TaskProperties implements Cloneable {
         assignmentDuration nullable: true
         keywords nullable: true
         maxAssignments nullable: true
+        batchSize nullable:true
         title nullable: true
         description nullable: true
         height nullable: true
@@ -36,6 +37,9 @@ class TaskProperties implements Cloneable {
 
     //Max assignments is the number of assignments *total* that we require; they may be split over individual hits
     Integer maxAssignments
+
+    //If split over multiple hits this is the number of HITs to be launched each time
+    Integer batchSize
     String title
     String description
     Integer height

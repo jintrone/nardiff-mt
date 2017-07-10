@@ -101,7 +101,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        gwurk.hostname = "cognosis.cas.msu.edu"
+        gwurk.hostname = "mturk.megateuthis.org"
       //  grails.serverURL = "https://cognosis.cas.msu.edu:8001/${appName}"
 
     }
@@ -114,6 +114,8 @@ log4j.main = {
     appenders {
         console name:'stderr', layout:pattern(conversionPattern: '%c{2} %m%n')
     }
+
+
 
    off  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP

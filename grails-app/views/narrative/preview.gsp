@@ -37,17 +37,17 @@
 
     <div ng-show="stage === 1">
         <p>This HIT is part of a research study. You will be given 1 minute to read a brief story, and then
-        write what you can remember of the story for someone else to read.  You will be asked an unrelated question between
+        write what you can remember of the story for someone else to read.  You will be asked to fill in a brief survey, and then an unrelated question between
         reading the story and writing it down.</p>
 
         <h2>Please note:<br/>
-            <em>Due to Amazon's surcharge on HITs with a large number of assignments, we have implemented a programmatic restriction that will
-            only allow you to complete four HITs from this batch.  If you attempt to do more than ${storycount} of these HITs, you will be notified
+            <em>We have implemented a programmatic restriction that will
+            only allow you to complete ${storycount} HIT${storycount>1?"s":""} from this batch.  If you attempt to do more than this many HITs, you will be notified
             and asked to return the HIT. This will not affect your reputation.</em>
         </h2>
 
 
-        <p>We estimate that the whole task should take you less than 10 min.  Based on this estimate, the pay rate for this task is about $8.00 / hr.</p>
+        <p>We estimate that the whole task should take you less than 6 min (based on trial runs).  Based on this estimate, the pay rate for this task is about $9.00 / hr.</p>
 
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         be asked for some basic demographic information and then
@@ -60,12 +60,6 @@
 
         <p>
 
-
-
-        <p>
-            If you do submit a fifth HIT (this should not be possible), that HIT will be rejected.
-
-        </p>
 
         <p><b>Research Disclosure.</b> The task below is part of a research study
         conducted by a team from the Media and Information department at Michigan

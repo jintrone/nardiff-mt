@@ -1,9 +1,10 @@
 package nardiff.mt
 
 import grails.transaction.Transactional
+import groovy.util.logging.Log4j
 import org.codehaus.groovy.grails.web.servlet.mvc.GrailsParameterMap
 
-
+@Log4j
 @Transactional
 class NardiffService {
 
@@ -28,7 +29,10 @@ class NardiffService {
      * otherwise, just pick the parents with the least number of children
      **/
     def Narrative findNarrativeToExpandForWorker(String workerid) {
-        List<NarrativeSeed> available = NarrativeSeed.list() - Narrative.findAllByWorkerId(workerid)*.root_narrative
+        List<NarrativeSeed> available = NarrativeSeed.list()
+        if (workerid!="A1GVB0L841WR6Q") {
+            available -= Narrative.findAllByWorkerId(workerid)*.root_narrative
+        }
 
         if (!available) {
             log.error("No avialable roots for ${workerid}")
@@ -49,20 +53,29 @@ class NardiffService {
                     }
                 }
             }
-            [node, [closed: closed.size() - getBranchingFactor(node.depth), open: open.size()]]
+            [node, [degreeneed: open.size()+closed.size() - getBranchingFactor(node.depth), hasneed: (closed.size()+open.size()) < getBranchingFactor(node.depth)?0:1]]
         }
+
+        log.info("Unsorted: "+expandable)
 
         if (!expandable) {
             log.error("No expandable nodes?!?!")
         }
 
+        //I STOPPED HERE
         expandable = expandable.sort { a, b ->
-            if (a.value.closed == b.value.closed) {
-                a.value.open <=> b.value.open
+
+            if (a.value.hasneed != b.value.hasneed) {
+                a.value.hasneed <=> b.value.hasneed
+            }
+            else if (a.key.depth != b.key.depth) {
+                a.key.depth <=> b.key.depth
             } else {
-                a.value.closed <=> b.value.closed
+                a.value.degreeneed <=> b.value.degreeneed
             }
         }
+
+        log.info("Sorted: "+expandable)
 
         return expandable ? expandable.keySet().first() : null
     }
@@ -124,13 +137,15 @@ class NardiffService {
         d.time_distrator = Integer.parseInt(data.timeDistractor)
         d.time_reading = Integer.parseInt(data.timeReading)
         d.time_writing = Integer.parseInt(data.timeWriting)
-        d.stage = 7
+        d.stage = 8
         d.save([flush: true, failOnError: true])
 
         slowUpdate(n) {
             it.closed = new Date()
             it.too_simple = isAnswerTooSimple(d.text, it.parent_narrative.data.text, it.depth)
         }
+
+        
     }
 
 

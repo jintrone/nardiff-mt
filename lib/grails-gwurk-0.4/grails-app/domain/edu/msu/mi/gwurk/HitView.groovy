@@ -27,9 +27,9 @@ class HitView {
     Status hitStatus
 
     HitView(TaskRun run, HIT hit) {
-        hitId = hit.HITId
-        hitGroup = hit.HITGroupId
-        creationTime = hit.creationTime.getTime()
+        hitId = hit?.HITId
+        hitGroup = hit?.HITGroupId
+        creationTime = hit?.creationTime?.getTime() ?: new Date()
         hitStatus = Status.AVAILABLE
         taskRun = run
         save()
@@ -42,34 +42,37 @@ class HitView {
 
 
     def update(RequesterService requesterService) {
-        HIT h = requesterService.getHIT(hitId)
+        HIT h = hitId?requesterService.getHIT(hitId):null
+        if (h) {
+            switch (h.getHITStatus()) {
 
-        switch(h.getHITStatus()) {
-
-            case HITStatus.Assignable:
-                hitStatus = Status.AVAILABLE
-                break
-            case HITStatus.Unassignable:
-                hitStatus= Status.UNAVAILABLE
-                break
-            case HITStatus.Reviewable:
-                hitStatus = Status.REVIEWABLE
-                break
-            case HITStatus.Disposed:
-                hitStatus = Status.FINISHED
+                case HITStatus.Assignable:
+                    hitStatus = Status.AVAILABLE
+                    break
+                case HITStatus.Unassignable:
+                    hitStatus = Status.UNAVAILABLE
+                    break
+                case HITStatus.Reviewable:
+                    hitStatus = Status.REVIEWABLE
+                    break
+                case HITStatus.Disposed:
+                    hitStatus = Status.FINISHED
+            }
+            save()
+            def known = assignments*.assignmentId as Set
+            def awsAssts = requesterService.getAllAssignmentsForHIT(hitId)
+            log.info "Retrieved assignments from service: ${awsAssts}"
+            awsAssts.findAll { it && !known.contains(it.assignmentId) }.each {
+                log.info("Adding assignment $it")
+                addToAssignments(new AssignmentView(it))
+            }
+            assignments.each {
+                if (it.assignmentStatus == AssignmentView.Status.SUBMITTED) it.update(requesterService)
+            }
+            save()
+        } else {
+            log.warn("Could not identify hit : ${hitId}")
         }
-        save()
-        def known = assignments*.assignmentId as Set
-        def awsAssts = requesterService.getAllAssignmentsForHIT(hitId)
-        log.info "Retrieved assignments from service: ${awsAssts}"
-        awsAssts.findAll {it && !known.contains(it.assignmentId)}.each {
-            log.info("Adding assignment $it")
-            addToAssignments(new AssignmentView(it))
-        }
-        assignments.each {
-           if (it.assignmentStatus == AssignmentView.Status.SUBMITTED) it.update(requesterService)
-        }
-        save()
 
     }
 

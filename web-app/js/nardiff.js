@@ -24,6 +24,51 @@
             img_div.removeChild(to_remove);
         };
 
+        $scope.steps = [
+            'Step 1',
+            'Step 2',
+            'Step 3',
+            'Step 4'
+        ];
+        $scope.selection = $scope.steps[0];
+
+        $scope.getCurrentStepIndex = function(){
+            // Get the index of the current step given selection
+            return _.indexOf($scope.steps, $scope.selection);
+        };
+
+        $scope.hasNextStep = function(){
+            var stepIndex = $scope.getCurrentStepIndex();
+            var nextStep = stepIndex + 1;
+            // Return true if there is a next step, false if not
+            return !_.isUndefined($scope.steps[nextStep]);
+        };
+
+        $scope.hasPreviousStep = function(){
+            var stepIndex = $scope.getCurrentStepIndex();
+            var previousStep = stepIndex - 1;
+            // Return true if there is a next step, false if not
+            return !_.isUndefined($scope.steps[previousStep]);
+        };
+
+        $scope.incrementStep = function() {
+            if ( $scope.hasNextStep() )
+            {
+                var stepIndex = $scope.getCurrentStepIndex();
+                var nextStep = stepIndex + 1;
+                $scope.selection = $scope.steps[nextStep];
+            }
+        };
+
+        $scope.decrementStep = function() {
+            if ( $scope.hasPreviousStep() )
+            {
+                var stepIndex = $scope.getCurrentStepIndex();
+                var previousStep = stepIndex - 1;
+                $scope.selection = $scope.steps[previousStep];
+            }
+        };
+
 
         this.submitStage = function () {
 

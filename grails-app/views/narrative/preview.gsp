@@ -36,8 +36,8 @@
 <div ng-controller="WorkflowController as wf" id="mainPanel">
 
     <div ng-show="stage === 1">
-        <p>This HIT is part of a research study. You will be given 1 minute to read a brief story, and then
-        write what you can remember of the story for someone else to read.  You will be asked to fill in a brief survey, and then an unrelated question between
+        <p>This HIT is part of a research study on how people remember stories. You will be given 1 minute to read a brief story, and then
+        write what you can remember of the story for someone else to read.  You will also be asked to fill in a brief survey, and then answer an unrelated question between
         reading the story and writing it down.</p>
 
         <h2>Please note:<br/>
@@ -52,7 +52,7 @@
         <p><b>Instructions.</b>  When you press the “begin” button below, you will
         be asked for some basic demographic information and then
         be given 1 minute to read a very short story. Afterward, you will be asked to
-        retell as much of the story as possible in your own words for the
+        retell as much of the story as possible for the
         next person. Do not try to copy the story, because we seek to understand how people remember stories.
         Any assignment that appears to be a simple copy will be
         rejected.

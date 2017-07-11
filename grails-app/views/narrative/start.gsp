@@ -611,7 +611,7 @@
         </p>
 
         <p>
-            Please tell the story as best as you can. If you copy the text, or it appears that you have put very little effort into recalling the story, this assigment may be <b>rejected</b>.
+            Please tell the story as best as you can. If you copy the text, this assignment will be <b>rejected</b>.
         </p>
 
         <form ng-submit="narrative='${narrative.id}';wf.advance();wf.submitStory()"

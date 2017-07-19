@@ -1,11 +1,12 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.dataschema.QuestionFormAnswers
-import com.amazonaws.mturk.dataschema.QuestionFormAnswersType
-import com.amazonaws.mturk.requester.Assignment
-import com.amazonaws.mturk.requester.AssignmentStatus
-import com.amazonaws.mturk.service.axis.RequesterService
-import com.amazonaws.mturk.service.exception.ServiceException
+import com.amazonaws.services.mturk.AmazonMTurkClient
+import com.amazonaws.services.mturk.model.ApproveAssignmentRequest
+import com.amazonaws.services.mturk.model.Assignment
+import com.amazonaws.services.mturk.model.AssignmentStatus
+import com.amazonaws.services.mturk.model.GetAssignmentRequest
+import com.amazonaws.services.mturk.model.GetFileUploadURLRequest
+import com.amazonaws.services.mturk.model.ServiceException
 
 
 class AssignmentView {
@@ -52,8 +53,8 @@ class AssignmentView {
         this.processed = false
         this.assignmentId = a.assignmentId
         this.workerId = a.workerId
-        this.acceptTime = a.acceptTime.getTime()
-        this.submitTime = a.submitTime.getTime()
+        this.acceptTime = a.acceptTime
+        this.submitTime = a.submitTime
         this.hit = HitView.find { hitId == "${a.getHITId()}" }
         this.rawAnswer = a.answer
         hasData = getFileKey()!=null
@@ -61,14 +62,15 @@ class AssignmentView {
        save()
     }
 
-    def update(RequesterService service) {
-        def a = service.getAssignment(assignmentId).assignment
-        switch (a.assignmentStatus) {
+    def update(AmazonMTurkClient service) {
+        def a = service.getAssignment(new GetAssignmentRequest().withAssignmentId(assignmentId)).assignment
+        switch (AssignmentStatus.fromValue(a.assignmentStatus)) {
             case AssignmentStatus.Submitted:
                 assignmentStatus = Status.SUBMITTED
                 if (hit.taskRun.taskProperties.autoApprove) {
                     try {
-                        service.approveAssignment(assignmentId, "Thanks for your help!")
+                        service.approveAssignment(new ApproveAssignmentRequest().withAssignmentId(assignmentId).
+                                withRequesterFeedback("Thanks for your help!"))
                         this.approvalTime = new Date()
                         update(service)
                     } catch (ServiceException ex) {
@@ -86,10 +88,10 @@ class AssignmentView {
                 break
         }
         if (assignmentStatus == Status.APPROVED) {
-            this.approvalTime = a.approvalTime?.time ?: this.approvalTime
+            this.approvalTime = a.approvalTime ?: this.approvalTime
 
         } else if (assignmentStatus == Status.REJECTED) {
-            this.rejectTime = a.rejectionTime?.time ?: this.rejectTime
+            this.rejectTime = a.rejectionTime ?: this.rejectTime
         }
 
         this.requestorFeedback = a?.requesterFeedback
@@ -111,16 +113,16 @@ class AssignmentView {
     }
 
     public static Map extractAnswers(String answer) {
-        QuestionFormAnswers answers = RequesterService.parseAnswers(answer);
-        answers.answer.collectEntries { QuestionFormAnswersType.AnswerType a ->
-                if (a.freeText) {
-                    [a.getQuestionIdentifier(), a.freeText]
-                } else if (a.selectionIdentifier) {
-                    [a.getQuestionIdentifier(), a.selectionIdentifier]
-                } else if (a.otherSelectionText) {
-                    [a.questionIdentifier, a.otherSelectionText]
-                }  else if (a.uploadedFileSizeInBytes) {
-                    [a.questionIdentifier, [size: a.uploadedFileSizeInBytes, key: a.uploadedFileKey]]
+        def answers = new XmlSlurper().parseText(answer)
+        answers.Answer.collectEntries { a ->
+                if (a.FreeText) {
+                    [a.QuestionIdentifier, a.freeText]
+                } else if (a.SelectionIdentifier) {
+                    [a.QuestionIdentifier, a.SelectionIdentifier]
+                } else if (a.OtherSelectionText) {
+                    [a.QuestionIdentifier, a.OtherSelectionText]
+                }  else if (a.UploadedFileSizeInBytes) {
+                    [a.QuestionIdentifier, [size: a.UploadedFileSizeInBytes, key: a.UploadedFileKey]]
                 } else {
                     [ : ]
                 }
@@ -134,10 +136,10 @@ class AssignmentView {
         }
     }
 
-    private retrieveFile(RequesterService service) {
+    private retrieveFile(AmazonMTurkClient service) {
         Map.Entry ent = getFileKey()
         log.info("Retrieving file data ${ent.value.size}")
-        String s = service.getFileUploadURL(assignmentId, ent.key)
+        String s = service.getFileUploadURL(new GetFileUploadURLRequest().withAssignmentId(assignmentId).withQuestionIdentifier(ent.key))
         data = new byte[ent.value.size as int];
         DataInputStream dataIs = new DataInputStream(new URL(s).openConnection().inputStream)
         dataIs.readFully(data);

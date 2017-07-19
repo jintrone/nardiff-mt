@@ -12,3 +12,4 @@ title:<g:textField name="${prefix?"props.${prefix}.":''}title" value="${fieldVal
 description:<g:textField name="${prefix?"props.${prefix}.":''}description" value="${fieldValue(bean:props,field:'description')}"/><br />
 height:<g:textField name="${prefix?"props.${prefix}.":''}height" value="${props?.height?fieldValue(bean:props,field:'height'):""}"/><br />
 requireApproval:<g:textField name="${prefix?"props.${prefix}.":''}requireApproval" value="${props?.requireApproval?fieldValue(bean:props,field:'requireApproval'):""}"/><br />
+qualificaionString:<g:textField name="${prefix?"props.${prefix}.":''}qualificationString" value="${props?.qualificationString?fieldValue(bean:props,field:'qualificationString'):""}"/><br />

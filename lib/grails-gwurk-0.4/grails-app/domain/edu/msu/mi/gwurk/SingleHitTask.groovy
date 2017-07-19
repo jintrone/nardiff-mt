@@ -1,7 +1,8 @@
 package edu.msu.mi.gwurk
 
 
-import com.amazonaws.mturk.service.axis.RequesterService
+
+import com.amazonaws.services.mturk.AmazonMTurkClient
 import groovy.util.logging.Log4j
 
 @Log4j
@@ -16,13 +17,13 @@ class SingleHitTask extends Task {
     }
 
     @Override
-    def start(RequesterService service, TaskRun runner) {
+    def start(AmazonMTurkClient service, TaskRun runner) {
         mturkAwsFacadeService.launchHit(service, runner)
     }
 
 
     @Override
-    def update(RequesterService service, TaskRun runner) {
+    def update(AmazonMTurkClient service, TaskRun runner) {
 
         mturkAwsFacadeService.refresh(service, runner)
         log.info "All assignments ${runner.allHits*.assignments}"

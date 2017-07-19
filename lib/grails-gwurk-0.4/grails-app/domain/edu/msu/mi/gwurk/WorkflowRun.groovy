@@ -1,7 +1,9 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.service.axis.RequesterService
-import com.amazonaws.mturk.util.ClientConfig
+import com.amazonaws.ClientConfiguration
+import com.amazonaws.auth.AWSCredentials
+import com.amazonaws.retry.RetryPolicy
+import com.amazonaws.services.mturk.AmazonMTurkClient
 import groovy.util.logging.Log4j
 
 @Log4j
@@ -26,6 +28,7 @@ class WorkflowRun implements BeatListener {
     static transients = ['retriableErrors']
 
     def mturkTaskService
+    def mturkAwsFacadeService
 
 
     // RequesterService requesterService
@@ -93,21 +96,8 @@ class WorkflowRun implements BeatListener {
 
 
 
-    RequesterService getRequesterService() {
-        ClientConfig config = new ClientConfig()
-        config.setAccessKeyId(credentials.awsId)
-        config.setSecretAccessKey(credentials.awsSecret)
-        config.setRetriableErrors(retriableErrors)
-        config.setRetryAttempts(retryAttempts)
-        config.setRetryDelayMillis(retryDelayMillis)
-        if (real) {
-            config.setServiceURL(ClientConfig.PRODUCTION_SERVICE_URL);
-
-        } else {
-            config.setServiceURL(ClientConfig.SANDBOX_SERVICE_URL);
-
-        }
-        new RequesterService(config)
+    AmazonMTurkClient getRequesterService() {
+        mturkAwsFacadeService.getRequesterService(credentials,real)
     }
 
     TaskRun addTask(Task t, boolean current, TaskRun... previous) {

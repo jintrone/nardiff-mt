@@ -1,8 +1,11 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.requester.HIT
-import com.amazonaws.mturk.requester.HITStatus
-import com.amazonaws.mturk.service.axis.RequesterService
+import com.amazonaws.services.mturk.AmazonMTurkClient
+import com.amazonaws.services.mturk.model.GetHITRequest
+import com.amazonaws.services.mturk.model.HIT
+import com.amazonaws.services.mturk.model.HITStatus
+import com.amazonaws.services.mturk.model.ListAssignmentsForHITRequest
+import com.amazonaws.services.mturk.model.UpdateExpirationForHITRequest
 import groovy.util.logging.Log4j
 
 @Log4j
@@ -29,7 +32,7 @@ class HitView {
     HitView(TaskRun run, HIT hit) {
         hitId = hit?.HITId
         hitGroup = hit?.HITGroupId
-        creationTime = hit?.creationTime?.getTime() ?: new Date()
+        creationTime = hit?.creationTime?:new Date()
         hitStatus = Status.AVAILABLE
         taskRun = run
         save()
@@ -41,10 +44,11 @@ class HitView {
 
 
 
-    def update(RequesterService requesterService) {
-        HIT h = hitId?requesterService.getHIT(hitId):null
+    def update(AmazonMTurkClient requesterService) {
+
+        HIT h = hitId?requesterService.getHIT(new GetHITRequest().withHITId(hitId)).HIT:null
         if (h) {
-            switch (h.getHITStatus()) {
+            switch (HITStatus.fromValue(h.getHITStatus())) {
 
                 case HITStatus.Assignable:
                     hitStatus = Status.AVAILABLE
@@ -60,9 +64,10 @@ class HitView {
             }
             save()
             def known = assignments*.assignmentId as Set
-            def awsAssts = requesterService.getAllAssignmentsForHIT(hitId)
+
+            def awsAssts = requesterService.listAssignmentsForHIT(new ListAssignmentsForHITRequest().withHITId(hitId))
             log.info "Retrieved assignments from service: ${awsAssts}"
-            awsAssts.findAll { it && !known.contains(it.assignmentId) }.each {
+            awsAssts.assignments.findAll { it && !known.contains(it.assignmentId) }.each {
                 log.info("Adding assignment $it")
                 addToAssignments(new AssignmentView(it))
             }
@@ -92,8 +97,8 @@ class HitView {
         return assignments.findAll {it.assignmentStatus != AssignmentView.Status.APPROVED}
     }
 
-    def expire(RequesterService requesterService) {
-        requesterService.forceExpireHIT(hitId)
+    def expire(AmazonMTurkClient requesterService) {
+        requesterService.updateExpirationForHIT(new UpdateExpirationForHITRequest().withHITId(hitId).withExpireAt(new Date()))
         update(requesterService)
         save()
     }

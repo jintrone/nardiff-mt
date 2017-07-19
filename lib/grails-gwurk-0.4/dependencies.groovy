@@ -24,7 +24,8 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
         // runtime 'mysql:mysql-connector-java:5.1.24'
-        compile "org.clojars.zaxtax:java-aws-mturk:1.6.2"
+        //compile "org.clojars.zaxtax:java-aws-mturk:1.6.2"
+        compile group: 'com.amazonaws', name: 'aws-java-sdk-mechanicalturkrequester', version: '1.11.163'
     }
 
     plugins {

@@ -1,6 +1,7 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.service.axis.RequesterService
+
+import com.amazonaws.services.mturk.AmazonMTurkClient
 import groovy.util.logging.Log4j
 
 @Log4j
@@ -16,8 +17,8 @@ abstract class Task  {
     static transients = ['mturkTaskService','mturkAwsFacadeService']
 
 
-    abstract def start(RequesterService service, TaskRun runner)
-    abstract def update(RequesterService service, TaskRun runner)
+    abstract def start(AmazonMTurkClient service, TaskRun runner)
+    abstract def update(AmazonMTurkClient service, TaskRun runner)
 
     String name
     def mturkAwsFacadeService

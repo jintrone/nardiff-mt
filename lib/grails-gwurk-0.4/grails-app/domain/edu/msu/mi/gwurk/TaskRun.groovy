@@ -1,6 +1,7 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.service.axis.RequesterService
+
+import com.amazonaws.services.mturk.AmazonMTurkClient
 import groovy.util.logging.Log4j
 
 @Log4j
@@ -90,7 +91,7 @@ class TaskRun implements BeatListener{
 
     @Override
     def beat(def beater, long timestamp) {
-        RequesterService service = (beater as WorkflowRun).requesterService
+        AmazonMTurkClient service = (beater as WorkflowRun).requesterService
         if (taskStatus == Status.WAITING) {
             task.mturkTaskService.onTaskStarting(this)
             taskStatus = Status.RUNNING

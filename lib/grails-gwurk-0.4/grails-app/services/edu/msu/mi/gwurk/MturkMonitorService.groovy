@@ -1,6 +1,6 @@
 package edu.msu.mi.gwurk
 
-import com.amazonaws.mturk.service.exception.InternalServiceException
+import com.amazonaws.services.mturk.model.ServiceException
 import grails.transaction.Transactional
 import groovy.util.logging.Log4j
 import org.apache.shiro.crypto.hash.Sha256Hash
@@ -65,7 +65,7 @@ class MturkMonitorService {
                     beat();
 
 
-                } catch (InternalServiceException e1) {
+                } catch (ServiceException e1) {
                     log.warn("AWS Service Exception: ");
                     e1.printStackTrace();
                     log.warn("Continuing");

@@ -329,7 +329,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if1" type="radio" name="if1" value="2" required></li>
                                 <li><input ng-model="survey.if1" type="radio" name="if1" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if1" type="radio" name="if1" value="4" required></li>
                                 <li><input ng-model="survey.if1" type="radio" name="if1" value="5"
@@ -346,7 +346,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if2" type="radio" name="if2" value="2" required></li>
                                 <li><input ng-model="survey.if2" type="radio" name="if2" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if2" type="radio" name="if2" value="4" required></li>
                                 <li><input ng-model="survey.if2" type="radio" name="if2" value="5"
@@ -363,7 +363,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if3" type="radio" name="if3" value="2" required></li>
                                 <li><input ng-model="survey.if3" type="radio" name="if3" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if3" type="radio" name="if3" value="4" required></li>
                                 <li><input ng-model="survey.if3" type="radio" name="if3" value="5"
@@ -380,7 +380,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if4" type="radio" name="if4" value="2" required></li>
                                 <li><input ng-model="survey.if4" type="radio" name="if4" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if4" type="radio" name="if4" value="4" required></li>
                                 <li><input ng-model="survey.if4" type="radio" name="if4" value="5"
@@ -390,14 +390,14 @@
 
                         <div class="minor-section">
                             <p>
-                                Please select the item 'Neither agree nor disagree'
+                                Please select the item 'Neither agree<br/>nor disagree'
                             </p>
                             <ul class="likert">
                                 <li><input ng-model="survey.ifc" type="radio" name="ifc" value="1"
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.ifc" type="radio" name="ifc" value="2" required></li>
                                 <li><input ng-model="survey.ifc" type="radio" name="ifc" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.ifc" type="radio" name="ifc" value="4" required></li>
                                 <li><input ng-model="survey.ifc" type="radio" name="ifc" value="5"
@@ -414,7 +414,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if5" type="radio" name="if5" value="2" required></li>
                                 <li><input ng-model="survey.if5" type="radio" name="if5" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if5" type="radio" name="if5" value="4" required></li>
                                 <li><input ng-model="survey.if5" type="radio" name="if5" value="5"
@@ -431,7 +431,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.if6" type="radio" name="if6" value="2" required></li>
                                 <li><input ng-model="survey.if6" type="radio" name="if6" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.if6" type="radio" name="if6" value="4" required></li>
                                 <li><input ng-model="survey.if6" type="radio" name="if6" value="5"
@@ -456,7 +456,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.sh1" type="radio" name="sh1" value="2" required></li>
                                 <li><input ng-model="survey.sh1" type="radio" name="sh1" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.sh1" type="radio" name="sh1" value="4" required></li>
                                 <li><input ng-model="survey.sh1" type="radio" name="sh1" value="5"
@@ -473,7 +473,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.sh2" type="radio" name="sh2" value="2" required></li>
                                 <li><input ng-model="survey.sh2" type="radio" name="sh2" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.sh2" type="radio" name="sh2" value="4" required></li>
                                 <li><input ng-model="survey.sh2" type="radio" name="sh2" value="5"
@@ -490,7 +490,7 @@
                                            required><br/>Strongly disagree</li>
                                 <li><input ng-model="survey.sh3" type="radio" name="sh3" value="2" required></li>
                                 <li><input ng-model="survey.sh3" type="radio" name="sh3" value="3"
-                                           required><br/>Neither agree nor disagree
+                                           required><br/>Neither agree<br/>nor disagree
                                 </li>
                                 <li><input ng-model="survey.sh3" type="radio" name="sh3" value="4" required></li>
                                 <li><input ng-model="survey.sh3" type="radio" name="sh3" value="5"

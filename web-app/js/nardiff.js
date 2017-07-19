@@ -116,7 +116,7 @@
         };
 
         this.submitSurvey = function () {
-
+            $scope.survey.narrativeId = $scope.narrative
             $http({
                 method: 'POST',
                 url: '/nardiff-mt/narrative/survey',

@@ -61,7 +61,7 @@ class BootStrap {
 
         nardiffService.setBranching([6, 3, 1])
 
-        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment_pilot_small.json")))
+        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment_pilot_small_chained.json")))
 
         experimentData.each { Map m ->
             if (!NarrativeSeed.findAllByTitle(m.title)) {
@@ -74,16 +74,17 @@ class BootStrap {
         Workflow w
         if (Workflow.count() < 1) {
             w = new Workflow("Narrative Diffusion", "An experiment similar to a game of telephone", [
-                    rewardAmount      : 0.90f,
+                    rewardAmount      : 1.00f,
                     relaunchInterval  : 1000 * 60 * 60,
                     autoApprove       : true,
                     lifetime          : 60 * 60 * 10,
-                    assignmentDuration: 600,
+                    assignmentDuration: 60 * 60,
                     keywords          : "research, memory, study, experiment",
                     maxAssignments    : 70,
                     batchSize         : 6,
                     height            : 1000,
-                    requireApproval   : false
+                    requireApproval   : false,
+                    qualificationString : "not NarrDiff1"
             ]).save([flush: true, failOnError: true])
             w.initStartingTasks((1..NarrativeSeed.count).collect { id ->
                 new MultiHitTask("Narrative Task #" + id, [

@@ -1,17 +1,10 @@
 package nardiff.mt
 
-import com.amazonaws.mturk.requester.QualificationType
-import com.amazonaws.mturk.service.axis.RequesterService
-import edu.msu.mi.gwurk.Task
 import edu.msu.mi.gwurk.TaskRun
-import org.apache.commons.lang3.StringUtils
+import grails.transaction.Transactional
 import org.springframework.core.io.ResourceLoader
 
 import javax.imageio.ImageIO
-import java.awt.image.BufferedImage
-
-import static org.springframework.http.HttpStatus.*
-import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class NarrativeController implements org.springframework.context.ResourceLoaderAware {
@@ -21,7 +14,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
     ResourceLoader resourceLoader
 
     def nardiffService
-    def mturkAwsFacadeService
+
 
 
     def complete() {
@@ -101,7 +94,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
 
     @Transactional
     def survey() {
-        Survey t = Survey.findByMturk_id(params.workerid)
+        Survey t = Survey.findByMturk_idAndNarrativeId(params.workerid,params.narrativeId)
         if (!t) {
             t = new Survey()
             t.mturk_id = params.workerid

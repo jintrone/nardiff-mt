@@ -1,7 +1,8 @@
 [
   {
-    "title": "Judy E/C/1",
-    "story": "When Judy went to college last year, she did not have enough time to prepare food by herself. She skipped breakfast often, which made her crave high-calorie food (like chips and candy) later in the day. Thus, Judy ate large amounts of unhealthy snack food from convenience stores. This kind of food contained many more calories than she needed in a day, and so the extra calories were saved in her body as body fat. The increased body fat made Judy feel depressed. Jason, a friend of Judy's, has healthy eating habits. Judy decided to ask for advice from Jason. Jason had developed easy-to-follow strategies for eating well that included a healthy breakfast with lean protein. He also suggested that Judy try to eat 5 servings of fruits or vegetables a day. Judy began eating breakfast and replaced high calorie snack-foods with regular, healthy meals including 5 servings of fruits or vegetables a day. Her mood improved overall and she did better in school.",
+    "title": "Judy",
+    "identifier": "Judy X/C/1",
+    "story": "When Judy went to college last year, she did not have enough time to prepare food by herself, and skipped breakfast often. Skipping breakfast made Judy crave high-calorie food (like chips and candy), leading her to eat junk food later in the day. Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. This made her feel depressed. Jason, a friend of Judy's, has healthy eating habits. Judy decided to ask for advice from Jason. Jason explained the problems with Judy’s eating habits. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day.  Judy began eating a healthy breakfast each day that included a lean protein  and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall and she did better in school.",
     "survey": ["eat 5 servings of fruits and vegetables","eat lean protein for breakfast"],
     "distractor": {
       "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
@@ -15,4 +16,5 @@
       "correct": 3
     }
   }
+
 ]

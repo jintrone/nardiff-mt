@@ -30,12 +30,15 @@ class NardiffService {
      **/
     def Narrative findNarrativeToExpandForWorker(String workerid) {
         List<NarrativeSeed> available = NarrativeSeed.list()
-        if (workerid!="A1GVB0L841WR6Q") {
-            available -= Narrative.findAllByWorkerId(workerid)*.root_narrative
-        }
+        //if (workerid!="A1GVB0L841WR6Q") {
+            def titles = Narrative.findAllByWorkerId(workerid)*.root_narrative.title as Set
+            available.removeAll {
+                it.title in titles
+            }
+        //}
 
         if (!available) {
-            log.error("No avialable roots for ${workerid}")
+            log.error("No available roots for ${workerid}")
             return null
         }
         Collections.shuffle(available)

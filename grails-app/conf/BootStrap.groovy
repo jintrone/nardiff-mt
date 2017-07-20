@@ -1,4 +1,3 @@
-import edu.msu.mi.gwurk.Credentials
 import edu.msu.mi.gwurk.GwurkEvent
 import edu.msu.mi.gwurk.MultiHitTask
 import edu.msu.mi.gwurk.Task
@@ -6,14 +5,9 @@ import edu.msu.mi.gwurk.Workflow
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import groovy.util.logging.Log4j
-import nardiff.mt.NardiffStuff
 import nardiff.mt.Narrative
 import nardiff.mt.NarrativeData
 import nardiff.mt.NarrativeSeed
-import org.springframework.web.context.WebApplicationContext
-import org.springframework.web.context.support.WebApplicationContextUtils
-
-import javax.servlet.ServletContext
 
 //This is test application
 @Log4j
@@ -29,7 +23,7 @@ class BootStrap {
     public static Narrative insertStory(def storydata) {
 
         NarrativeSeed seed = new NarrativeSeed(distractorTask: new JsonBuilder(storydata.distractor).toPrettyString(),
-                expandingLevel: 0, title: storydata.title, text: storydata.story, survey: new JsonBuilder(storydata.survey).toPrettyString())
+                expandingLevel: 0, title: storydata.title, identifier: storydata.identifier, text: storydata.story, survey: new JsonBuilder(storydata.survey).toPrettyString())
         NarrativeSeed.withTransaction {
             seed.save flush: true, failOnError: true
         }
@@ -64,7 +58,7 @@ class BootStrap {
         def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment_pilot_small_chained.json")))
 
         experimentData.each { Map m ->
-            if (!NarrativeSeed.findAllByTitle(m.title)) {
+            if (!NarrativeSeed.findAllByIdentifier(m.identifier)) {
                 insertStory(m)
             }
         }

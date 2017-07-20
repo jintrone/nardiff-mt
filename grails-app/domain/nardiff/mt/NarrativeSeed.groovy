@@ -7,6 +7,7 @@ class NarrativeSeed {
     String text
     String title
     String survey
+    String identifier
 
 
     static hasMany = [narratives: Narrative]

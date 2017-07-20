@@ -159,7 +159,7 @@ class NarrativeController implements org.springframework.context.ResourceLoaderA
         println(params)
 
         if (!params.workerId) {
-            render(view: "preview.gsp", model: [storycount: NarrativeSeed.count])
+            render(view: "preview.gsp", model: [storycount: (NarrativeSeed.list()*.title as Set).size()])
 
         } else {
 

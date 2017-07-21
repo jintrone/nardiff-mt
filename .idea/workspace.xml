@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6151107c-3170-4ff8-b393-7276cc2092d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json" afterPath="$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,8 +81,8 @@
       <file leaf-file-name="experiment_pilot_small_chained.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            <state relative-caret-position="105">
+              <caret line="4" column="739" lean-forward="false" selection-start-line="4" selection-start-column="739" selection-end-line="4" selection-end-column="739" />
               <folding />
             </state>
           </provider>
@@ -224,10 +220,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+    <option name="x" value="-2560" />
     <option name="y" value="23" />
-    <option name="width" value="1436" />
-    <option name="height" value="877" />
+    <option name="width" value="1792" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
@@ -1519,7 +1515,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="1436" height="877" extended-state="0" />
+    <frame x="-2560" y="23" width="1792" height="1087" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1528,13 +1524,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="22" y="51" width="1386" height="821" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998565" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700637" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21306533" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23385939" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18628572" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1578,7 +1574,8 @@
     <MESSAGE value="Minor changes to the instructions." />
     <MESSAGE value="Updates to use new API (in order to support more flexible quals)" />
     <MESSAGE value="Updates to work with plugin changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to work with plugin changes" />
+    <MESSAGE value="Updates to story, and also to allow distinguishing between multiple versions of the same story to be tested." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to story, and also to allow distinguishing between multiple versions of the same story to be tested." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2002,7 +1999,7 @@
         <state relative-caret-position="54">
           <caret line="49" column="87" lean-forward="true" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
           <folding>
-            <element signature="e#26#79#0" expanded="true" />
+            <element signature="e#26#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2015,7 +2012,7 @@
         <state relative-caret-position="-615">
           <caret line="86" column="66" lean-forward="true" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
           <folding>
-            <element signature="e#26#79#0" expanded="true" />
+            <element signature="e#26#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2107,8 +2104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="105">
+          <caret line="4" column="739" lean-forward="false" selection-start-line="4" selection-start-column="739" selection-end-line="4" selection-end-column="739" />
           <folding />
         </state>
       </provider>

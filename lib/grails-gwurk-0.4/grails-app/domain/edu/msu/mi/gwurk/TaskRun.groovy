@@ -113,14 +113,16 @@ class TaskRun implements BeatListener{
 
         //TODO handle abort?
 
-        if (taskStatus in Status.RUN_STATES) {
-            ([]+activeHits.hits).each { HitView h->
-                if (h.age > taskProperties.relaunchInterval) {
-                    addActive(mturkAwsFacadeService.recycle(service,h))
-                    mturkAwsFacadeService.expire(service, h)
-                }
-            }
-        }
+        //TODO reincorporate recycle
+
+//        if (taskStatus in Status.RUN_STATES) {
+//            ([]+activeHits.hits).each { HitView h->
+//                if (h.age > taskProperties.relaunchInterval) {
+//                    addActive(mturkAwsFacadeService.recycle(service,h))
+//                    mturkAwsFacadeService.expire(service, h)
+//                }
+//            }
+//        }
         save()
 
     }

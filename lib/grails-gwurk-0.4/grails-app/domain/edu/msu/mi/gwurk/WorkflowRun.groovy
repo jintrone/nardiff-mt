@@ -29,7 +29,7 @@ class WorkflowRun implements BeatListener {
 
     def mturkTaskService
     def mturkAwsFacadeService
-
+    def mturkMonitorService
 
     // RequesterService requesterService
     //Set<TaskRun> currentTasks = [] as Set
@@ -168,9 +168,8 @@ class WorkflowRun implements BeatListener {
     def beat(def Object beater, long timestamp) {
         def next = []
         if (currentStatus == Status.RUNNING) {
-            currentTasks.toArray(new TaskRun[0]).each { TaskRun currTaskRun ->
-
-                currTaskRun.beat(this, System.currentTimeMillis())
+            mturkMonitorService.safeBeat(this,currentTasks) { currTaskRun ->
+               
                 if (currTaskRun.taskStatus == TaskRun.Status.COMPLETE) {
                     log.info("Removing TaskRun:${currTaskRun.task.name}")
                     removeFromCurrentTasks(currTaskRun)

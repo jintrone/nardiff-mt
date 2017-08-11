@@ -97,7 +97,7 @@ class MturkAwsFacadeService {
 
 
         TaskProperties p = taskRun.taskProperties.clone() as TaskProperties
-        p.maxAssignments = 1
+        p.maxAssignments = p.assignmentsPerHit
         taskRun.attach()
         HitView result = new HitView(taskRun,launchHit(requesterService,p,taskRun.id))
         result.save()

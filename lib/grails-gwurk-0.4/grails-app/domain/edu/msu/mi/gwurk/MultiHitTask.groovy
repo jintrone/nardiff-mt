@@ -55,7 +55,7 @@ class MultiHitTask extends Task {
             runner.taskStatus = TaskRun.Status.COMPLETE
         } else if (runner.hasPendingAssignments()) {
             runner.taskStatus = TaskRun.Status.NEEDS_INPUT
-        } else if (runner.activeHits.hits.size() == 0 && runner.allHits.size() < runner.taskProperties.maxAssignments) {
+        } else if (runner.activeHits.hits.size() == 0 && (runner.allHits*.assignments*.size()).sum() < runner.taskProperties.maxAssignments) {
             log.info runner.activeHits
             kickoffHits(service,runner)
         }
@@ -65,8 +65,9 @@ class MultiHitTask extends Task {
     }
 
     def kickoffHits(AmazonMTurkClient svc, TaskRun runner) {
-        int remaining = runner.taskProperties.maxAssignments - runner.allHits.size()
-        int toLaunch = Math.min(remaining,runner.taskProperties.batchSize?:Integer.MAX_VALUE)
+        int remaining = Math.ceil(runner.taskProperties.maxAssignments / runner.taskProperties.assignmentsPerHit) - runner.allHits.size()
+
+        int toLaunch = Math.min(remaining,runner.taskProperties.batchSize)
 
         (1..toLaunch).each {
             mturkAwsFacadeService.launchOneHit(svc, runner)

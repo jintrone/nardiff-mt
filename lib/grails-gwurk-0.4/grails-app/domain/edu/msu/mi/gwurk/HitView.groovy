@@ -66,7 +66,7 @@ class HitView {
             def known = assignments*.assignmentId as Set
 
             def awsAssts = requesterService.listAssignmentsForHIT(new ListAssignmentsForHITRequest().withHITId(hitId))
-            log.info "Retrieved assignments from service: ${awsAssts}"
+            log.info "Retrieved assignments from service: ${awsAssts.getNumResults()}"
             awsAssts.assignments.findAll { it && !known.contains(it.assignmentId) }.each {
                 log.info("Adding assignment $it")
                 addToAssignments(new AssignmentView(it))

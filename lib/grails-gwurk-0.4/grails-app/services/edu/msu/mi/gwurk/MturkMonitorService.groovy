@@ -1,5 +1,7 @@
 package edu.msu.mi.gwurk
 
+import com.amazonaws.AmazonServiceException
+import com.amazonaws.services.mturk.model.AmazonMTurkException
 import com.amazonaws.services.mturk.model.ServiceException
 import grails.transaction.Transactional
 import groovy.util.logging.Log4j
@@ -96,17 +98,48 @@ class MturkMonitorService {
         log.info("Done launching workflow: "+run)
     }
 
-    def beat() {
-        log.info "Dropping the beat"
-        listeners.each {
-            if (it instanceof WorkflowRun) {
-                it = WorkflowRun.get(it.id)
-                if (it == null) {
+    def safeBeat(Object beater, Collection<BeatListener> llist, Closure c = null) throws AmazonServiceException {
+
+        List<BeatListener> tmp =  []+llist
+        long sleep = 500
+        while (!tmp.isEmpty()) {
+
+
+            log.info("Running ${tmp.size()}")
+            BeatListener f = tmp.first()
+            if (f instanceof WorkflowRun) {
+                f = WorkflowRun.get(f.id)
+                if (f == null) {
                     log.warn("Could not retrieve workflow")
+                    tmp.remove(0)
                 }
             }
-            if (it!=null)  it.beat(this,System.currentTimeMillis())
+            if (f!=null)  {
+                try {
+                    f.beat(beater, System.currentTimeMillis())
+                    if (c!=null) {
+                        c(f)
+                    }
+                    sleep = 500
+                    tmp.remove(0)
+                } catch (AmazonMTurkException ex) {
+                    if (ex.statusCode == 400) {
+                        log.warn("Sleeping due to throttling")
+                        Thread.sleep(sleep)
+                        sleep*=2
+                    } else {
+                        throw ex
+                    }
+                }
+            }
+
         }
+
+    }
+
+    def beat() throws AmazonServiceException {
+        log.info "Dropping the beat"
+        safeBeat(this,listeners)
         listeners.removeAll {
             it.hasProperty("currentStatus") && it.currentStatus == WorkflowRun.Status.DONE
 

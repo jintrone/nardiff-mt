@@ -1,0 +1,962 @@
+[
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEC1",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself, and skipped breakfast often. Skipping breakfast makes people crave high-calorie food (like chips and candy), leading Judy to eat junk food later in the day. Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. This made her feel depressed. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Judy began eating a healthy breakfast each day that included a lean protein and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNC1",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves, and might skip breakfast often. Skipping breakfast makes people crave high-calorie food (like chips and candy), leading them to eat junk food later in the day. Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. This can make a person feel depressed. It may helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might explain the problems with these eating behaviors. They might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. When college students eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day, their mood may improve overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEU1",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself. She skipped breakfast often, leading her to eat junk food later in the day. This made her feel depressed. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Judy began eating a healthy breakfast each day that included a lean protein and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNU1",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves. They might skip breakfast often, leading them to eat junk food later in the day. This can make a person feel depressed. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. It may helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might explain the problems with these eating behaviors. They might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. When college students eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day, their mood may improve overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEC2",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself. She skipped breakfast often, leading her to eat junk food later in the day. This made her feel depressed. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason knew that skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Judy began eating a healthy breakfast each day that included a lean protein and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNC2",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves. They might skip breakfast often, leading them to eat junk food later in the day. This can make a person feel depressed. It may be helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might know that Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. They can explain the problems with these eating behaviors and they might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. When college students eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day, their mood may improve overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEU2",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself. She skipped breakfast often, leading her to eat junk food later in the day. This made her feel depressed. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. Judy began eating a healthy breakfast each day that included a lean protein and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNU2",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves. They might skip breakfast often, leading them to eat junk food later in the day. This can make a person feel depressed. It may be helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might explain the problems with these eating behaviors. They might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. When college students eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day, their mood may improve overall "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEC3",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself. She skipped breakfast often, leading her to eat junk food later in the day. This made her feel depressed. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Judy learned from Jason that skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. This led her to began eating a healthy breakfast each day that included a lean protein, and to supplement her diet with fruits or vegetables throughout the day. Her mood improved overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNC3",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves. They might skip breakfast often, leading them to eat junk food later in the day. This can make a person feel depressed. It may be helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might explain the problems with these eating behaviors. They might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. After asking for advice new college students might learn that skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. Knowing this might cause college students to eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day. This may cause their mood may improve overall. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JEU3",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When Judy went to college last year, she did not have enough time to prepare food for herself. She skipped breakfast often, leading her to eat junk food later in the day. This made her feel depressed. Judy decided to ask for advice from Jason, who is a friend with healthy eating habits. Jason explained the problems with Judy\u2019s eating behaviors. He suggested eating a breakfast that included lean protein, and 5 servings of fruits or vegetables a day. Judy began eating a healthy breakfast each day that included a lean protein and supplemented her diet with fruits or vegetables throughout the day. Her mood improved overall. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contained more calories than Judy needed, the extra calories were saved in her body as body fat. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "Weekend Evenings",
+                "Weekday Mornings",
+                "Weekday Evenings",
+                "None, the station is now closed."
+            ],
+            "correct": 3,
+            "probe": "Aldwych tube station is a closed station on the London Underground, in the City of Westminster in central London. The station building, near the junction of Strand and Surrey Street, opened in 1907 as the only other station on the Piccadilly line's short branch from Holborn. Suffering from low passenger numbers, the station and branch were considered for closure several times. Service was offered only during weekday peak hours from 1962 and finally discontinued altogether in 1994, when the cost of replacing the lifts was considered too high compared to the income generated. Disused parts of the station and the running tunnels were used to shelter artworks from the National Gallery during the First World War, and from the British Museum during the Second World War.",
+            "question": "Based on the passage above, what is the busiest time of day for the Aldwych tube station?"
+        },
+        "identifier": "JNU3",
+        "survey": [
+            "eat 5 servings of fruits and vegetables",
+            "eat lean protein for breakfast"
+        ],
+        "title": "Nutritional health",
+        "story": "When people go to college, they might not have enough time to prepare food for themselves. They might skip breakfast often, leading them to eat junk food later in the day. This can make a person feel depressed. It may be helpful for a person to ask for advice from students who have developed healthy eating habits. Other students might explain the problems with these eating behaviors. They might suggest eating a breakfast with lean protein, and having 5 servings of fruits or vegetables a day. When college students to eat breakfast each day that includes a lean protein and supplement their diets with fruits or vegetables throughout the day. This may cause their mood may improve overall. Skipping breakfast makes people crave high-calorie food (like chips and candy), Because junk food contains more calories than a person needs, the extra calories are saved in the body as body fat. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REC1",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. Thus, when Ruth had minor fall one day, she hurt her wrist badly. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines, and ordered an X-ray. The doctor found a fracture, and also diagnosed Ruth with osteoporosis, which is a loss of bone density. The doctor explained the diagnosis, and told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNC1",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. Because of this, even minor falls can lead to bad injuries. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines, and might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. When an older woman begins walking each day and exercising regularly with some light weights. The rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REU1",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. When Ruth had minor fall one day, she hurt her wrist badly. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines, and ordered an X-ray. The doctor found a fracture, and also diagnosed Ruth with osteoporosis, which is a loss of bone density. The doctor explained the diagnosis, and told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNU1",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Because of this, even minor falls can lead to bad injuries. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines, and might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. When an older woman begins walking each day and exercising regularly with some light weights, the rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REC2",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. When Ruth had minor fall one day, she hurt her wrist badly. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines. The doctor knew that older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. So the doctor ordered an X-ray. and found a fracture. The doctor diagnosed Ruth with osteoporosis, which is a loss of bone density, and explained the diagnosis. The doctor told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNC2",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Because of this, even minor falls can lead to bad injuries. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines. Doctors know that older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. Therefore, the doctor might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. When an older woman begins walking each day and exercising regularly with some light weights, the rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REU2",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. When Ruth had minor fall one day, she hurt her wrist badly. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines. The doctor ordered an X-ray. and found a fracture. The doctor diagnosed Ruth with osteoporosis, which is a loss of bone density, and explained the diagnosis. The doctor told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNU2",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Because of this, even minor falls can lead to bad injuries. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines, and might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. When an older woman begins walking each day and exercising regularly with some light weights. The rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REC3",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. When Ruth had minor fall one day, she hurt her wrist badly. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines. The doctor ordered an X-ray. and found a fracture. The doctor diagnosed Ruth with osteoporosis, which is a loss of bone density, and explained the diagnosis. The doctor told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Ruth learned from the doctor that older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. As a result, Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNC3",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Because of this, even minor falls can lead to bad injuries. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines, and might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. A woman might learn from the doctor that Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. Knowing this might help her begin walking each day and exercising regularly with some light weights. The rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "REU3",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Ruth is a 50-year-old woman who consumes dairy and other food with calcium and vitamin D, but is not physically active. When Ruth had minor fall one day, she hurt her wrist badly. When Ruth visited a doctor to check her injury, the doctor asked about her daily routines. The doctor ordered an X-ray. and found a fracture. The doctor diagnosed Ruth with osteoporosis, which is a loss of bone density, and explained the diagnosis. The doctor told Ruth that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor suggested walking more and doing weight-bearing exercises. Ruth began walking each day to and from the store, and began exercising regularly with light weights. This reduced the rate at which her bones were losing mass, helping her to avoid more serious fractures in the future. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "It is the most populous city in the world",
+                "It is the capital city of India",
+                "It is on located on the east coast of India",
+                "It has a deep natural harbor"
+            ],
+            "correct": 3,
+            "probe": "Mumbai (also known as Bombay) is the capital city of the Indian state of Maharashtra.It is the most populous city in India, most populous metropolitan area in India, and the eighth most populous city in the world, with an estimated city population of 18.4 million and metropolitan area population of 20.7 million as of 2011. Along with the urban areas, including the cities of Navi Mumbai, Thane, Bhiwandi, Kalyan, it is one of the most populous urban regions in the world. Mumbai lies on the west coast of India and has a deep natural harbour. In 2009, Mumbai was named an alpha world city. It is also the wealthiest city in India, and has the highest GDP of any city in South, West, or Central Asia. Mumbai has the highest number of billionaires and millionaires among all cities in India.",
+            "question": "Based on the passage above, which of the following is true about the city of Mumbai?"
+        },
+        "identifier": "RNU3",
+        "survey": [
+            "walk more",
+            "do weight bearing exercise"
+        ],
+        "title": "Bone health",
+        "story": "Some women in their 50s consume dairy and other food with calcium and vitamin D, but are not physically active. Because of this, even minor falls can lead to bad injuries. If an older woman experiences pain after a fall, she might decide to go to a doctor. The doctor will ask about her daily routines, and might suggest an X-ray. The doctor might find a fracture, and also diagnose the woman with osteoporosis, which is a loss of bone density. The doctor can explain the diagnosis, and may tell her that a healthy diet and physical activity are both needed to maintain healthy bones. The doctor might suggest walking more and doing weight-bearing exercises. When an older woman begins walking each day and exercising regularly with some light weights. The rate at which her bones lose mass will slow, helping her to avoid serious fractures in the future. Older women lose bone mass more quickly than younger women, making it easier to break bones, and without physical activity, a person's body doesn't use calcium and vitamin D to replenish bone mass as effectively. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEC1",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Thus Jason and his partner became even more stressed and bickered a lot. The couple decided to go to couples counseling. The counselor asked about their eating schedule, and told them that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. The couple took the counselor's advice, started planning their meals every week, and made food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNC1",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Thus a couple can become even more stressed and start to bicker a lot. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule, and tell them that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. If a couple takes this advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEU1",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Jason and his partner became even more stressed began to bicker a lot. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. The couple decided to go to couples counseling. The counselor asked about their eating schedule, and told them that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. The couple took the counselor's advice, started planning their meals every week, and made food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNU1",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). A couple can become even more stressed and start to bicker a lot. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule, and tell them that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. If a couple takes this advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEC2",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Jason and his partner became even more stressed began to bicker a lot. The couple decided to go to couples counseling. The counselor asked about their eating schedule. The counselor knew that fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Thus, the counselor told the couple that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. The couple took the counselor's advice, started planning their meals every week, and made food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNC2",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). A couple can become even more stressed and start to bicker a lot. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule. Counselors might know that fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Thus, a counselor might tell the couple that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. If a couple takes this advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEU2",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Jason and his partner became even more stressed began to bicker a lot. The couple decided to go to couples counseling. The counselor asked about their eating schedule. and told the couple that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. The couple took the counselor's advice, started planning their meals every week, and made food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNU2",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). A couple can become even more stressed and start to bicker a lot. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule, and tell the couple that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. If a couple takes this advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEC3",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Jason and his partner became even more stressed began to bicker a lot. The couple decided to go to couples counseling. The counselor asked about their eating schedule. and told the couple that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. The couple learned from the counselor that fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Thus, the couple took the counselor's advice, planning their meals every week, and making food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNC3",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). A couple can become even more stressed and start to bicker a lot. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule, and tell them that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. The couple might learn from the counselor that fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. Knowing this might help them follow the counselor's advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaEU3",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When Jason became a new parent, he and his partner felt very stressed and tired. Because they had little time, they ate lots of fast-food (like pizza and burgers). Jason and his partner became even more stressed began to bicker a lot. The couple decided to go to couples counseling. The counselor asked about their eating schedule. and told the couple that their diet could be making things harder. The counselor suggested that the couple plan their meals ahead of time, and suggested eating lean meats and beans. The couple took the counselor's advice, planning their meals every week, and making food at home with lean meats and beans. This helped with their energy levels and moods, and they bickered less. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "To find food",
+                "To find other paddlefish",
+                "To navigate rivers",
+                "None of the above"
+            ],
+            "correct": 0,
+            "probe": "The American paddlefish is one of the largest freshwater fish in North America. Closely related to the sturgeon, it is one of only two extant taxa in the paddlefish family (the other being the Chinese paddlefish). The rostrum and cranium of American paddlefish are covered with tens of thousands of sensory receptors for locating swarms of zooplankton, their primary food source. American paddlefish are native to the Mississippi River Basin and once moved freely under the relatively natural, unaltered conditions that existed prior to the early 1900s. Their numbers have declined dramatically primarily because of overfishing, habitat destruction, and pollution. They are currently found in only twenty-two U.S. states, and their range has been reduced to the Mississippi and Missouri river tributaries and Mobile Bay drainage basin.",
+            "question": "Based on the passage above, what is the purpose of the sensory receptors on the cranium and rostrum of the American paddlefish?"
+        },
+        "identifier": "JaNU3",
+        "survey": [
+            "plan meals ahead of time",
+            "eat more lean meats or beans"
+        ],
+        "title": "Parenting health",
+        "story": "When people become new parents, they might felt very stressed and tired. Because they have little time, they might eat lots of fast-food (like pizza and burgers). A couple can become even more stressed and start to bicker a lot. Such a couple might decide to go to couples counseling. The counselor might ask about their eating schedule, and tell them that their diet is making things harder. A counselor might suggest that the couple plan their meals ahead of time, and eat lean meats and beans. If a couple takes this advice, planning meals every week, and making food at home with lean meats and beans, their energy levels and moods might improve, and they might bicker less. Fast food is usually high in calories and saturated fat and low in nutrients. This kind of diet can cause people to feel sluggish and irritable. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEC1",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. One day Jonathan noticed his skin was starting to look unhealthy. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. his dermatologist suggested that Jonathan start practicing meditation and that he drink more water throughout the day. Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so he started sleeping better. Along with increased hydration, this also made his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNC1",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. This might lead a young man to notice that his skin starts to look unhealthy. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. If a man takes his dermatologist's advice, taking an online meditation course and drinking more water throughout the day, his stress levels may be reduced and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEU1",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. One day Jonathan noticed his skin was starting to look unhealthy. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. his dermatologist suggested that Jonathan start practicing meditation and that he drink more water throughout the day. Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so he started sleeping better. Along with increased hydration, this also made his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNU1",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. This might lead a young man to notice that his skin starts to look unhealthy. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. If a man takes his dermatologist's advice, taking an online meditation course and drinking more water throughout the day, his stress levels may be reduced and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEC2",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. One day Jonathan noticed his skin was starting to look unhealthy. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. The dermatologist knew that stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. his dermatologist suggested that Jonathan start practicing meditation and that he drink more water throughout the day. Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so he started sleeping better. Along with increased hydration, this also made his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNC2",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. This might lead a young man to notice that his skin starts to look unhealthy. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. Dermatologists know that stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. If a man takes his dermatologist's advice, taking an online meditation course and drinking more water throughout the day, his stress levels may be reduced and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEU2",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. One day Jonathan noticed his skin was starting to look unhealthy. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. his dermatologist suggested that Jonathan start practicing meditation and that He drink more water throughout the day. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so He started sleeping better. Along with increased hydration, this also made his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNU2",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. This might lead a young man to notice that his skin starts to look unhealthy. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. If a man takes his dermatologist's advice, taking an online meditation course and drinking more water throughout the day, his stress levels may be reduced and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEC3",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. One day Jonathan noticed his skin was starting to look unhealthy. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. his dermatologist suggested that Jonathan start practicing meditation and that he drink more water throughout the day. Jonathan learned from the dermatologist that stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. Thus, Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so he started sleeping better. Along with increased hydration, this also made his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNC3",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. This might lead a young man to notice that his skin starts to look unhealthy. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. The person might learn from the dermatologist that stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. Knowing this might help him to follow the dermatologist's advice, taking an online meditation course and drinking more water throughout the day. This can reduce his stress levels, and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeEU3",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Jonathan is a young man who has a demanding job. He experiences a lot of stress, which makes it hard for him to sleep at night. So, Jonathan drinks a lot of coffee to stay awake, and rarely drinks water. One day Jonathan noticed his skin was starting to look unhealthy. Jonathan went to a dermatologist. The dermatologist asked about his stress levels and water consumption. his dermatologist suggested that Jonathan start practicing meditation and that he drink more water throughout the day. Jonathan took his dermatologist's advice. He took an online meditation course, and started drinking more water throughout the day. This reduced his stress levels, and so he started sleeping better. Along with increased hydration, this also made his skin healthier. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. "
+    },
+    {
+        "distractor": {
+            "answers": [
+                "John Wesley Powell",
+                "The Grand Canyon",
+                "The Hoover Dam",
+                "All of the Above"
+            ],
+            "correct": 2,
+            "probe": "The Colorado River is the principal river of the Southwestern United States and northwest Mexico.  Known for its dramatic scenery and its whitewater, the Colorado carves numerous gorges, including the Grand Canyon in northern Arizona. For 8,000 years, the Colorado Basin was only sparsely populated by Native Americans, though some of their ancient civilizations employed advanced irrigation techniques. Even after becoming part of theU.S. in the 1800s, the Colorado River country remained extremely remote until John Wesley Powell's 1869 river-running expedition, which began to open up the river for future development. Since the completion of Hoover Dam in 1935, the Colorado has been tamed by an extensive system of dams and canals, providing for irrigation, cities, and hydropower. Today the Colorado supports 40 million people in seven U.S. and two Mexican states; with every drop of its water allocated, it no longer reaches the sea except in years of heavy runoff.",
+            "question": "Based on the passage above, which of the following are associated with the Colorado River?"
+        },
+        "identifier": "JeNU3",
+        "survey": [
+            "practice meditation",
+            "drink more water"
+        ],
+        "title": "Skin health",
+        "story": "Young men with demanding jobs can experience a lot of stress, making it hard for them to sleep at night. So they might drink a lot of coffee to stay awake, and have little water. This might lead a young man to notice that his skin starts to look unhealthy. A young man might visit a dermatologist, who might ask about his stress levels and water consumption. The dermatologist might suggest that he practice meditation, and drink more water throughout the day. If a man takes his dermatologist's advice, taking an online meditation course and drinking more water throughout the day, his stress levels may be reduced and he might begin sleeping better. Along with increased hydration, this can make his skin healthier. Stress can have detrimental effects on skin, like acne or worsening eczema, and being dehydrated also has negative consequences for skin tone. "
+    }
+]

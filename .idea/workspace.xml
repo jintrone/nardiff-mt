@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6151107c-3170-4ff8-b393-7276cc2092d2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/data/nardiff_data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json" afterPath="$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/narrative/start.gsp" afterPath="$PROJECT_DIR$/grails-app/views/narrative/start.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/nardiff.js" afterPath="$PROJECT_DIR$/web-app/js/nardiff.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -23,11 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="experiment_pilot_small.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small.json">
+      <file leaf-file-name="MultiHitTask.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="211">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -36,8 +42,8 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state relative-caret-position="441">
+              <caret line="73" column="81" lean-forward="true" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -45,67 +51,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment1.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/data/experiment1.json">
+      <file leaf-file-name="MturkAwsFacadeService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="84" lean-forward="true" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NardiffService.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy">
+      <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="21" column="104" lean-forward="true" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="115" column="66" lean-forward="true" selection-start-line="115" selection-start-column="66" selection-end-line="115" selection-end-column="66" />
+              <folding>
+                <element signature="e#26#69#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NarrativeSeed.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="WorkflowRun.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="169" column="67" lean-forward="true" selection-start-line="169" selection-start-column="67" selection-end-line="169" selection-end-column="67" />
+              <folding>
+                <element signature="e#26#66#0" expanded="true" />
+                <marker date="1502471922000" expanded="true" signature="2741:2751" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment_pilot_small_chained.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json">
+      <file leaf-file-name="TaskRun.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeatListener.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/BeatListener.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="4" column="739" lean-forward="false" selection-start-line="4" selection-start-column="739" selection-end-line="4" selection-end-column="739" />
+              <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/preview.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-              <folding />
-            </state>
+      <file leaf-file-name="HitView.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NarrativeController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="161" column="105" lean-forward="false" selection-start-line="161" selection-start-column="105" selection-end-line="161" selection-end-column="105" />
-              <folding>
-                <element signature="e#20#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-127">
+              <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,23 +128,20 @@
       <file leaf-file-name="start.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/start.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+            <state relative-caret-position="227">
+              <caret line="188" column="135" lean-forward="true" selection-start-line="188" selection-start-column="135" selection-end-line="188" selection-end-column="135" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Narrative.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Narrative.groovy">
+      <file leaf-file-name="nardiff.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/js/nardiff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3015">
+              <caret line="201" column="8" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="8" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -186,27 +198,29 @@
         <option value="$PROJECT_DIR$/grails-app/views/narrative/preview.gsp" />
         <option value="$PROJECT_DIR$/web-app/data/experiment_pilot.json" />
         <option value="$PROJECT_DIR$/grails-app/domain/nardiff/mt/Survey.groovy" />
-        <option value="$PROJECT_DIR$/web-app/data/experiment_pilot_small.json" />
         <option value="$PROJECT_DIR$/web-app/data/experiment_pilot_smald_chaind.json" />
-        <option value="$PROJECT_DIR$/web-app/js/nardiff.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/narrative/start.gsp" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/dependencies.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/SingleHitTask.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Task.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/MturkHitProperties.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy" />
         <option value="$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json" />
+        <option value="$PROJECT_DIR$/web-app/data/experiment_pilot_small.json" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy" />
+        <option value="$PROJECT_DIR$/web-app/data/nardiff_data_small.json" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/narrative/start.gsp" />
+        <option value="$PROJECT_DIR$/web-app/js/nardiff.js" />
       </list>
     </option>
   </component>
@@ -220,10 +234,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2560" />
-    <option name="y" value="23" />
-    <option name="width" value="1792" />
-    <option name="height" value="1087" />
+    <option name="x" value="-2127" />
+    <option name="y" value="72" />
+    <option name="width" value="1613" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
@@ -240,6 +254,164 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narrative" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nardiff-mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -268,6 +440,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -392,6 +565,16 @@
           </PATH>
         </subPane>
         <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="External Dependencies">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -637,32 +820,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="workflow">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="gwurk-inplacePlugin">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lib/grails-gwurk-0.4">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="grails-app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="services">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -788,165 +945,6 @@
             <PATH_ELEMENT USER_OBJECT="edu/msu/mi/gwurk">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="narrative" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nardiff-mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1146,12 +1144,15 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Narr&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/controllers/nardiff/mt/NarrativeController.groovy&#10;preview&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/preview.gsp&#10;start.&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/start.gsp&#10;experiment&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment1.json&#10;Nardiff&#9;null&#9;null&#10;Narra&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/controllers/nardiff/mt/NarrativeController.groovy&#10;Boo&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;experiment_&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment_pilot_small_chained.json&#10;mturk&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy&#10;depe&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/dependencies.groovy&#10;b&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;nardi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/js/nardiff.js&#10;nardiff.&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/js/nardiff.js&#10;Data&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/DataSource.groovy&#10;exp&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment_pilot_small.json&#10;Config&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/Config.groovy&#10;form&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp&#10;Boot&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;Assi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy&#10;TaskR&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy&#10;ork&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy&#10;Multi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy&#10;Narrat&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="nardiff.js&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/js/nardiff.js&#10;start.gsp&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/start.gsp&#10;M&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy&#10;Work&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy&#10;Boot&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;HitView&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy&#10;nardiff.&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/js/nardiff.js&#10;star&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/start.gsp&#10;Nar&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/services/nardiff/mt/NardiffService.groovy&#10;start&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/start.gsp&#10;Single&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/SingleHitTask.groovy&#10;ot&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;Narr&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/controllers/nardiff/mt/NarrativeController.groovy&#10;preview&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/preview.gsp&#10;start.&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/views/narrative/start.gsp&#10;experiment&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment1.json&#10;Nardiff&#9;null&#9;null&#10;Narra&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/controllers/nardiff/mt/NarrativeController.groovy&#10;Boo&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;experiment_&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment_pilot_small_chained.json&#10;mturk&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy&#10;depe&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/dependencies.groovy&#10;b&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/BootStrap.groovy&#10;nardi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/js/nardiff.js&#10;Data&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/DataSource.groovy&#10;exp&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/web-app/data/experiment_pilot_small.json&#10;Config&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/grails-app/conf/Config.groovy&#10;form&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp&#10;Assi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy&#10;TaskR&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy&#10;ork&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy&#10;Multi&#9;FILE&#9;file:///Users/josh/@Development/nardiff-current/nardiff-mt/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy&#10;Narrat&#9;null&#9;null" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-app/data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web-app/data" />
     </key>
@@ -1515,29 +1516,26 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="23" width="1792" height="1087" extended-state="0" />
+    <frame x="-2127" y="72" width="1613" height="1417" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="22" y="51" width="1386" height="821" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998565" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21306533" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4445283" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18628572" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42966264" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39961758" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39961758" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1546,13 +1544,16 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="22" y="51" width="1386" height="821" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853717" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1611,105 +1612,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/zaxtax/java-aws-mturk/1.6.2/java-aws-mturk-1.6.2.jar!/com/amazonaws/mturk/requester/QualificationRequirement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/dependencies.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/conf/PluginResources.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/conf/PluginUrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/CreateHITRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="86" column="16" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding>
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/Assignment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/AssignmentStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/MturkStateException.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/BeatListener.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/GwurkEvent.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/TaskDecorator.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1745,17 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/controllers/edu/msu/mi/gwurk/WorkflowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1498246199000" expanded="true" signature="1014:1022" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1768,90 +1663,46 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/ActiveHits.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#26#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/ShiroRole.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/ShiroUser.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/SingleHitTask.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#81#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/AmazonMTurkClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="204" column="4" lean-forward="false" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Credentials.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-          <folding>
-            <element signature="e#26#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1865,88 +1716,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
-          <folding>
-            <element signature="e#26#66#0" expanded="true" />
-            <marker date="1500387780000" expanded="true" signature="2714:2724" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Task.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#27#80#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#27#80#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeData.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Survey.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Turker.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Workflow.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/workflow/launchWorkflow.gsp">
@@ -1957,25 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/MturkHitProperties.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1984,30 +1774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="130" column="9" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="130" selection-end-column="9" />
-          <folding>
-            <element signature="e#26#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="49" column="87" lean-forward="true" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
-          <folding>
-            <element signature="e#26#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-615">
           <caret line="86" column="66" lean-forward="true" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
@@ -2016,22 +1786,40 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="161" column="105" lean-forward="false" selection-start-line="161" selection-start-column="105" selection-end-line="161" selection-end-column="105" />
+          <folding>
+            <element signature="e#20#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/Narrative.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/data/experiment1.json">
+    <entry file="file://$PROJECT_DIR$/web-app/data/experiment2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2041,71 +1829,262 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/nardiff/mt/NarrativeSeed.groovy">
+    <entry file="file://$PROJECT_DIR$/web-app/data/experiment1.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+        <state relative-caret-position="465">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/SingleHitTask.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="21" column="104" lean-forward="true" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/start.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+        <state relative-caret-position="195">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/preview.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/nardiff/mt/NarrativeController.groovy">
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/views/_taskPropertiesForm.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="161" column="105" lean-forward="false" selection-start-line="161" selection-start-column="105" selection-end-line="161" selection-end-column="105" />
+        <state relative-caret-position="208">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/data/nardiff_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/data/nardiff_data_small.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/controllers/edu/msu/mi/gwurk/WorkflowController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
           <folding>
-            <element signature="e#20#51#0" expanded="true" />
+            <marker date="1498246199000" expanded="true" signature="1014:1022" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/data/experiment_pilot_small_chained.json">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/nardiff/mt/NardiffService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gvm/grails/2.4.4/src/grails-datastore-gorm-3.1.3.RELEASE-sources.jar!/org/grails/datastore/gorm/GormStaticApi.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="224" column="6" lean-forward="false" selection-start-line="224" selection-start-column="6" selection-end-line="224" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/Task.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/Assignment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/HIT.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/AmazonMTurkClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="935" column="26" lean-forward="false" selection-start-line="935" selection-start-column="26" selection-end-line="935" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/ListHITsRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="116" lean-forward="true" selection-start-line="10" selection-start-column="116" selection-end-line="10" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/ListHITsResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.163/aws-java-sdk-mechanicalturkrequester-1.11.163.jar!/com/amazonaws/services/mturk/model/ListAssignmentsForHITResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/HitView.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="73" column="81" lean-forward="true" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkAwsFacadeService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="84" lean-forward="true" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/src/groovy/edu/msu/mi/gwurk/BeatListener.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="4" column="739" lean-forward="false" selection-start-line="4" selection-start-column="739" selection-end-line="4" selection-end-column="739" />
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="115" column="66" lean-forward="true" selection-start-line="115" selection-start-column="66" selection-end-line="115" selection-end-column="66" />
+          <folding>
+            <element signature="e#26#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/TaskRun.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/MultiHitTask.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.4/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="169" column="67" lean-forward="true" selection-start-line="169" selection-start-column="67" selection-end-line="169" selection-end-column="67" />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+            <marker date="1502471922000" expanded="true" signature="2741:2751" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/narrative/start.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="188" column="135" lean-forward="true" selection-start-line="188" selection-start-column="135" selection-end-line="188" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/nardiff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3015">
+          <caret line="201" column="8" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="8" />
           <folding />
         </state>
       </provider>

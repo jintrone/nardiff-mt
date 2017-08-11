@@ -53,9 +53,9 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        nardiffService.setBranching([6, 3, 1])
+        nardiffService.setBranching([18, 1, 1, 1, 1])
 
-        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/experiment_pilot_small_chained.json")))
+        def experimentData = new JsonSlurper().parse(new File(servletContext.getRealPath("/data/nardiff_data.json")))
 
         experimentData.each { Map m ->
             if (!NarrativeSeed.findAllByIdentifier(m.identifier)) {
@@ -74,8 +74,9 @@ class BootStrap {
                     lifetime          : 60 * 60 * 10,
                     assignmentDuration: 60 * 60,
                     keywords          : "research, memory, study, experiment",
-                    maxAssignments    : 70,
-                    batchSize         : 6,
+                    maxAssignments    : 90,
+                    batchSize         : 2,
+                    assignmentsPerHit : 9,
                     height            : 1000,
                     requireApproval   : false,
                     qualificationString : "not NarrDiff1"

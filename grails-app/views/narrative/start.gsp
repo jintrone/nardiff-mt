@@ -85,7 +85,7 @@
             <p>Year of Birth:
 
             <g:select id="age" name="age" ng-model="demographics.age" from="${((1905..1998) as List).reverse()}"
-                      noSelection="['': '-Choose your birth year-']"/>
+                      noSelection="['': '-Choose your birth year-']" required="required"/>
 
             </p>
 
@@ -184,6 +184,7 @@
         <p>Time Remaining: {{(60-elapsedTime) + " seconds" }}</p>
 
         <p><button class="button" ng-click="wf.advance()">Skip Remaining Time</button></p>
+       
     </div>
 
     <div ng-show="stage === 5">
@@ -191,7 +192,7 @@
 
             <div ng-switch on="selection">
                 <div ng-switch-when="Step 1">
-                    <h2>Please answer the following questions about how engaging the story you just read was.</h2>
+                    <h2>(1/4) Please answer the following questions about how engaging the story you just read was.</h2>
                     <%
                         JsonSlurper slurper = new JsonSlurper()
                         def actions = slurper.parse(narrative.root_narrative.survey as char[])
@@ -317,7 +318,7 @@
 
                 <div ng-switch-when="Step 2">
 
-                    <h2>Please indicate how much you agree with the following statements about the information in the story.</h2>
+                    <h2>(2/4) Please indicate how much you agree with the following statements about the information in the story.</h2>
 
                     <form name="subForm2" class="gwurkignore">
                         <div class="minor-section">
@@ -443,7 +444,7 @@
                 </div>
 
                 <div ng-switch-when="Step 3">
-                    <h2>Please indicate how much you agree with the following statements about your interest in sharing the story you
+                    <h2>(3/4) Please indicate how much you agree with the following statements about your interest in sharing the story you
                     just read.</h2>
 
                     <form name="subForm3" class="gwurkignore">
@@ -502,7 +503,7 @@
                 </div>
 
                 <div ng-switch-when="Step 4">
-                    <h2>Please indicate how likely it is you will perform the following activities with the specified frequency.</h2>
+                    <h2>(4/4) Please indicate how likely it is you will perform the following activities with the specified frequency.</h2>
 
                     <form name="subForm4" class="gwurkignore">
                         <g:each var="action" in="${actions}" status="status">
